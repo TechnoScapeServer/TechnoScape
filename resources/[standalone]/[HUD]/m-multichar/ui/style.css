@@ -1,0 +1,1112 @@
+@font-face {
+  font-family: Proxima Nova;
+  src: url("fonts/proxima_nova.otf");
+}  
+@font-face {
+    font-family: "gilroy";
+    src: url("fonts/gilroy.otf");
+  }  
+  
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}  
+
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    user-select: none;
+}
+
+
+
+
+.app-container {
+    width: 100%;
+    height: 100%;
+    background: url("images/bg-overlay.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.app-container-top-box {
+    position: absolute;
+    display: flex;
+    width: 95vw;
+    left: 4vh;
+    height: 11vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.27);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-server-image {
+    width: 12.5vw;
+    height: 7.5vh;
+    align-self: center;
+    /* background: url("images/codemrp.png"); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.app-top-text {
+    align-self: center;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2vh;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+    color: white;
+    letter-spacing: 0.11em;
+    border-bottom: 3px solid #FFFFFF;
+    height: 100%;
+    line-height: 12vh;
+    margin-left: 4.5vh;
+}
+
+
+.app-top-userinfo {
+    display: flex;
+    width: 15vw;
+    height: 60%;
+}
+
+.app-top-userinfo-localImage {
+    position: absolute;
+    height: 6.3vh;
+    width: 3.5vw;
+    right: 0;
+    border-radius: 40vw;
+    background: url("https://cdn.discordapp.com/attachments/1064711050798317720/1076180269540835429/image_658.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #FFFFFF;
+}
+
+.app-top-userinfo-texts {
+    display: flex;
+    width: 10vw;
+    flex-direction: column;
+    margin-top: 1.5vh;
+}
+
+.app-top-userinfo-texts-playername {
+
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    width: 100%;
+    letter-spacing: 0.11em;
+    height: 2vh;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: right;
+    overflow:hidden;
+    
+}
+
+.app-top-userinfo-texts-playerId {
+    margin-left: auto;
+    letter-spacing: 0.11em;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3vh;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* char selection side*/
+.app-container-main {
+    position: absolute;
+    width: 100vw;
+    height: 89vh;
+    top: 11vh;
+}
+
+.app-container-createcharacter {
+    position: absolute;
+    width: 100vw;
+    height: 89vh;
+    top: 11vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-container-main-charselection {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.app-container-main-charname {
+    width: 30vw;
+    height: 5vh;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vh;
+    line-height: 99.5%;
+    /* identical to box height, or 25px */
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    text-align: center;
+    color: #FFFFFF;
+
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+    margin-top: 4vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.27);
+}
+
+
+.app-container-main-character-side {
+    position: absolute;
+    display: flex;
+    width: 20vw;
+    left: 4vh;
+    height: 60vh;
+    background: url("https://cdn.discordapp.com/attachments/1070720955434934282/1076194890544857180/Group_3412_1.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    
+}
+
+.app-container-main-character-statics {
+    display: none;
+    position: absolute;
+    width: 20vw;
+    right: -40vh;
+    height: 60vh;
+    background: url("images/statics.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    right: 0;
+    width: 19.3vw;
+    height: 100%;
+    border: none;
+    border-radius: 0.5vh;
+    flex-direction: column;
+    flex-flow: row wrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+.container::-webkit-scrollbar {
+    color: gray;
+} 
+
+.border {
+    width: 0.5vw;
+    height: 70%;
+    background-color: white;
+    margin-left: 2vh;
+    box-shadow: 0px 0px 37px #FFFFFF;
+}
+
+.character-side-index-title {
+    width: 20vw;
+    height: 7vh;
+    margin-top: 3vh;
+    display: flex;
+    /* margin-left: auto; */
+    /* border-left: 1.1vh solid white; */
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vh;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+    align-items: center;
+    border-bottom:  1px solid rgba(255, 255, 255, 0.163);;
+}
+
+.character-side-index-title > p {
+    margin-left: 2vh;
+}
+
+
+.character-side-index {
+    width: 17vw;
+    margin-left: 2vh;
+    height: 9vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.3vh;
+}
+
+.character-side-index-desc {
+    display: flex;
+    width: 17.7vw;
+    height: 7.5vh;
+    background: url(images/character-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-left: 0.5vw solid rgb(182, 182, 182);
+}
+
+
+
+
+
+.selected {
+    display: none;
+    line-height: 2vh;
+    width: 18.2vw;
+    height: 2vh;
+    background: #FFFFFF;
+    text-align: center;
+    font-family: 'gilroy';
+
+    font-weight: 800;
+    font-size: 1.2vh;
+    letter-spacing: 0.11em;
+    color: rgba(0, 0, 0, 0.47);
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+
+}
+
+
+.character-side-index-desc[char-id="tebex"] {
+    background: url("images/tebex-slot.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border-right: 0.5vw solid #c5ba59; */
+    border-left: 0.5vw solid #c5ba59;
+}
+
+.character-createnewcharacter[char-id="tebex"] > i {
+    color: #c5ba59;
+}
+
+
+
+.character-infos-image{
+    position: absolute;
+    width: 8vw;
+    right: 0;
+    height: 7.5vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    mix-blend-mode: hard-light;
+}
+
+
+.character-side-charname {
+    font-family: 'gilroy';
+    font-style: normal;
+    margin-left: 2vh;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+    text-transform: uppercase;
+}
+
+
+.character-side-job {
+    color: rgba(255, 255, 255, 0.47);
+    font-family: 'gilroy';
+    font-style: normal;
+    margin-left: 2vh;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    font-size: 1vh;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+    text-transform: uppercase;
+}
+
+
+
+.character-createnewcharacter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 99.5%;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+}
+
+.character-createnewcharacter i {
+    color: gray;
+    font-size: 2.5vh;
+    margin-bottom: 1.5vh;
+}
+
+.createcharacter {
+    /* border-right: 0.5vw solid rgb(182, 182, 182); */
+}
+
+
+
+
+
+.app-container-main-buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 45vh;
+}
+
+.app-container-button-index {
+    width: 16vw;
+    height: 4vh;
+    margin-top: 1vh;
+    display: flex;
+    font-family: 'gilroy';
+    font-style: normal;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.11em;
+    font-size: 1.2vh;
+    color: rgba(255, 255, 255, 0.47);
+    
+}
+
+.app-container-button-index:hover {
+    color: white;
+}
+
+.app-container-button-index[id="playtime"] {
+    background: url("images/playtime-background.png");
+    background-size: cover ;
+    background-repeat: no-repeat;
+    
+}
+
+.app-container-button-index[id="deletecharacter"] {
+    background: url("images/deletechar-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+}
+
+
+
+
+.app-container-main-ellipse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ellipse {
+    width: 35vw;
+    height: 3vh;
+    background: url("images/ellips.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bottom-text {
+    text-align: center;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.05vh;
+    letter-spacing: 0.11em;
+    color: rgba(255, 255, 255, 0.46);
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+}
+
+.bottom-text:hover {
+    color: white;
+}
+
+
+.play-button-main {
+    display: flex;
+    justify-content: center;
+}
+
+.play-button{
+    overflow: hidden;
+    height: 7vh;
+    width: 18.8vw;
+    border-radius: 2px;
+    background-image: url(images/playbutton.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    text-align: center;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+    -webkit-box-shadow: -2px -1px 120px -5px rgba(255,255,255,1); -moz-box-shadow: -2px -1px 120px -5px rgba(255,255,255,1); box-shadow: -2px -1px 120px -5px rgba(255,255,255,1);
+}
+
+
+.character-statics-index{
+    width: 17vw;
+    margin-right: 2vh;
+    height: 9vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.3vh;
+}
+
+
+
+.character-statics-desc {
+    display: flex;
+    width: 17.7vw;
+    height: 7.5vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-right: 0.5vw solid rgb(182, 182, 182);
+    text-align: right;
+    flex-direction: column;
+    
+}
+
+.character-statics-desc[id="age"] {
+    background: url("images/age.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.character-statics-desc[id="cash"] {
+    background: url("images/cash.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.character-statics-desc[id="bank"] {
+    background: url("images/bank.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.character-statics-desc[id="number"] {
+    background: url("images/number.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.character-statics-desc[id="nationality"] {
+    background: url("images/nationality.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.statics-label {
+    text-align: right;
+    font-family: 'gilroy';
+    font-style: normal;
+    font-weight: 800;
+    margin-right: 1.5vh;
+    letter-spacing: 0.10em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+
+}
+
+.statics-index {
+    text-align: right;
+    color: rgba(255, 255, 255, 0.47);
+    font-family: 'gilroy';
+    font-style: normal;
+    margin-left: 2vh;
+    margin-right: 1.5vh;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    font-size: 1vh;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+
+
+}
+
+
+.delete-character-container {
+    position: absolute;
+    width: 30vw;
+    display: flex;
+    height: 21.3vh;
+    margin-left: 62.5vh;
+    margin-top: 10vh;
+    background: url("images/deletechar-container.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delete-character-container[id="tebex-container"] {
+    background-image: url("images/tbx-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%  100%;
+}
+
+.delete-character-container i{
+    color: #c5ba59;
+    font-size: 2vh;
+    margin-top: 0.5vh;
+}
+
+
+.delete-character-text{
+    height: 6vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.27);
+    text-align: center;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    width: 100%;
+    font-size: 1.5vh;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+    transition: 0.4 color;
+}
+
+.buy-new-slot:hover {
+    color: #c4bb64;
+}
+
+.delete-character-buttons{
+    position: absolute;
+    width: 100%;
+    height: 12.5vh;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-character-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+    height: 5.1vh;
+    background: url("images/no.png");
+    margin-left: 1vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    font-size: 1.4vh;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+}
+
+#tebex-link-div {
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3vh;
+    color: white;
+    letter-spacing: 0.11em;
+    width: 85%;
+    height: 4.52vh;
+    background: url("images/tbx-insert-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2vh;
+    
+}
+
+.buy-new-slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 4.52vh;
+    background: url("images/tbx-buy-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 1.5vh;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.6vh;
+    /* or 24px */
+
+    text-align: center;
+    letter-spacing: 0.11em;
+
+    color: #A79E53;
+
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+
+}
+
+.delete-character-container > textarea::-webkit-input-placeholder {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.3vh;
+    letter-spacing: 0.11em;
+    text-align: left;
+}
+
+    
+    
+
+.delete-character-index[id="yes"] {
+    width: 8vw;
+    height: 5.1vh;
+    background: url("images/yes.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.logo-container {
+    width: 30vw;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.create-character-container {
+    width: 25vw;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-character-text {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6vh;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+    text-align: center;
+}
+
+.create-character-container-main {
+    width: 100%;
+    height: 65vh;
+    background: url("images/create-char-background.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.create-character-title{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 23.1vw;
+    height: 7vh;
+    margin-top: 3vh;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9vh;
+    letter-spacing: 0.11em;
+    color: #686868;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.237);
+    background: url("images/new-char-bg.png");
+    background-size: cover;
+}
+
+
+.create-character-button {
+    height: 7vh;
+    width: 18.8vw;
+    background: url("images/playbutton.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+    -webkit-box-shadow: -2px -1px 120px -5px rgba(255,255,255,1); -moz-box-shadow: -2px -1px 120px -5px rgba(255,255,255,1); box-shadow: -2px -1px 120px -5px rgba(255,255,255,1);
+}
+
+.create-character-cancel {
+    height: 3.5vh;
+    width: 10vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 1vh;
+    text-align: center;
+    font-size: 1.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+    -webkit-box-shadow: -2px -1px 120px -5px rgba(255,255,255,1); -moz-box-shadow: -2px -1px 120px -5px rgba(255,255,255,1); box-shadow: -2px -1px 120px -5px rgba(255,255,255,1);
+    background: linear-gradient(180deg, rgba(255, 64, 64, 0.54) 0%, rgba(255, 64, 64, 0.54) 100%);
+    border: 3px solid #FF5757;
+    border-radius: 6px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.11em;
+    color: #FFA4A4;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+}
+
+.create-character-cancel:hover {
+    color: white;
+}
+
+
+.create-character-index-container {
+    display: flex;
+    flex-direction: column;
+    width: 16.5vw;
+    height: 45vh;
+    margin-top: 2vh;
+    
+    border-right: 5px solid #D9D9D9;
+    align-items: center;
+}
+
+.create-character-index{
+    display: flex;
+    justify-content: center;
+    width: 98%;
+    height: 10vh;
+    border-bottom: 2px solid #D9D9D9;
+    flex-direction: column;
+    margin-top: 0.5vh;
+}
+
+.create-character-index[id="sex"] {
+    border: none;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.create-character-index-label {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    color: rgba(255, 255, 255, 0.38);
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+    font-size: 0.95vh;
+    margin-left: 1.2vh;
+}
+
+.create-character-index i {
+    position: absolute;
+    align-self: end;
+    margin-top: 2.5vh;
+    font-size: 2vh;
+    margin-right: 1.5vh;
+    color: white;
+}
+
+.create-character-index-text {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3vh;
+    color: white;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+    letter-spacing: 0.11em;
+    margin-left: 1.2vh;
+    margin-top: 0.7vh;
+    text-transform: uppercase;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    font-size: 1.5vh;
+    margin-right: 2.6vh;
+    background: url("images/calendar.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+#create-character-index-area {
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4vh;
+    color: white;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+    letter-spacing: 0.11em;
+    width: 100%;
+    height: 3vh;
+    background: none;
+    margin-left: 1.2vh;
+    margin-top: 0.7vh;
+}
+
+
+#create-character-date {
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vh;
+    color: white;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+    letter-spacing: 0.11em;
+    width: 100%;
+    height: 3vh;
+    background: none;
+    margin-left: 1vh;
+    margin-top: 0.2vh;
+    text-transform: uppercase;
+}
+
+.create-character-sex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 8vw;
+    height: 6.5vh;
+    background: url("images/buttons-bg.png");
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+    font-size: 1.5vh;
+    /* border-bottom: 3px solid white; */
+}
+
+
+.create-character-info-text {
+    font-size: 1.2vh;
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2.5vh;
+    letter-spacing: 0.11em;
+    color: rgba(255, 255, 255, 0.46);
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+}
+
+
+.create-error {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2vh;
+    color: rgba(255, 120, 120, 0.89);
+    text-align: center;
+    letter-spacing: 0.11em;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+    margin-top: 2.5vh;
+}
+
+
+
+
+
+
+
+/* .app-container-spinner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.spinner-square {
+    display: flex;
+    flex-direction: row;
+    width: 90px;
+    height: 120px;
+}
+
+.spinner-square > .square {
+    width: 17px;
+    height: 80px;
+    margin: auto auto;
+    border-radius: 4px;
+}
+
+.square-1 {
+    animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s infinite;
+}
+
+.square-2 {
+    animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 200ms infinite;
+}
+
+.square-3 {
+    animation: square-anim 1200ms cubic-bezier(0.445, 0.05, 0.55, 0.95) 400ms infinite;
+}
+
+@keyframes square-anim {
+    0% {
+        height: 80px;
+        background-color: rgb(111, 163, 240);
+    }
+    20% {
+        height: 80px;
+    }
+    40% {
+        height: 120px;
+        background-color: rgb(111, 200, 240);
+    }
+    80% {
+        height: 80px;
+    }
+    100% {
+        height: 80px;
+        background-color: rgb(111, 163, 240);
+    }
+} */
+
+
+
+select::-webkit-scrollbar {
+    display: none;
+} 
+
+select option{
+    background: url("./images/section-bg.png");
+    background-color: #D9D9D9;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    height: 15vh;
+    letter-spacing: 0.11em;
+    line-height: 99.5%;
+color: rgba(0, 0, 0, 0.27);
+
+text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+}
+
+
+
+select {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4vh;
+    color: white;
+    letter-spacing: 0.11em;
+    text-shadow: 0px 0px 35px rgba(255, 255, 255, 0.45);
+    border: none;
+    background: none;
+    margin-left: 1.2vh;
+    margin-top: 0.7vh;
+    width: 90%;
+    resize: none;
+    outline: none;
+}
+
+.loading-container {
+    display: none;
+    position: absolute;
+    left: 85vh;
+    margin-top: 20vh;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .lds-ring p {
+    margin-top: 8vh;
+    color: white;
+  }  
+  
