@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b3a6356caf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <script src="./progressbar.js"> </script>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="notify-container">
+      
+      
+    </div>
+    <audio id="buckle" src="buckle.ogg" preload></audio>
+    <audio id="unbuckle" src="unbuckle.ogg" preload></audio>
+    <div class="ammo-cont"></div>
+    <div class="player-info glitch-anim-2">
+      <div class="player-info-wrapper ">
+        <p class="job">Unemployed</p>
+        <p class="cash">0 <span class="dollar-icon">$</span></p>
+      </div>
+    </div>
+    <div class="player-info">
+      <div class="player-info-wrapper ">
+        <p class="job">Unemployed</p>
+        <p class="cash">0 <span class="dollar-icon">$</span></p>
+      </div>
+    </div>
+    <div class="speedometer test">
+      <svg class="gasline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="281" height="97" viewBox="0 0 281 97">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: none;
+              stroke: #fff;
+              stroke-width: 3.15px;
+              fill-rule: evenodd;
+              filter: url(#filter);
+            }
+          </style>
+          <filter id="filter" x="1609" y="962" width="281" height="97" filterUnits="userSpaceOnUse">
+            <feGaussianBlur result="blur" stdDeviation="11.667" in="SourceAlpha"/>
+            <feComposite result="composite"/>
+            <feComposite result="composite-2"/>
+            <feComposite result="composite-3"/>
+            <feFlood result="flood" flood-color="#ff0800"/>
+            <feComposite result="composite-4" operator="in" in2="composite-3"/>
+            <feBlend result="blend" mode="screen" in2="SourceGraphic"/>
+            <feBlend result="blend-2" in="SourceGraphic"/>
+            <feFlood result="flood-2" flood-color="#d3423d"/>
+            <feComposite result="composite-5" operator="in" in2="SourceGraphic"/>
+            <feBlend result="blend-3" in2="blend-2"/>
+          </filter>
+        </defs>
+        <g transform="translate(-1609 -962)" style="fill: none; filter: url(#filter)">
+          <path id="path" class="cls-1" d="M1645,1023l9-12,200-13" style="stroke: inherit; filter: none; fill: inherit"/>
+        </g>
+        <use transform="translate(-1609 -962)" xlink:href="#path" style="stroke: #d3423d; filter: none; fill: none"/>
+      </svg>
+    
+      <div class="speedometer-icons ">
+        <div class="seatbelt glitch-anim-2 test"></div>
+        <div class="engine  glitch-anim-2 test"></div>
+        <div class="lights  glitch-anim-2 test"></div>
+        <div class="cruise  glitch-anim-2 test"></div>
+        <div class="shortlights glitch-anim-2 test"></div>
+      </div>
+      
+      <div class="speed glitch-anim-2 test">0</div>
+        <div class="lines ">
+          <div class="speedometer-line line-1 ">
+            <div class="speedometer-inner speedometer-inner-1 "></div>
+        </div>
+        <div class="speedometer-line line-2">
+            <div class="speedometer-inner speedometer-inner-2"></div>
+        </div>
+        <div class="speedometer-line line-3">
+            <div class="speedometer-inner speedometer-inner-3"></div>
+        </div>
+        <div class="speedometer-line line-4">
+            <div class="speedometer-inner speedometer-inner-4"></div>
+        </div>
+        <div class="speedometer-line line-5">
+            <div class="speedometer-inner speedometer-inner-5"></div>
+        </div>
+        <div class="speedometer-line line-6">
+            <div class="speedometer-inner speedometer-inner-6"></div>
+        </div>
+        <div class="speedometer-line line-7">
+            <div class="speedometer-inner speedometer-inner-7"></div>
+        </div>
+        <div class="speedometer-line line-8">
+            <div class="speedometer-inner speedometer-inner-8"></div>
+        </div>
+        <div class="speedometer-line line-9">
+            <div class="speedometer-inner speedometer-inner-9"></div>
+        </div>
+        <div class="speedometer-line line-10">
+            <div class="speedometer-inner speedometer-inner-10"></div>
+        </div>
+        <div class="speedometer-line line-11">
+            <div class="speedometer-inner speedometer-inner-11"></div>
+        </div>
+        <div class="speedometer-line line-12">
+            <div class="speedometer-inner speedometer-inner-12"></div>
+        </div>
+        <div class="speedometer-line line-13">
+            <div class="speedometer-inner speedometer-inner-13"></div>
+        </div>
+        <div class="speedometer-line line-14">
+            <div class="speedometer-inner speedometer-inner-14"></div>
+        </div>
+        <div class="speedometer-line line-15">
+            <div class="speedometer-inner speedometer-inner-15"></div>
+        </div>
+      </div>
+      
+  </div>
+
+    <div class="speedometer test">
+      <div class="speedometer-icons">
+        <div class="seatbelt test"></div>
+        <div class="engine test"></div>
+        <div class="lights test"></div>
+        <div class="cruise test"></div>
+        <div class="shortlights test"></div>
+      </div>
+
+      
+      <div class="speed test">0</div>
+        <div class="lines">
+          <div class="speedometer-line line-1">
+            <div class="speedometer-inner speedometer-inner-1"></div>
+        </div>
+        <div class="speedometer-line line-2">
+            <div class="speedometer-inner speedometer-inner-2"></div>
+        </div>
+        <div class="speedometer-line line-3">
+            <div class="speedometer-inner speedometer-inner-3"></div>
+        </div>
+        <div class="speedometer-line line-4">
+            <div class="speedometer-inner speedometer-inner-4"></div>
+        </div>
+        <div class="speedometer-line line-5">
+            <div class="speedometer-inner speedometer-inner-5"></div>
+        </div>
+        <div class="speedometer-line line-6">
+            <div class="speedometer-inner speedometer-inner-6"></div>
+        </div>
+        <div class="speedometer-line line-7">
+            <div class="speedometer-inner speedometer-inner-7"></div>
+        </div>
+        <div class="speedometer-line line-8">
+            <div class="speedometer-inner speedometer-inner-8"></div>
+        </div>
+        <div class="speedometer-line line-9">
+            <div class="speedometer-inner speedometer-inner-9"></div>
+        </div>
+        <div class="speedometer-line line-10">
+            <div class="speedometer-inner speedometer-inner-10"></div>
+        </div>
+        <div class="speedometer-line line-11">
+            <div class="speedometer-inner speedometer-inner-11"></div>
+        </div>
+        <div class="speedometer-line line-12">
+            <div class="speedometer-inner speedometer-inner-12"></div>
+        </div>
+        <div class="speedometer-line line-13">
+            <div class="speedometer-inner speedometer-inner-13"></div>
+        </div>
+        <div class="speedometer-line line-14">
+            <div class="speedometer-inner speedometer-inner-14"></div>
+        </div>
+        <div class="speedometer-line line-15">
+            <div class="speedometer-inner speedometer-inner-15"></div>
+        </div>
+      </div>
+  </div>
+    <div class="hudMap glitch-anim-4 ">
+      <div class="hudMapWrapper">
+        <div class="line"></div>
+        <div class="health ">
+          <div class="status-wrapper">
+            <p class="status-text health-text">100%</p>
+          </div>
+        </div>
+        <div class="armor">
+          <div class="status-wrapper">
+            <p class="status-text armor-text">5%</p>
+          </div>
+        </div>
+        <div class="water">
+          <div class="status-wrapper">
+            <p class="status-text water-text">50%</p>
+          </div>
+        </div>
+        <div class="hunger">
+          <div class="status-wrapper">
+            <p class="status-text hunger-text">100%</p>
+          </div>
+        </div>
+        <h3 class="location-text">Spanish Avenue</h3>
+        <p class="player-id">ID : 23</p>
+        <div class="microphone"></div>
+        <div class="clock">10:00</div>
+      </div>
+    </div>
+
+    <div class="hudMap main">
+      <div class="hudMapWrapper">
+        <div class="mic-radius-high"></div>
+        <div class="mic-radius-mid"></div>
+        <div class="mic-radius-low"></div>
+
+        <div class="line"></div>
+        <div class="health">
+          <div class="status-wrapper">
+            <p class="status-text health-text">100%</p>
+          </div>
+        </div>
+        <div class="armor">
+          <div class="status-wrapper">
+            <p class="status-text armor-text">5%</p>
+          </div>
+        </div>
+        <div class="water">
+          <div class="status-wrapper">
+            <p class="status-text water-text">50%</p>
+          </div>
+        </div>
+        <div class="hunger">
+          <div class="status-wrapper">
+            <p class="status-text hunger-text">100%</p>
+          </div>
+        </div>
+        <h3 class="location-text">Spanish Avenue</h3>
+        <p class="player-id">ID : 23</p>
+        <div class="microphone"></div>
+        <div class="clock">10:00</div>
+      </div>
+    </div>
+    <div class="hudmap-onwalk glitch-anim-3" >
+      <div class="hudmap-onwalk-wrapper  ">
+        <p class="player-id-onwalk">ID : 23</p>
+        <div class="hudmap-onwalk-mic"></div>
+        <div class="hudmap-onwalk-mic-radius"></div>
+        <div class="hudmap-onwalk-icons">
+          <div class="health-onwalk ">
+            <div class="status-wrapper ">
+              <p class="status-text health-text-onwalk">100%</p>
+            </div>
+          </div>
+          <div class="armor-onwalk  ">
+            <div class="status-wrapper">
+              <p class="status-text armor-text-onwalk ">5%</p>
+            </div>
+          </div>
+          <div class="water-onwalk ">
+            <div class="status-wrapper  ">
+              <p class="status-text water-text-onwalk ">50%</p>
+            </div>
+          </div>
+          <div class="hunger-onwalk  ">
+            <div class="status-wrapper">
+              <p class="status-text hunger-text-onwalk ">100%</p>
+            </div>
+          </div>
+          <div class="stamina-onwalk  ">
+            <div class="status-wrapper ">
+              <p class="status-text stamina-text-onwalk ">100%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+    <div class="hudmap-onwalk">
+        <div class="hudmap-onwalk-wrapper">
+          <p class="player-id-onwalk">ID : 23</p>
+          <div class="hudmap-onwalk-mic"></div>
+          <div class="hudmap-onwalk-mic-radius"></div>
+          <div class="hudmap-onwalk-icons">
+            <div class="health-onwalk">
+              <div class="status-wrapper">
+                <p class="status-text health-text-onwalk">100%</p>
+              </div>
+            </div>
+            <div class="armor-onwalk">
+              <div class="status-wrapper">
+                <p class="status-text armor-text-onwalk">5%</p>
+              </div>
+            </div>
+            <div class="water-onwalk">
+              <div class="status-wrapper">
+                <p class="status-text water-text-onwalk">50%</p>
+              </div>
+            </div>
+            <div class="hunger-onwalk">
+              <div class="status-wrapper">
+                <p class="status-text hunger-text-onwalk">100%</p>
+              </div>
+            </div>
+            <div class="stamina-onwalk">
+              <div class="status-wrapper">
+                <p class="status-text stamina-text-onwalk">100%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

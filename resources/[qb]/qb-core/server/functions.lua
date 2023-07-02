@@ -530,9 +530,16 @@ end
 ---@param amount number
 ---@return boolean
 function QBCore.Functions.HasItem(source, items, amount)
-    if GetResourceState('qb-inventory') == 'missing' then return end
-    return exports['qb-inventory']:HasItem(source, items, amount)
+    local xPlayer = QBCore.Functions.GetPlayer(source)
+    local item = xPlayer.Functions.GetItemByName(items)
+    if item ~= nil and item.amount >= amount then
+       hasItem = true
+    else
+        hasItem = false
+    end
+    return hasItem
 end
+
 
 ---Notify
 ---@param source any

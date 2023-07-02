@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="281" height="97" viewBox="0 0 281 97">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 3.15px;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1609" y="962" width="281" height="97" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="11.667" in="SourceAlpha"/>
+      <feComposite result="composite"/>
+      <feComposite result="composite-2"/>
+      <feComposite result="composite-3"/>
+      <feFlood result="flood" flood-color="#ff0800"/>
+      <feComposite result="composite-4" operator="in" in2="composite-3"/>
+      <feBlend result="blend" mode="screen" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in="SourceGraphic"/>
+      <feFlood result="flood-2" flood-color="#d3423d"/>
+      <feComposite result="composite-5" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-3" in2="blend-2"/>
+    </filter>
+  </defs>
+  <g transform="translate(-1609 -962)" style="fill: none; filter: url(#filter)">
+    <path id="path" class="cls-1" d="M1645,1023l9-12,200-13" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-1609 -962)" xlink:href="#path" style="stroke: #fff; filter: none; fill: none"/>
+</svg>

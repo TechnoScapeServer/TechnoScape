@@ -183,6 +183,44 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
     self.PlayerData = PlayerData
     self.Offline = Offline
 
+    function self.Functions.AddItem(item, amount, slot, metadata, inventory)
+        inventory = inventory or 'content-' ..  self.PlayerData.citizenid
+        amount = amount or 1
+        return exports['core_inventory']:addItem(inventory, item, tonumber(amount), metadata)
+    end
+    
+    function self.Functions.RemoveItem(item, amount, slot, inventory)
+        inventory = inventory or 'content-' ..  self.PlayerData.citizenid 
+        amount = amount or 1
+        return exports['core_inventory']:removeItem(inventory, item, tonumber(amount))
+    end
+    
+    function self.Functions.ClearInventory(inventory)
+        inventory = 'content-' ..  self.PlayerData.citizenid 
+        return exports['core_inventory']:clearInventory(inventory)
+    end
+    
+    function self.Functions.GetItemByName(item, inventory)
+        inventory = inventory or 'content-' ..  self.PlayerData.citizenid 
+        return exports['core_inventory']:getItem(inventory, item)
+    end
+    
+    function self.Functions.GetItemsByName(item, inventory)
+        inventory = inventory or 'content-' ..  self.PlayerData.citizenid 
+        return exports['core_inventory']:getItems(inventory, item)
+    end
+    
+    function self.Functions.GetItemBySlot(slot)
+        slot = tonumber(slot)
+        return self.PlayerData.items[slot]
+    end
+
+    function self.Functions.SetInventory(items, dontUpdateChat)
+        self.PlayerData.items = items
+        self.Functions.UpdatePlayerData(dontUpdateChat)
+        TriggerEvent('qb-log:server:CreateLog', 'playerinventory', 'SetInventory', 'blue', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** items set: ' .. json.encode(items))
+    end
+
     function self.Functions.UpdatePlayerData()
         if self.Offline then return end -- Unsupported for Offline Players
         TriggerEvent('QBCore:Player:SetPlayerData', self.PlayerData)
