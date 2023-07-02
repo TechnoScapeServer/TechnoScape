@@ -1,0 +1,32 @@
+<CVehicleModelInfoVariation>
+  <variationData>
+<Item>
+<modelName>excalibur</modelName>
+<colors>
+<Item>
+<indices content="char_array">
+0
+159
+0
+4
+4
+31
+</indices>
+</Item>
+</colors>
+      <kits>
+        <Item>922_excalibur_modkit</Item>
+      </kits>
+	        <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>Standard White</Name>
+            <Value value="100" />
+          </Item>
+        </Probabilities>
+		</plateProbabilities>
+<lightSettings value="922" />
+
+</Item>
+  </variationData>
+</CVehicleModelInfoVariation>

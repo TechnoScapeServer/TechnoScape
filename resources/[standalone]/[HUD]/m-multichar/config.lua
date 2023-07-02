@@ -1,6 +1,6 @@
 Config = {}
 Config.QBCoreVersion = "newqb" -- newqb or oldqb || only working qbcore
-Config.Clothes = "illenium-appanceare " -- default - illenium-appanceare 
+Config.Clothes = "illenium-appearance" -- default - illenium-appanceare 
 Config.MySQL = "oxmysql" -- oxmysql , mysql-async , ghmattimysql
 Config.UseQBApartments = true
 Config.DefaultSpawn = vector3(-1035.71, -2731.87, 12.86) -- Default spawn coords if you have start apartments disabled

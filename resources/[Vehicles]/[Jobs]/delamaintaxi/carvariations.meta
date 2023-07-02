@@ -1,0 +1,31 @@
+<CVehicleModelInfoVariation>
+  <variationData>
+<Item>
+<modelName>delamaintaxi</modelName>
+<colors>
+<Item>
+<indices content="char_array">
+0
+1
+0
+0
+21
+33
+</indices>
+</Item>
+</colors>
+      <kits>
+        <Item>957_delamaintaxi_modkit</Item>
+      </kits>
+	        <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>Police guv plate</Name>
+            <Value value="100" />
+          </Item>
+        </Probabilities>
+		</plateProbabilities>
+<lightSettings value="957" />
+</Item>
+  </variationData>
+</CVehicleModelInfoVariation>
