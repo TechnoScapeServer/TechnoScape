@@ -21,14 +21,14 @@ $(document).ready(function () {
     // Close the UI and hide mouse cursor
     function closeUI() {
         display(false);
-        $.post('http://Test/exit', JSON.stringify({}));
+        $.post('http://tsrp-lifepaths/exit', JSON.stringify({}));
     }
 
     // Handle lifepath selection
     function handleLifepathSelection(event) {
         var selectedLifepath = $(this).data("choice");
         console.log("Selected Lifepath:", selectedLifepath);
-        $.post('http://Test/selectLifepath', JSON.stringify({ lifepath: selectedLifepath }), function (response) {
+        $.post('http://tsrp-lifepaths/selectLifepath', JSON.stringify({ lifepath: selectedLifepath }), function (response) {
             // Handle the response from the server
         }).fail(function (error) {
             // Handle any errors that occur during the request
