@@ -61,6 +61,7 @@ ensure [standalone]
 ensure [voice]
 ensure [MLOS]
 ensure [Clothing]
+ensure [Vehicles]
 ensure core_inventory
 
 ## Permissions ##

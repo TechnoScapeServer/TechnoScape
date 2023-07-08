@@ -362,7 +362,7 @@ RegisterNUICallback("saveEdit", function(data)
                     [7]  = "accessory",
                     [8]  = "t-shirt", -- or tshirt
                     [9]  = "vest",
-                    [11] = "torso2"
+                    [11] = "torso"
             },
             ['Accessories'] = {
                     [0]= "hat",
@@ -514,7 +514,7 @@ function ReloadSkin()
             end
         end)
     elseif Config.UsingIlleniumAppearance then
-        QBCore.Functions.TriggerCallback('illenium-appearance:server:getAppearance', function(appearance)
+        lib.callback("illenium-appearance:server:getAppearance", false, function(appearance)
             if appearance then
                 exports['illenium-appearance']:setPlayerAppearance(appearance)
             end
