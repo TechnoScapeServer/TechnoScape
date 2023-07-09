@@ -10,7 +10,7 @@ Config.SurgeonCost = 100
 Config.ChargePerTattoo = true -- Charge players per tattoo. Config.TattooCost will become the cost of 1 tattoo. The cost can be overridden by adding `cost` key in shared/tattoos.lua for specific tattoos
 
 -- Only set this to true if you're using rcore_tattoos
-Config.RCoreTattoosCompatibility = false
+Config.RCoreTattoosCompatibility = true
 
 Config.AsynchronousLoading = false -- Change this to false if you want the NUI data to load before displaying the appearance UI
 
@@ -79,24 +79,24 @@ Config.ACEResetCooldown = 5000
 Config.ACEListCooldown = 60 * 60 * 1000 -- 1 Hour
 
 Config.DisableComponents = {
-    Masks = false,
-    UpperBody = false,
-    LowerBody = false,
-    Bags = false,
-    Shoes = false,
-    ScarfAndChains = false,
-    BodyArmor = false,
-    Shirts = false,
-    Decals = false,
-    Jackets = false
+    Masks = true,
+    UpperBody = true,
+    LowerBody = true,
+    Bags = true,
+    Shoes = true,
+    ScarfAndChains = true,
+    BodyArmor = true,
+    Shirts = true,
+    Decals = true,
+    Jackets = true
 }
 
 Config.DisableProps = {
-    Hats = false,
-    Glasses = false,
-    Ear = false,
-    Watches = false,
-    Bracelets = false
+    Hats = true,
+    Glasses = true,
+    Ear = true,
+    Watches = true,
+    Bracelets = true
 }
 
 Config.Blips = {
@@ -176,204 +176,6 @@ Config.TargetConfig = {
 }
 
 Config.Stores = {
-    {
-        type = "clothing",
-        coords = vector4(1693.2, 4828.11, 42.07, 188.66),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false, -- false => uses the size + rotation to create the zone | true => uses points to create the zone
-        showBlip = true, -- overrides the blip visibilty configured above for the group
-        --targetModel = "s_m_m_doctor_01", -- overrides the target ped configured for the group
-        --targetScenario = "" -- overrides the target scenario configure for the group
-        points = {
-            vector3(1686.9018554688, 4829.8330078125, 42.07),
-            vector3(1698.8566894531, 4831.4604492188, 42.07),
-            vector3(1700.2448730469, 4817.7734375, 42.07),
-            vector3(1688.3682861328, 4816.2954101562, 42.07)
-        }
-    },
-    {
-        type = "clothing",
-        coords = vector4(-705.5, -149.22, 37.42, 122),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(-719.86212158203, -147.83151245117, 37.42),
-            vector3(-709.10491943359, -141.53076171875, 37.42),
-            vector3(-699.94342041016, -157.44494628906, 37.42),
-            vector3(-710.68774414062, -163.64665222168, 37.42)
-        }
-    },
-    {
-        type = "clothing",
-        coords = vector4(-1192.61, -768.4, 17.32, 216.6),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(-1206.9552001953, -775.06304931641, 17.32),
-            vector3(-1190.6080322266, -764.03198242188, 17.32),
-            vector3(-1184.5672607422, -772.16949462891, 17.32),
-            vector3(-1199.24609375, -783.07928466797, 17.32)
-        }
-    },
-    {
-        type = "clothing",
-        coords = vector4(425.91, -801.03, 29.49, 177.79),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(419.55020141602, -798.36547851562, 29.49),
-            vector3(431.61773681641, -798.31909179688, 29.49),
-            vector3(431.19784545898, -812.07122802734, 29.49),
-            vector3(419.140625, -812.03594970703, 29.49)
-        }
-    },
-    {
-        type = "clothing",
-        coords = vector4(-168.73, -301.41, 39.73, 238.67),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(-160.82145690918, -313.85919189453, 39.73),
-            vector3(-172.56513977051, -309.82858276367, 39.73),
-            vector3(-166.5775604248, -292.48077392578, 39.73),
-            vector3(-154.84906005859, -296.51647949219, 39.73)
-        }
-    },
-    {
-        type = "clothing",
-        coords = vector4(75.39, -1398.28, 29.38, 6.73),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(81.406135559082, -1400.7791748047, 29.38),
-            vector3(69.335029602051, -1400.8251953125, 29.38),
-            vector3(69.754981994629, -1387.078125, 29.38),
-            vector3(81.500122070312, -1387.3002929688, 29.38)
-        }
-    },
-    {
-        type = "clothing",
-        coords = vector4(-827.39, -1075.93, 11.33, 294.31),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(-826.26251220703, -1082.6293945312, 11.33),
-            vector3(-832.27856445312, -1072.2819824219, 11.33),
-            vector3(-820.16442871094, -1065.7727050781, 11.33),
-            vector3(-814.08953857422, -1076.1878662109, 11.33)
-        }
-    },
-    {
-        type = "clothing",
-        coords = vector4(-1445.86, -240.78, 49.82, 36.17),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(-1448.4829101562, -226.39401245117, 49.82),
-            vector3(-1439.2475585938, -234.70428466797, 49.82),
-            vector3(-1451.5389404297, -248.33193969727, 49.82),
-            vector3(-1460.7554931641, -240.02815246582, 49.82)
-        }
-    },
-    {
-        type = "clothing",
-        coords = vector4(9.22, 6515.74, 31.88, 131.27),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(6.4955291748047, 6522.205078125, 31.88),
-            vector3(14.737417221069, 6513.3872070312, 31.88),
-            vector3(4.3691010475159, 6504.3452148438, 31.88),
-            vector3(-3.5187695026398, 6513.1538085938, 31.88)
-        }
-    },
-    {
-        type = "clothing",
-        coords = vector4(615.35, 2762.72, 42.09, 170.51),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(612.58312988281, 2747.2814941406, 42.09),
-            vector3(612.26214599609, 2767.0520019531, 42.09),
-            vector3(622.37548828125, 2767.7614746094, 42.09),
-            vector3(623.66833496094, 2749.5180664062, 42.09)
-        }
-    },
-    {
-        type = "clothing",
-        coords = vector4(1191.61, 2710.91, 38.22, 269.96),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(1188.7923583984, 2704.2021484375, 38.22),
-            vector3(1188.7498779297, 2716.2661132812, 38.22),
-            vector3(1202.4979248047, 2715.8479003906, 38.22),
-            vector3(1202.3558349609, 2703.9294433594, 38.22)
-        }
-    },
-    {
-        type = "clothing",
-        coords = vector4(-3171.32, 1043.56, 20.86, 334.3),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(-3162.0075683594, 1056.7303466797, 20.86),
-            vector3(-3170.8247070312, 1039.0412597656, 20.86),
-            vector3(-3180.0979003906, 1043.1201171875, 20.86),
-            vector3(-3172.7292480469, 1059.8623046875, 20.86)
-        }
-    },
-    {
-        type = "clothing",
-        coords = vector4(-1105.52, 2707.79, 19.11, 317.19),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(-1103.3004150391, 2700.8195800781, 19.11),
-            vector3(-1111.3771972656, 2709.884765625, 19.11),
-            vector3(-1100.8548583984, 2718.638671875, 19.11),
-            vector3(-1093.1976318359, 2709.7365722656, 19.11)
-        }
-    },
-    {
-        type = "clothing",
-        coords = vector4(-1119.24, -1440.6, 5.23, 300.5),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(-1124.5535888672, -1444.5367431641, 5.23),
-            vector3(-1118.7023925781, -1441.0450439453, 5.23),
-            vector3(-1121.2891845703, -1434.8474121094, 5.23),
-            vector3(-1128.4727783203, -1439.8254394531, 5.23)
-        }
-    },
-    {
-        type = "clothing",
-        coords = vector4(124.82, -224.36, 54.56, 335.41),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(133.60948181152, -210.31390380859, 54.56),
-            vector3(125.8349609375, -228.48097229004, 54.56),
-            vector3(116.3140335083, -225.02020263672, 54.56),
-            vector3(122.56930541992, -207.83396911621, 54.56)
-        }
-    },
     {
         type = "barber",
         coords = vector4(-814.22, -183.7, 37.57, 116.91),
