@@ -12,7 +12,10 @@ shared_scripts {
 }
 
 client_scripts {
-    'client.lua',
+    'Client/client.lua',
+    'Client/functions.lua',
+    'Client/dialogue.lua',
+    'Client/streetkid.lua'
 }
 
 server_scripts {

@@ -1,10 +1,11 @@
--- Add this to your client-side Lua file in your FiveM resource
+
 local isUIOpen = false -- Track the state of the UI
 local pedsSpawned = false
+local lifepath = nil
 
 function SpawnPeds()
-	if not Config.OrginSelectorNPC or not next(Config.OrginSelectorNPC) or pedsSpawned then return end
-	local current = Config.OrginSelectorNPC[1]
+	if not Config.LifepathSelectorNPC or not next(Config.LifepathSelectorNPC) or pedsSpawned then return end
+	local current = Config.LifepathSelectorNPC[1]
 	current.model = type(current.model) == 'string' and joaat(current.model) or current.model
 	RequestModel(current.model)
 	while not HasModelLoaded(current.model) do
@@ -33,7 +34,7 @@ end
 
 local function DeletePeds()
     if not pedsSpawned then return end
-	local current = Config.OrginSelectorNPC[1]
+	local current = Config.LifepathSelectorNPC[1]
 	if current.pedHandle then
 		DeletePed(current.pedHandle)
 	end
@@ -72,19 +73,30 @@ end)
 
 -- NUI callback for lifepath selection
 RegisterNUICallback('selectLifepath', function(data, cb)
-    print("Selected Lifepath:", data.lifepath)
-    TriggerEvent('chat:addMessage', {
-        color = {255, 255, 0},
-        multiline = true,
-        args = {"Selected Lifepath: ", data.lifepath}
-    })
+    lifepath = data.lifepath
     cb('ok')
+    TriggerEvent('lifepath:StartTutorial')
 end)
 
 -- Event handler for lifepath UI open event
 RegisterNetEvent('lifepath:openUI')
 AddEventHandler('lifepath:openUI', function()
     openUI()
+end)
+
+RegisterNetEvent('lifepath:StartTutorial')
+AddEventHandler('lifepath:StartTutorial', function()
+    if lifepath == "corpo" then
+        print("You have chosen Corpo")
+    elseif lifepath == "streetkid" then
+        StreetkidLifepath()
+    elseif lifepath == "nomad" then
+        print("You have chosen Nomad")
+    elseif lifepath == "ncpd" then
+        print("You have chosen NCPD")
+    elseif lifepath == "trauma" then
+        print("You have chosen Trauma Team")
+    end
 end)
 
 -- UI page initialization

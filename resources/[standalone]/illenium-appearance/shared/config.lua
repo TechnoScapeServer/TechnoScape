@@ -80,7 +80,7 @@ Config.ACEListCooldown = 60 * 60 * 1000 -- 1 Hour
 
 Config.DisableComponents = {
     Masks = true,
-    UpperBody = true,
+    UpperBody = false,
     LowerBody = true,
     Bags = true,
     Shoes = true,
