@@ -67,6 +67,7 @@ ensure core_inventory
 ## Permissions ##
 add_ace group.admin command allow # allow all commands
 add_principal identifier.fivem:463723 group.admin #TheSladeSlayer
+add_principal identifier.fivem:10111682 group.admin #TheSladeSlayer
 add_principal identifier.fivem:124460 qbcore.god #Tkiljoy1
 
 # Resources
