@@ -9,7 +9,7 @@ Peds = {
 
 --Lifepath Functions
 
-function SpawnPepe()
+function SpawnSKPeds()
     loadModel(Config.LifepathSettings["streetkid"]['PepeModel'])
     Peds['Bar'][0] = CreatePed(26, GetHashKey(Config.LifepathSettings["streetkid"]['PepeModel']), Config.LifepathSettings["streetkid"]['PepeLocation'], Config.LifepathSettings["streetkid"]['PepeLocation'].w, true, true)
     NetworkRegisterEntityAsNetworked(Peds['Bar'][0])
@@ -36,10 +36,37 @@ function SpawnPepe()
             distance = 2.0
         })
     end
+    loadModel(Config.LifepathSettings["streetkid"]['KirkModel'])
+    Peds['Bar'][1] = CreatePed(26, GetHashKey(Config.LifepathSettings["streetkid"]['KirkModel']), Config.LifepathSettings["streetkid"]['KirkLocation'], Config.LifepathSettings["streetkid"]['KirkLocation'].w, true, true)
+    NetworkRegisterEntityAsNetworked(Peds['Bar'][1])
+    networkID = NetworkGetNetworkIdFromEntity(Peds['Bar'][1])
+    SetNetworkIdCanMigrate(networkID, true)
+    SetNetworkIdExistsOnAllMachines(networkID, true)
+    SetPedRandomComponentVariation(Peds['Bar'][1], 0)
+    SetPedRandomProps(Peds['Bar'][1])
+    SetEntityAsMissionEntity(Peds['Bar'][1])
+    SetEntityVisible(Peds['Bar'][1], true)
+    FreezeEntityPosition(Peds['Bar'][1], true)
+    SetBlockingOfNonTemporaryEvents(Peds['Bar'][1], true)
+    SetEntityInvincible(Peds['Bar'][1], true)
+    local opts2 = nil
+    opts2 = {
+        label = "Talk With Kirk",
+        icon = 'fas fa-comment-dots',
+        type = "client",
+        event = "lifepaths:streetkid:Dialogue6",
+    }
+    if opts2 then
+        exports['qb-target']:AddTargetEntity(Peds['Bar'][1], {
+            options = {opts2},
+            distance = 2.0
+        })
+    end
 end
 
-function DeletePepe()
+function DeleteSKPeds()
     DeleteEntity(Peds['Bar'][0])
+    DeleteEntity(Peds['Bar'][1])
 end
 
 function StreetkidLifepath()
@@ -50,7 +77,7 @@ function StreetkidLifepath()
     FreezeEntityPosition(PlayerPedId(),true)
     DoScreenFadeIn(2000)
     streetkidChoice1prompted = true
-    SpawnPepe()
+    SpawnSKPeds()
     TriggerEvent("lifepaths:streetkid:Choice1")
 end
 
@@ -89,9 +116,9 @@ end)
 
 AddEventHandler('onResourceStop', function(resource)
     if resource ~= GetCurrentResourceName() then return end
-    DeletePepe()
+    DeleteSKPeds()
 end)
 
 RegisterNetEvent('QBCore:Client:OnPlayerUnload', function()
-    DeletePepe()
+    DeleteSKPeds()
 end)

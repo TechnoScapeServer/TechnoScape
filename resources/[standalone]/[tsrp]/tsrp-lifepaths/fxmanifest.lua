@@ -1,7 +1,7 @@
 fx_version 'bodacious'
 game 'gta5'
 
-author 'Your Name'
+author 'Tkiljoy'
 description 'Your Resource Description'
 version '1.0.0'
 
@@ -14,7 +14,7 @@ shared_scripts {
 client_scripts {
     'Client/client.lua',
     'Client/functions.lua',
-    'Client/dialogue.lua',
+    'Client/streetkid_dialogue.lua',
     'Client/streetkid.lua'
 }
 

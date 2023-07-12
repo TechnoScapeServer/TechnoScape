@@ -10,12 +10,11 @@ Config.LifepathSelectorNPC = {
 }
 
 Config.LifepathSettings = {
-    ["corpo"] = {
-
-    },
     ["streetkid"] = {
-        ["SpawnLocation"] = vector4(-563.39, 285.26, 84.38, 84.83),
+        ["SpawnLocation"] = vector4(-560.42, 284.72, 81.18, 89.28),
         ["PepeModel"] = "s_m_m_highsec_02",
-        ["PepeLocation"] = vector4(-564.77, 284.8, 84.38, 267.56)
+        ["PepeLocation"] = vector4(-561.92, 284.74, 81.18, 261.6),
+        ["KirkModel"] = "s_m_m_highsec_02",
+        ["KirkLocation"] = vector4(-560.89, 290.26, 84.4, 171.01),
     }
 }
