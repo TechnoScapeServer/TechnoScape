@@ -2,6 +2,7 @@ local QBCore = exports['qb-core']:GetCoreObject()
 local isLoggedIn = LocalPlayer.state.isLoggedIn
 local sk1 = false
 local sk2 = false
+local sk3 = false
 local skd15p2 = false
 local skd15p3 = false
 local skd15p4 = false
@@ -379,7 +380,7 @@ RegisterNetEvent('lifepaths:streetkid:Dialogue15', function()
     local menu = {
         {
             header = "",
-            txt = "How am I supposed to do this? Expect me to slife under a chasis on a skateboard for a quick hotwire, fast an' easy?",
+            txt = "How'm I supposed to do this? Expect me to slife under a chasis on a skateboard for a quick hotwire, fast an' easy?",
             icon = "fas fa-comment",
             params = {
                 event = "lifepaths:streetkid:Dialogue16-1",
@@ -419,15 +420,17 @@ end)
 RegisterNetEvent('lifepaths:streetkid:Dialogue16-1', function()
     local PlayerData = QBCore.Functions.GetPlayerData()
     local PlayerName = PlayerData.charinfo.firstname
-    exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ Course. I'm a man o' my word, you know that.", 5000)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ Kirk, wheels like this got security systems. Good ones.", 6000)
+    Wait(6050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ This bitty bop works like the key Rayfield techs use for repairs. Opens locks, bypasses identity authorization.", 7000)
+    Wait(7050)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ A skeleton key for all Rayfields in the city, heh, c'mon, Kirk, even you don't buy that.", 7000)
+    Wait(7050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ Kabuki's tech wizards sell more magical shit than this under the counter. Have a little faith.", 7000)
+    Wait(7050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ So... we all agreed, then?", 5000)
     Wait(5050)
-    exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ Whole thing's simple - you swipe the Rayfield for me, I clear Pepe's account. Even toss in a cut for you I'm such a nice guy.", 9000)
-    Wait(9050)
-    exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ My man Rick works a parking structure by Embers, club where our Rayfield driver likes to kick it. There every Friday night like clockwork", 9000)
-    Wait(9050)
-    exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ Soon as you appear, security cams shut down, gate swings up - the road is yours. Just gotta grab the Rayfield and roll out. Simple", 9000)
-    Wait(9050)
-    TriggerEvent("lifepaths:streetkid:Dialogue15")
+    TriggerEvent("lifepaths:streetkid:Dialogue17")
 end)
 
 RegisterNetEvent('lifepaths:streetkid:Dialogue16-2', function()
@@ -463,4 +466,58 @@ RegisterNetEvent('lifepaths:streetkid:Dialogue16-4', function()
     Wait(5050)
     skd15p4 = true
     TriggerEvent("lifepaths:streetkid:Dialogue15")
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue17', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    local menu = {
+        {
+            header = "",
+            txt = "We are.",
+            icon = "fas fa-comment",
+            params = {
+                event = "lifepaths:streetkid:Dialogue18-1",
+            }
+        },
+        {
+            header = "",
+            txt = "Best keep your word, Kirk.",
+            icon = "fas fa-comment",
+            params = {
+                event = "lifepaths:streetkid:Dialogue18-2",
+            }
+        },
+    }
+    exports['qb-menu']:openMenu(menu)
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue18-1', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ Glad to hear it. Always said you were a bright bulb.", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ Head to Embers, in the Glen. Rick's in the garage, be waitin' for ya. You two'll hit it off.", 7000)
+    Wait(7050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ Good luck out there. We'll be in touch.", 5000)
+    sk3 = true
+    while sk3 do
+        Wait(0)
+        TriggerEvent('tsrp-dialogue:showtext', "Leave the bar.")
+    end
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue18-2', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ Eeeaasy,"..PlayerName..". Job's gonna pad your wallet too, y'know.", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ Head to Embers, in the Glen. Rick's in the garage, be waitin' for ya. You two'll hit it off.", 7000)
+    Wait(7050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ Good luck out there. We'll be in touch.", 5000)
+    sk3 = true
+    while sk3 do
+        Wait(0)
+        TriggerEvent('tsrp-dialogue:showtext', "Leave the bar.")
+    end
 end)
