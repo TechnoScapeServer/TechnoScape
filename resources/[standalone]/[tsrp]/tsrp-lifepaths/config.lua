@@ -16,5 +16,11 @@ Config.LifepathSettings = {
         ["PepeLocation"] = vector4(-561.92, 284.74, 81.18, 261.6),
         ["KirkModel"] = "s_m_m_highsec_02",
         ["KirkLocation"] = vector4(-560.89, 290.26, 84.4, 171.01),
+        ["PadreModel"] = "s_m_m_highsec_02",
+        ["PadreVehicleModel"] = "delamaintaxi",
+        ["PadreCarLocation"] = vector4(-550.88, 305.43, 82.48, 232.11),
+        ["PadreLocation"] = vector4(-552.21, 307.91, 82.22, 138.53),
+        ["PadreBGModel"] = "s_m_m_highsec_02",
+        ["PadreBGLocation"] = vector4(-553.97, 305.86, 82.31, 52.2),
     }
 }

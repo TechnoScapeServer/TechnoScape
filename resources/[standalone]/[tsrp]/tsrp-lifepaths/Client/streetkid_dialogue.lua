@@ -3,9 +3,121 @@ local isLoggedIn = LocalPlayer.state.isLoggedIn
 local sk1 = false
 local sk2 = false
 local sk3 = false
+local sk4 = false
+local sk5 = false
+local sk6 = false
 local skd15p2 = false
 local skd15p3 = false
 local skd15p4 = false
+local skd20p2 = false
+local skd20p3 = false
+local Zones = {}
+local skzone1 = {
+    vector2(-567.98, 291.47),
+    vector2(-566.12, 291.27),
+    vector2(-566.43, 288.9),
+    vector2(-568.11, 287.97)
+}
+local skzone2 = {
+    vector2(-566.65, 275.14),
+    vector2(-562.83, 274.62),
+    vector2(-562.93, 271.4),
+    vector2(-566.64, 271.88),
+
+}
+local skzone3 = {
+    vector2(-562.49, 295.29),
+    vector2(-562.58, 294.22),
+    vector2(-559.63, 293.87),
+    vector2(-559.91, 295.08)
+}
+local skzone4 = {
+    vector2(-547.32, 295.5),
+    vector2(-542.79, 295.31),
+    vector2(-541.22, 310.62),
+    vector2(-546.3, 310.93)
+}
+local zonename = nil
+local currentZone = nil 
+
+CreateThread(function()
+    Zones[1] = PolyZone:Create(skzone1, {
+        name = 'Upstairs',
+        minZ = 	84,
+        maxZ = 86,
+        debugPoly = true,
+    })
+    Zones[1]:onPlayerInOut(function(isPointInside)
+        if isPointInside and sk2 == true and sk3 == false then
+            currentZone = 1
+            zonename = Zones[currentZone].name
+            print(zonename)
+            sk2 = false
+            sk3 = true
+            while sk3 do
+                Wait(0)
+                TriggerEvent('tsrp-dialogue:showtext', "Talk With Kirk")
+            end
+        end
+    end)
+    Zones[2] = PolyZone:Create(skzone2, {
+        name = 'Outside Bar',
+        minZ = 	82,
+        maxZ = 86,
+        debugPoly = true,
+    })
+    Zones[2]:onPlayerInOut(function(isPointInside)
+        if isPointInside and sk4 == true and sk5 == false then
+            currentZone = 2
+            zonename = Zones[currentZone].name
+            print(zonename)
+            sk4 = false
+            sk5 = true
+            while sk5 do
+                Wait(0)
+                TriggerEvent('tsrp-dialogue:showtext', "Go to the back of the building")
+            end
+        end
+    end)
+    Zones[3] = PolyZone:Create(skzone3, {
+        name = 'Outside Bar',
+        minZ = 	86,
+        maxZ = 90,
+        debugPoly = true,
+    })
+    Zones[3]:onPlayerInOut(function(isPointInside)
+        if isPointInside and sk4 == true and sk5 == false then
+            currentZone = 3
+            zonename = Zones[currentZone].name
+            print(zonename)
+            sk4 = false
+            sk5 = true
+            while sk5 do
+                Wait(0)
+                TriggerEvent('tsrp-dialogue:showtext', "Talk with Padre")
+            end
+        end
+    end)
+    Zones[4] = PolyZone:Create(skzone4, {
+        name = 'Back of the Parking Lot',
+        minZ = 	82,
+        maxZ = 96,
+        debugPoly = true,
+    })
+    Zones[4]:onPlayerInOut(function(isPointInside)
+        if isPointInside and sk5 == true and sk6 == false then
+            currentZone = 3
+            zonename = Zones[currentZone].name
+            print(zonename)
+            sk5 = false
+            sk6 = true
+            while sk6 do
+                Wait(0)
+                TriggerEvent('tsrp-dialogue:showtext', "Talk with Padre")
+            end
+        end
+    end)
+end)
 
 RegisterNetEvent('lifepaths:streetkid:Choice1', function()
     local PlayerData = QBCore.Functions.GetPlayerData()
@@ -151,7 +263,7 @@ end)
 RegisterNetEvent('lifepaths:streetkid:Dialogue6', function()
     local PlayerData = QBCore.Functions.GetPlayerData()
     local PlayerName = PlayerData.charinfo.firstname
-    sk2 = false
+    sk3 = false
     TriggerEvent('tsrp-dialogue:hidetext')
     exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ Hey, Kirk, Wanna Talk.", 5000)
     Wait(5050)
@@ -500,8 +612,8 @@ RegisterNetEvent('lifepaths:streetkid:Dialogue18-1', function()
     exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ Head to Embers, in the Glen. Rick's in the garage, be waitin' for ya. You two'll hit it off.", 7000)
     Wait(7050)
     exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ Good luck out there. We'll be in touch.", 5000)
-    sk3 = true
-    while sk3 do
+    sk4 = true
+    while sk4 do
         Wait(0)
         TriggerEvent('tsrp-dialogue:showtext', "Leave the bar.")
     end
@@ -515,9 +627,86 @@ RegisterNetEvent('lifepaths:streetkid:Dialogue18-2', function()
     exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ Head to Embers, in the Glen. Rick's in the garage, be waitin' for ya. You two'll hit it off.", 7000)
     Wait(7050)
     exports['tsrp-dialogue']:showTextUI("~r~ Kirk: ~s~ Good luck out there. We'll be in touch.", 5000)
-    sk3 = true
-    while sk3 do
+    sk4 = true
+    while sk4 do
         Wait(0)
         TriggerEvent('tsrp-dialogue:showtext', "Leave the bar.")
     end
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue19', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    sk5 = false
+    sk6 = false
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Well, who do we have here...", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~"..PlayerName.."... long time. Didn't know you were around.", 7000)
+    Wait(7050)
+    TriggerEvent("lifepaths:streetkid:Dialogue20")
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue20', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    local menu = {
+        {
+            header = "",
+            txt = "Got back from Atlanta a few weeks ago.",
+            icon = "fas fa-comment",
+            params = {
+                event = "lifepaths:streetkid:Dialogue21-1",
+            }
+        },
+        {
+            header = "",
+            txt = "Sebastian Ibarra - haven't changed a smidge.",
+            icon = "fas fa-comment",
+            disabled = skd20p2,
+            params = {
+                event = "lifepaths:streetkid:Dialogue21-2",
+            }
+        },
+        {
+            header = "",
+            txt = "Yep, no place like home...",
+            icon = "fas fa-comment",
+            disabled = skd20p3,
+            params = {
+                event = "lifepaths:streetkid:Dialogue21-3",
+            }
+        },
+    }
+    exports['qb-menu']:openMenu(menu)
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue21-1', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ See you got a good down-home welcome. How was it back east?", 7000)
+    Wait(7050)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ Tell ya later, got somethin' on my plate...", 7000)
+    Wait(7050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ How about you fill me in now? We'll give you a ride.", 7000)
+    Wait(7050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Marcus, let's go.", 5000)
+    -- Have peds enter car
+    padreEnterVehicle()
+    -- change mission text
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue21-2', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ No one calls me by my name anymore. Almost forgetten how it sounds.", 7000)
+    Wait(7050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ The same. Heywood - nothing ever changes here. I'd rather hear about you.", 7000)
+    Wait(7050)
+    skd20p2 = true
+    TriggerEvent("lifepaths:streetkid:Dialogue20")
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue21-3', function()
+    skd20p3 = true
+    TriggerEvent("lifepaths:streetkid:Dialogue20")
 end)
