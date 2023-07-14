@@ -79,24 +79,24 @@ Config.ACEResetCooldown = 5000
 Config.ACEListCooldown = 60 * 60 * 1000 -- 1 Hour
 
 Config.DisableComponents = {
-    Masks = true,
+    Masks = false,
     UpperBody = false,
-    LowerBody = true,
-    Bags = true,
-    Shoes = true,
-    ScarfAndChains = true,
-    BodyArmor = true,
-    Shirts = true,
-    Decals = true,
-    Jackets = true
+    LowerBody = false,
+    Bags = false,
+    Shoes = false,
+    ScarfAndChains = false,
+    BodyArmor = false,
+    Shirts = false,
+    Decals = false,
+    Jackets = false
 }
 
 Config.DisableProps = {
-    Hats = true,
-    Glasses = true,
-    Ear = true,
-    Watches = true,
-    Bracelets = true
+    Hats = false,
+    Glasses = false,
+    Ear = false,
+    Watches = false,
+    Bracelets = false
 }
 
 Config.Blips = {
