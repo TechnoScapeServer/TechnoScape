@@ -7355,43 +7355,7 @@
       <Name>VEH_BIKES_MP</Name>
       <models>
         <Item>
-          <Name>vader</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>faggio2</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>akuma</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>bagger</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>bati</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>daemon</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>nemesis</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>pcj</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>double</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>ruffian</Name>
+          <Name>shotaro</Name>
           <Variations type="NULL"/>
         </Item>
       </models>
@@ -7401,51 +7365,7 @@
       <Name>VEH_BIKES</Name>
       <models>
         <Item>
-          <Name>vader</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>faggio2</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>akuma</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>bagger</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>bati</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>daemon</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>nemesis</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>pcj</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>double</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>ruffian</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>thrust</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>hakuchou</Name>
+          <Name>shotaro</Name>
           <Variations type="NULL"/>
         </Item>
       </models>

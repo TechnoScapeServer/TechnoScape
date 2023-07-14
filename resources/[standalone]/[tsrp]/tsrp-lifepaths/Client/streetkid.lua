@@ -3,6 +3,8 @@ local PlayerData = QBCore.Functions.GetPlayerData()
 local isLoggedIn = LocalPlayer.state.isLoggedIn
 local streetkidChoice1prompted = false
 local streetkidChoice1 = false
+local vehicle = nil
+local inVehicle = false
 Peds = {
     ['Bar'] = {},
 }
@@ -10,6 +12,15 @@ Peds = {
 --Lifepath Functions
 
 function SpawnSKPeds()
+    --Vehicles
+    QBCore.Functions.SpawnVehicle(Config.LifepathSettings["streetkid"]['PadreVehicleModel'], function(veh)
+        vehicle = veh
+        SetEntityHeading(veh, Config.LifepathSettings["streetkid"]['PadreCarLocation'].w)
+        TriggerEvent("vehiclekeys:client:SetOwner", QBCore.Functions.GetPlate(veh))
+        exports['LegacyFuel']:SetFuel(veh, 100.0)
+        SetEntityAsMissionEntity(veh,true,true)
+    end, Config.LifepathSettings["streetkid"]['PadreCarLocation'], true)
+    --Peds
     loadModel(Config.LifepathSettings["streetkid"]['PepeModel'])
     Peds['Bar'][0] = CreatePed(26, GetHashKey(Config.LifepathSettings["streetkid"]['PepeModel']), Config.LifepathSettings["streetkid"]['PepeLocation'], Config.LifepathSettings["streetkid"]['PepeLocation'].w, true, true)
     NetworkRegisterEntityAsNetworked(Peds['Bar'][0])
@@ -62,11 +73,73 @@ function SpawnSKPeds()
             distance = 2.0
         })
     end
+    loadModel(Config.LifepathSettings["streetkid"]['PadreModel'])
+    Peds['Bar'][2] = CreatePed(26, GetHashKey(Config.LifepathSettings["streetkid"]['PadreModel']), Config.LifepathSettings["streetkid"]['PadreLocation'], Config.LifepathSettings["streetkid"]['PadreLocation'].w, true, true)
+    NetworkRegisterEntityAsNetworked(Peds['Bar'][2])
+    networkID = NetworkGetNetworkIdFromEntity(Peds['Bar'][2])
+    SetNetworkIdCanMigrate(networkID, true)
+    SetNetworkIdExistsOnAllMachines(networkID, true)
+    SetPedRandomComponentVariation(Peds['Bar'][2], 0)
+    SetPedRandomProps(Peds['Bar'][2])
+    SetEntityAsMissionEntity(Peds['Bar'][2])
+    SetEntityVisible(Peds['Bar'][2], true)
+    FreezeEntityPosition(Peds['Bar'][2], true)
+    SetBlockingOfNonTemporaryEvents(Peds['Bar'][2], true)
+    SetEntityInvincible(Peds['Bar'][2], true)
+    local opts3 = nil
+    opts3 = {
+        label = "Talk With Padre",
+        icon = 'fas fa-comment-dots',
+        type = "client",
+        event = "lifepaths:streetkid:Dialogue19",
+    }
+    if opts3 then
+        exports['qb-target']:AddTargetEntity(Peds['Bar'][2], {
+            options = {opts3},
+            distance = 2.0
+        })
+    end
+    loadModel(Config.LifepathSettings["streetkid"]['PadreBGModel'])
+    Peds['Bar'][3] = CreatePed(26, GetHashKey(Config.LifepathSettings["streetkid"]['PadreBGModel']), Config.LifepathSettings["streetkid"]['PadreBGLocation'], Config.LifepathSettings["streetkid"]['PadreBGLocation'].w, true, true)
+    NetworkRegisterEntityAsNetworked(Peds['Bar'][3])
+    networkID = NetworkGetNetworkIdFromEntity(Peds['Bar'][3])
+    SetNetworkIdCanMigrate(networkID, true)
+    SetNetworkIdExistsOnAllMachines(networkID, true)
+    SetPedRandomComponentVariation(Peds['Bar'][3], 0)
+    SetPedRandomProps(Peds['Bar'][3])
+    SetEntityAsMissionEntity(Peds['Bar'][3])
+    SetEntityVisible(Peds['Bar'][3], true)
+    FreezeEntityPosition(Peds['Bar'][3], true)
+    SetBlockingOfNonTemporaryEvents(Peds['Bar'][3], true)
+    SetEntityInvincible(Peds['Bar'][3], true)
 end
 
+function padreEnterVehicle()
+    FreezeEntityPosition(Peds['Bar'][2], false)
+    FreezeEntityPosition(Peds['Bar'][3], false)
+    TaskEnterVehicle(Peds['Bar'][2], vehicle, -1, 1, 1.0, 1, 0)
+    TaskEnterVehicle(Peds['Bar'][3], vehicle, -1, -1, 1.0, 1, 0)
+    TaskEnterVehicle(PlayerPedId(), vehicle, -1, 2, 1.0, 1, 0)
+end
+
+CreateThread(function()
+    while true do
+        Wait(1000)
+        if GetVehiclePedIsIn(PlayerPedId(),vehicle) == vehicle and GetVehiclePedIsIn(Peds['Bar'][2],vehicle) == vehicle and GetVehiclePedIsIn(Peds['Bar'][3],vehicle) == vehicle and not inVehicle then
+            inVehicle = true
+            SetVehicleDoorsLocked(vehicle,4)
+            SetFollowVehicleCamViewMode(4)
+	        SetFollowPedCamViewMode(4)
+        end
+    end
+end)
+
 function DeleteSKPeds()
-    DeleteEntity(Peds['Bar'][0])
-    DeleteEntity(Peds['Bar'][1])
+    DeleteEntity(Peds['Bar'][0]) -- Pepe
+    DeleteEntity(Peds['Bar'][1]) -- Kirk
+    DeleteEntity(Peds['Bar'][2]) -- Padre
+    DeleteEntity(Peds['Bar'][3]) -- PadreBG
+    DeleteEntity(vehicle) -- PadreCar
 end
 
 function StreetkidLifepath()
