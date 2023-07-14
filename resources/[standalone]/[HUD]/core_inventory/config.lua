@@ -8,7 +8,7 @@ Config = {
                                         -- On your database. If you don't do this, you will create ton of duplicate inventory and we will not provide support on this
                                         -- So please make sur to run this and ensure that name is become a primary key (you need to don't have duplicate name key in the database)
 
-    DisableClothing = false, -- Disables clothing feature if you dont have a way to add clothing items with metadata and dont want to use core_clothing
+    DisableClothing = true, -- Disables clothing feature if you dont have a way to add clothing items with metadata and dont want to use core_clothing
 
     DefaultItemSizeX = 1, -- If item size is not defined this will be used
     DefaultItemSizeY = 1, -- If item size is not defined this will be used

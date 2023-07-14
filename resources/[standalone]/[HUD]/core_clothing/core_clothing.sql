@@ -1,1 +1,0 @@
-ALTER TABLE `players` ADD `bought_clothes` LONGTEXT NULL DEFAULT NULL;

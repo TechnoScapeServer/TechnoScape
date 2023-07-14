@@ -1,12 +1,5 @@
 
 cache/**
 server.cfg
-db/default/OPTIONS-000008
-db/default/OPTIONS-000005
-db/default/MANIFEST-000005
-db/default/LOG.old.1689298970789482
-db/default/LOG
-db/default/LOCK
-db/default/IDENTITY
-db/default/CURRENT
-db/default/000006.log
+db/**
+.replxx_history
