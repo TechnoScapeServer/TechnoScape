@@ -4,7 +4,9 @@ Config.OwnerPermission = { -- only owner can use this permission
    --['char1:d6b94cf21d1e6ef8aa5d713d4016027f14c408b9'] = true, --  licenseid   -- example
   -- ['char2:d6b94cf21d1e6ef8aa5d713d4016027f14c408b9'] = true, --  licenseid   -- example
        -- ['CNP63275'] = true, --  citizenid   -- example
---    ['LOW06378'] = true, --  citizenid   -- 
+   ['VMH25867'] = true, --  citizenid   -- 
+   ['VKF88610'] = true, --  citizenid   -- 
+   ['UGU46999'] = true, --  citizenid   -- 
    --if you don't know enter the game and type myidentifier in f8
 }
 

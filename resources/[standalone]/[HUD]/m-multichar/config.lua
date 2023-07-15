@@ -19,8 +19,8 @@ Config.Slots = {
 }
 Config.Animations = {
     ["unemployed"] = {
-        camwiewcoord = {coord = vector3(-830.330, 167.9625, 70.294), rot = -25.0}, 
-        car = {coord = vector4(-828.923, 173.1707, 70.511, 200.0), hash = "sultan"}, -- car hash
+        camwiewcoord = {coord = vector3(81.53, -1771.14, 26.04), rot = -15.5}, 
+        car = {coord = vector4(81.417953491211,-1762.6013183594,26.056529998779,136.69873046875), hash = "t66avenger"}, -- car hash
         Peds = {
             {
                 coord = vector4(-829.995, 172.3521, 70.403, 170.0), -- npc coord 170.0 heading

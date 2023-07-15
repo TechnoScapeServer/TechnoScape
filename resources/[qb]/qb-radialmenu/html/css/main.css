@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;800;900&family=Space+Mono:wght@400;700&display=swap');
 
 h1 {
     font-weight: normal;
@@ -37,6 +39,7 @@ div.menuHolder {
     margin-left: auto;
     margin-right: auto;
     top: 30%;
+
 }
 
 svg.icons {
@@ -48,7 +51,28 @@ svg.menu {
     overflow: visible;
     transition: .1s;
     transition-timing-function: ease-out;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.308), 0 0 10px rgba(8, 1, 1, 0.034), 0 0 20px rgba(34, 35, 36, 0.048), 0 0 30px rgba(41, 42, 44, 0.74),
+    0 0 40px rgba(31, 29, 29, 0.493), 0 0 50px rgba(8, 21, 37, 0.493);
+  -webkit-animation: blink 0.7s infinite alternate;
+  animation: blink 0.7s infinite alternate;
+    border-radius: 100%;
+    border: 1px solid rgba(56, 18, 68, 0.514);
+
 }
+
+/* @-webkit-keyframes blink {
+    100% {
+        box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px rgba(152, 110, 161, 0.5), 0 0 30px rgba(110, 128, 161, 0.50),
+        0 0 40px rgba(110, 128, 161, 0.50), 0 0 50px rgba(142, 110, 161, 0.5);
+    }
+  }
+  
+  @keyframes blink {
+    100% {
+        box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px rgba(152, 110, 161, 0.5), 0 0 30px rgba(110, 128, 161, 0.50),
+        0 0 40px rgba(110, 128, 161, 0.50), 0 0 50px rgba(142, 110, 161, 0.5);
+    }
+  } */
 
 svg.menu.inner {
     transform: scale(0.66) rotate(-10deg);
@@ -62,7 +86,10 @@ svg.menu.outer {
 }
 
 svg.menu > g > path {
-    fill: rgb(23 23 23 / 80%);
+    fill: rgba(36, 36, 34, 0.377);
+    stroke: rgba(28, 29, 27, 0.459);
+  stroke-width: 2px;
+  stroke-linejoin: round;
 }
 
 svg.menu > g.sector > path {
@@ -71,27 +98,33 @@ svg.menu > g.sector > path {
 
 svg.menu > g.sector > text,
 svg.menu > g.sector > use {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Exo', sans-serif;
     margin-top: 5px;
-    font-size: 2.8px;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
+    font-size: 3.5px;
+    font-weight: 700;
+    letter-spacing: 0px;
     cursor: pointer;
     fill: white;
+    text-transform: uppercase;
+
 }
 
 svg.menu > g.sector:hover > path {
-    fill: #dc143c;
+    fill:rgba(206, 48, 56, 0.397);
 
 }
 
 svg.menu > g.center:hover > circle {
-    fill:#dc143c;
+    fill:rgba(209, 55, 55, 0.397);
 }
 
 svg.menu > g.center > circle {
     cursor: pointer;
-    fill: rgb(23 23 23 / 80%);
+    fill: rgba(0, 0, 0, 0.486);
+    /* stroke: rgba(233, 235, 245,0.30); */
+  /* stroke-width: 2px;
+  stroke-linejoin: round; */
+    
 }
 
 svg.menu > g.center > text,

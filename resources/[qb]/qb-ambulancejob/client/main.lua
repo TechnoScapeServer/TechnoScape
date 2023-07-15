@@ -593,6 +593,7 @@ RegisterNetEvent('hospital:client:Revive', function()
     TriggerServerEvent("hospital:server:SetLaststandStatus", false)
     emsNotified = false
     QBCore.Functions.Notify(Lang:t('info.healthy'))
+    TriggerEvent('codem-deathscreen:revive')
 end)
 
 RegisterNetEvent('hospital:client:SetPain', function()
@@ -662,6 +663,7 @@ RegisterNetEvent('hospital:client:SetBed2', function(id, isTaken)
 end)
 
 RegisterNetEvent('hospital:client:RespawnAtHospital', function()
+    TriggerEvent('codem-deathscreen:revive')
     TriggerServerEvent("hospital:server:RespawnAtHospital")
     if exports["qb-policejob"]:IsHandcuffed() then
         TriggerEvent("police:client:GetCuffed", -1)
