@@ -4,9 +4,23 @@ local isLoggedIn = LocalPlayer.state.isLoggedIn
 local streetkidChoice1prompted = false
 local streetkidChoice1 = false
 local vehicle = nil
+local gangVehicle = nil
 local inVehicle = false
+local gangMemberDistance = false
+local gangMemberDistance2 = false
+local Zones = {}
+local skzone5 = {
+    vector2(-555.84, -84.99),
+    vector2(-562.08, -82.15),
+    vector2(-550.86, -54.71),
+    vector2(-544.65, -58.13)
+}
+local zonename = nil
+local currentZone = nil 
+local waitingForTrigger = false
 Peds = {
     ['Bar'] = {},
+    ['Gang'] = {},
 }
 
 --Lifepath Functions
@@ -122,6 +136,67 @@ function padreEnterVehicle()
     TaskEnterVehicle(PlayerPedId(), vehicle, -1, 2, 1.0, 1, 0)
 end
 
+function padreDrive()
+    TaskVehicleDriveToCoord(Peds['Bar'][3],vehicle,Config.LifepathSettings["streetkid"]['PadreDriveL1'].x,Config.LifepathSettings["streetkid"]['PadreDriveL1'].y,Config.LifepathSettings["streetkid"]['PadreDriveL1'].z,20.0,0,Config.LifepathSettings["streetkid"]['PadreVehicleModel'],387,2.0)
+    SetPedKeepTask(Peds['Bar'][3], true)
+    waitingForTrigger = true
+    TriggerEvent("lifepaths:streetkid:Dialogue23")
+end
+
+function SpawnGangVehicle()
+    loadModel(Config.LifepathSettings["streetkid"]['GangModel'])
+    loadModel(Config.LifepathSettings["streetkid"]['GangVehicleModel'])
+    QBCore.Functions.SpawnVehicle(Config.LifepathSettings["streetkid"]['GangVehicleModel'], function(veh2)
+        gangVehicle = veh2
+        SetEntityHeading(veh2, Config.LifepathSettings["streetkid"]['GangVehicleLocation'].w)
+        exports['LegacyFuel']:SetFuel(veh2, 100.0)
+        SetEntityAsMissionEntity(veh2,true,true)
+    end, Config.LifepathSettings["streetkid"]['GangVehicleLocation'], true)
+    waitingForTrigger = false
+    Peds['Gang'][0] = CreatePedInsideVehicle(gangVehicle,1,GetHashKey(Config.LifepathSettings["streetkid"]['GangModel']),-1,true,true)
+    Peds['Gang'][1] = CreatePedInsideVehicle(gangVehicle,1,GetHashKey(Config.LifepathSettings["streetkid"]['GangModel']),0,true,true)
+    Peds['Gang'][2] = CreatePedInsideVehicle(gangVehicle,1,GetHashKey(Config.LifepathSettings["streetkid"]['GangModel']),1,true,true)
+    Peds['Gang'][3] = CreatePedInsideVehicle(gangVehicle,1,GetHashKey(Config.LifepathSettings["streetkid"]['GangModel']),2,true,true)
+    NetworkRegisterEntityAsNetworked(Peds['Gang'][0])
+    SetPedRandomComponentVariation(Peds['Gang'][0], 0)
+    SetPedRandomProps(Peds['Gang'][0])
+    SetEntityAsMissionEntity(Peds['Gang'][0])
+    SetEntityVisible(Peds['Gang'][0], true)
+    FreezeEntityPosition(Peds['Gang'][0], true)
+    SetBlockingOfNonTemporaryEvents(Peds['Gang'][0], true)
+    SetEntityInvincible(Peds['Gang'][0], true)
+    
+    NetworkRegisterEntityAsNetworked(Peds['Gang'][1])
+    SetPedRandomComponentVariation(Peds['Gang'][1], 0)
+    SetPedRandomProps(Peds['Gang'][1])
+    SetEntityAsMissionEntity(Peds['Gang'][1])
+    SetEntityVisible(Peds['Gang'][1], true)
+    FreezeEntityPosition(Peds['Gang'][1], true)
+    SetBlockingOfNonTemporaryEvents(Peds['Gang'][1], true)
+    SetEntityInvincible(Peds['Gang'][1], true)
+
+    NetworkRegisterEntityAsNetworked(Peds['Gang'][2])
+    SetPedRandomComponentVariation(Peds['Gang'][2], 0)
+    SetPedRandomProps(Peds['Gang'][2])
+    SetEntityAsMissionEntity(Peds['Gang'][2])
+    SetEntityVisible(Peds['Gang'][2], true)
+    FreezeEntityPosition(Peds['Gang'][2], true)
+    SetBlockingOfNonTemporaryEvents(Peds['Gang'][2], true)
+    SetEntityInvincible(Peds['Gang'][2], true)
+
+    NetworkRegisterEntityAsNetworked(Peds['Gang'][3])
+    SetPedRandomComponentVariation(Peds['Gang'][3], 0)
+    SetPedRandomProps(Peds['Gang'][3])
+    SetEntityAsMissionEntity(Peds['Gang'][3])
+    SetEntityVisible(Peds['Gang'][3], true)
+    FreezeEntityPosition(Peds['Gang'][3], true)
+    SetBlockingOfNonTemporaryEvents(Peds['Gang'][3], true)
+    SetEntityInvincible(Peds['Gang'][3], true)
+    Wait(1000)
+    TaskVehicleDriveToCoord(Peds['Gang'][0],gangVehicle,Config.LifepathSettings["streetkid"]['GangDriveL1'].x,Config.LifepathSettings["streetkid"]['GangDriveL1'].y,Config.LifepathSettings["streetkid"]['GangDriveL1'].z,20.0,0,Config.LifepathSettings["streetkid"]['GangVehicleModel'],956,4.0)
+    SetPedKeepTask(Peds['Gang'][0], true)
+end
+
 CreateThread(function()
     while true do
         Wait(1000)
@@ -130,6 +205,7 @@ CreateThread(function()
             SetVehicleDoorsLocked(vehicle,4)
             SetFollowVehicleCamViewMode(4)
 	        SetFollowPedCamViewMode(4)
+            TriggerEvent("lifepaths:streetkid:Dialogue22")
         end
     end
 end)
@@ -140,6 +216,11 @@ function DeleteSKPeds()
     DeleteEntity(Peds['Bar'][2]) -- Padre
     DeleteEntity(Peds['Bar'][3]) -- PadreBG
     DeleteEntity(vehicle) -- PadreCar
+    DeleteEntity(Peds['Gang'][0]) -- Gang Member Driver
+    DeleteEntity(Peds['Gang'][1]) -- Gang Member Passenger
+    DeleteEntity(Peds['Gang'][2]) -- Gang Member Driver Side Passenger
+    DeleteEntity(Peds['Gang'][3]) -- Gang Member Passenger Side Passenger
+    DeleteEntity(gangVehicle) -- GangCar
 end
 
 function StreetkidLifepath()
@@ -161,6 +242,8 @@ AddEventHandler('lifepath:streetkid:fixNose', function()
     streetkidChoice1 = true
     TriggerEvent('animations:client:EmoteCommandStart', {"adjusttie"})
     FreezeEntityPosition(PlayerPedId(),false)
+    Wait(3000)
+    TriggerEvent('animations:client:EmoteCommandStart', {"c"})
 end)
 
 RegisterNetEvent('lifepath:streetkid:takeShot')
@@ -170,6 +253,21 @@ AddEventHandler('lifepath:streetkid:takeShot', function()
     Wait(15000)
     TriggerEvent('animations:client:EmoteCommandStart', {"c"})
     FreezeEntityPosition(PlayerPedId(),false)
+end)
+
+CreateThread(function()
+    Zones[1] = PolyZone:Create(skzone5, {
+        name = 'SKSGT',
+        minZ = 	40,
+        maxZ = 46,
+        debugPoly = true,
+    })
+    Zones[1]:onPlayerInOut(function(isPointInside)
+        if isPointInside and waitingForTrigger == true then
+        elseif isPointInside == false and waitingForTrigger == true then
+            SpawnGangVehicle()
+        end
+    end)
 end)
 
 CreateThread(function()
@@ -184,6 +282,21 @@ CreateThread(function()
                 Wait(1000)
             end
         end
+        gangVehicleCoords = GetEntityCoords(gangVehicle)
+        gangMemberCoords = GetEntityCoords(Peds['Gang'][3])
+        playerCoords = GetEntityCoords(PlayerPedId())
+        print(GetDistanceBetweenCoords(gangVehicleCoords.x, gangVehicleCoords.y, gangVehicleCoords.z, Config.LifepathSettings["streetkid"]['GangDriveL1'].x, Config.LifepathSettings["streetkid"]['GangDriveL1'].y, Config.LifepathSettings["streetkid"]['GangDriveL1'].z, true))
+        if GetDistanceBetweenCoords(gangVehicleCoords.x, gangVehicleCoords.y, gangVehicleCoords.z, Config.LifepathSettings["streetkid"]['GangDriveL1'].x, Config.LifepathSettings["streetkid"]['GangDriveL1'].y, Config.LifepathSettings["streetkid"]['GangDriveL1'].z, true) <= 15 and gangMemberDistance == false then
+            Wait(4000)
+            FreezeEntityPosition(Peds['Gang'][3],false)
+            TaskLeaveVehicle(Peds['Gang'][3], gangVehicle, 0)
+            Wait(2000)
+            TaskGoStraightToCoord(Peds['Gang'][3], playerCoords, 1.2, -1, 0.0, 0.0)
+            gangMemberDistance = true
+        end
+        if GetDistanceBetweenCoords(gangMemberCoords,playerCoords, true) <= 10 and gangMemberDistance2 == false and gangMemberDistance == true then
+            gangMemberDistance2 = true
+        end 
     end
 end)
 

@@ -6,6 +6,7 @@ local sk3 = false
 local sk4 = false
 local sk5 = false
 local sk6 = false
+local sk7 = false
 local skd15p2 = false
 local skd15p3 = false
 local skd15p4 = false
@@ -693,15 +694,21 @@ RegisterNetEvent('lifepaths:streetkid:Dialogue21-1', function()
     -- Have peds enter car
     padreEnterVehicle()
     -- change mission text
+    sk7 = true
+    while sk7 do
+        Wait(0)
+        TriggerEvent('tsrp-dialogue:showtext', "Get in Padre's car.")
+    end
+
 end)
 
 RegisterNetEvent('lifepaths:streetkid:Dialogue21-2', function()
     local PlayerData = QBCore.Functions.GetPlayerData()
     local PlayerName = PlayerData.charinfo.firstname
-    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ No one calls me by my name anymore. Almost forgetten how it sounds.", 7000)
-    Wait(7050)
-    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ The same. Heywood - nothing ever changes here. I'd rather hear about you.", 7000)
-    Wait(7050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ No one calls me by my name anymore. Almost forgetten how it sounds.", 6000)
+    Wait(6050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ The same. Heywood - nothing ever changes here. I'd rather hear about you.", 6000)
+    Wait(6050)
     skd20p2 = true
     TriggerEvent("lifepaths:streetkid:Dialogue20")
 end)
@@ -710,3 +717,117 @@ RegisterNetEvent('lifepaths:streetkid:Dialogue21-3', function()
     skd20p3 = true
     TriggerEvent("lifepaths:streetkid:Dialogue20")
 end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue22', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    sk7 = false
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ So, where to?", 4000)
+    Wait(4050)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ The Glen. Drop me off at Embers", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Front door?", 4000)
+    Wait(4050)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ Take the ramp back of the bar. Show you where to stop.", 6000)
+    Wait(6050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ You heard him, Marcus.", 4000)
+    Wait(4050)
+    padreDrive()
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue23', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    Wait(8000)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Your return to NC has been good? Busy already?", 5000)
+    Wait(5050)
+    TriggerEvent("lifepaths:streetkid:Dialogue24")
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue24', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    local menu = {
+        {
+            header = "",
+            txt = "Ehh, pick up somethin' here and there. Nothin' major.",
+            icon = "fas fa-comment",
+            params = {
+                event = "lifepaths:streetkid:Dialogue25-1",
+            }
+        },
+        {
+            header = "",
+            txt = "Two years gone by, not much has changed.",
+            icon = "fas fa-comment",
+            params = {
+                event = "lifepaths:streetkid:Dialogue25-2",
+            }
+        },
+    }
+    exports['qb-menu']:openMenu(menu)
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue25-1', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ But I'm gettin' by. 'Preciate the concern.", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ So... Atlanta didn't turn out like you had expected, huh?", 5000)
+    Wait(5050)
+    TriggerEvent("lifepaths:streetkid:Dialogue26")
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue25-2', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ You know Heywood. It has strong roots - ever watered by the same blood", 6000)
+    Wait(6050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Now, tell me about you", 4000)
+    Wait(4050)
+    TriggerEvent("lifepaths:streetkid:Dialogue25-1")
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue26', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    local menu = {
+        {
+            header = "",
+            txt = "Went there without expectations, actually. Well, except that it'd be better than here.",
+            icon = "fas fa-comment",
+            params = {
+                event = "lifepaths:streetkid:Dialogue27-1",
+            }
+        },
+        {
+            header = "",
+            txt = "As you can see, I'm back. If it'd been better there, wouldn't've left.",
+            icon = "fas fa-comment",
+            params = {
+                event = "lifepaths:streetkid:Dialogue27-2",
+            }
+        },
+    }
+    exports['qb-menu']:openMenu(menu)
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue27-1', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ It wasn't.", 3000)
+    Wait(3050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Maybe it'll all work out for the best...", 5000)
+    Wait(5050)
+    --TriggerEvent("lifepaths:streetkid:Dialogue26")
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue27-2', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Maybe it'll all work out for the best...", 5000)
+    Wait(5050)
+    --TriggerEvent("lifepaths:streetkid:Dialogue25-1")
+end)
+
+

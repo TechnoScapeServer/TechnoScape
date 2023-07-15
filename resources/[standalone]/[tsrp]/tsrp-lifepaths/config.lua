@@ -22,5 +22,11 @@ Config.LifepathSettings = {
         ["PadreLocation"] = vector4(-552.21, 307.91, 82.22, 138.53),
         ["PadreBGModel"] = "s_m_m_highsec_02",
         ["PadreBGLocation"] = vector4(-553.97, 305.86, 82.31, 52.2),
+        ["PadreDriveL1"] = vector4(-493.67, -188.66, 36.72, 210.52),
+        ["GangVehicleModel"] = "delamaintaxi",
+        ["GangVehicleLocation"] = vector4(-622.99, -62.09, 40.79, 284.21),
+        ["GangModel"] = "s_m_m_highsec_02",
+        ["GangDriveL1"] = vector4(-489.08, -196.49, 36.48, 210.15),
+        ["GangWalkToPoint"] = vector4(-497.54, -187.0, 37.54, 286.38),
     }
 }
