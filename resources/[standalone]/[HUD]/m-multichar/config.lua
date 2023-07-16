@@ -35,7 +35,7 @@ Config.Animations = {
                 animation = {"amb@world_human_leaning@male@wall@back@foot_up@idle_a", "idle_a"},
             },
             {
-                coord = vector4(-829.742, 169.4886, 70.007, 160.0),
+                coord = vector4(82.43, -1768.73, 26.05, 145.93),
                 hash = nil,
                 isPlayerPed = true, -- this ped have a player clothes
                 animation = {"timetable@amanda@ig_2", "ig_2_base_amanda"},

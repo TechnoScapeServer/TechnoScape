@@ -21,8 +21,8 @@ end
 Config.Notification = function(message, type, time)
     TriggerEvent("codem-cyberhud:Notify", message, type, time)
 end
-Config.DefaultCruiseControlKey = "k"
-Config.DefaultSeatbeltControlKey = "b"
+Config.DefaultCruiseControlKey = "K"
+Config.DefaultSeatbeltControlKey = "B"
 
 Config.EnableSpamNotification = true
 Config.Notifications = {
@@ -55,4 +55,4 @@ Config.Notifications = {
 Config.ejectVelocity = (60 / 2.236936)
 Config.unknownEjectVelocity = (70 / 2.236936)
 Config.unknownModifier = 17.0 --  Default: 17.0,
-Config.minDamage = 30
+Config.minDamage = 50

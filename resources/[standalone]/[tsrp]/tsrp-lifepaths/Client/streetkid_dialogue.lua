@@ -818,16 +818,177 @@ RegisterNetEvent('lifepaths:streetkid:Dialogue27-1', function()
     exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ It wasn't.", 3000)
     Wait(3050)
     exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Maybe it'll all work out for the best...", 5000)
+    Wait(22050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Marcus: ~s~ Shit...", 5000)
     Wait(5050)
-    --TriggerEvent("lifepaths:streetkid:Dialogue26")
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Stop the car.", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ What's goin' on?", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Business. You carryin'?", 5000)
 end)
 
 RegisterNetEvent('lifepaths:streetkid:Dialogue27-2', function()
     local PlayerData = QBCore.Functions.GetPlayerData()
     local PlayerName = PlayerData.charinfo.firstname
     exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Maybe it'll all work out for the best...", 5000)
+    Wait(22050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Marcus: ~s~ Shit...", 5000)
     Wait(5050)
-    --TriggerEvent("lifepaths:streetkid:Dialogue25-1")
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Stop the car.", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ What's goin' on?", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Business. You carryin'?", 5000)
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue28', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    exports['tsrp-dialogue']:showTextUI("~r~ 6th Street Soldier: ~s~ Sebastian Ibarra.", 4000)
+    Wait(4050)
+    exports['tsrp-dialogue']:showTextUI("~r~ 6th Street Soldier: ~s~ Looks like it's my lucky day.", 4000)
+    Wait(4050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ What do you want?", 4000)
+    Wait(4050)
+    exports['tsrp-dialogue']:showTextUI("~r~ 6th Street Soldier: ~s~ To settle our biz. Once and for all.", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~ 6th Street Soldier: ~s~ Got an offer for ya, Paddy, so listen up.", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~ 6th Street Soldier: ~s~ Get the fuck outta Vista, pull your boys off the street.", 6000)
+    Wait(6050)
+    exports['tsrp-dialogue']:showTextUI("~r~ 6th Street Soldier: ~s~ I'll give ya the Glen, done deal. No more restless nights. See how generous I can be?", 7000)
+    Wait(7050)
+    exports['tsrp-dialogue']:showTextUI("~r~ 6th Street Soldier: ~s~ Well, Paddy, what's it gonna be?", 5000)
+    Wait(5050)
+    TriggerEvent("lifepaths:streetkid:Dialogue29")
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue29', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    local menu = {
+        {
+            header = "",
+            txt = "One more fuckin' word...",
+            icon = "fas fa-comment",
+            params = {
+                event = "lifepaths:streetkid:Dialogue30-1",
+            }
+        },
+        {
+            header = "",
+            txt = "[Stay Silent]",
+            icon = "fas fa-comment",
+            params = {
+                event = "lifepaths:streetkid:Dialogue30-2",
+            }
+        },
+    }
+    exports['qb-menu']:openMenu(menu)
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue30-1', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    exports['tsrp-dialogue']:showTextUI("~r~ 6th Street Soldier: ~s~ Stay outta this. I don't know you.", 6000)
+    Wait(6050)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ And I don't know you, which means you're worth shit around here and capable of even less.", 8000)
+    Wait(8050)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ Well? Anything else?", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ It seems our conversation has come to a close.", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~ 6th Street Soldier: ~s~ Careful, Padre. Never know who's got a barrel at your six. You neither, shitbucket", 8000)
+    Wait(8050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Marcus, please.", 4000)
+    Wait(4050)
+    PadreDriveAway()
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ I'm pleased to see you have not forgotten your roots, still have the gift.", 7000)
+    Wait(7050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ So many of the little shits left around here... their spines go soft when they look down a barrel.", 8000)
+    Wait(8050)
+    TriggerEvent("lifepaths:streetkid:Dialogue31")
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue30-2', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ A counteroffer. Turn around now and slide your ass right back into your ride.", 8000)
+    Wait(8050)
+    exports['tsrp-dialogue']:showTextUI("~r~ 6th Street Soldier: ~s~ And...?", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ And your mother, who lives on Pajaro, will wake up safe and sound in the morning.", 8000)
+    Wait(8050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ The Lord is ever watching, cabron", 5000)
+    Wait(5050)
+    exports['tsrp-dialogue']:showTextUI("~r~ 6th Street Soldier: ~s~ Careful, Padre. Never know who's got a barrel at your six. You neither, shitbucket", 8000)
+    Wait(8050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Marcus, please.", 4000)
+    Wait(4050)
+    PadreDriveAway()
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Atlanta broke you.", 4000)
+    Wait(4050)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ Meaning?", 4000)
+    Wait(4050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ You know what I mean.", 4000)
+    Wait(4050)
+    TriggerEvent("lifepaths:streetkid:Dialogue31")
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue31', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    local menu = {
+        {
+            header = "",
+            txt = "Who was that?",
+            icon = "fas fa-comment",
+            params = {
+                event = "lifepaths:streetkid:Dialogue32",
+            }
+        },
+        {
+            header = "",
+            txt = "[Stay Silent]",
+            icon = "fas fa-comment",
+            params = {
+                event = "",
+            }
+        },
+    }
+    exports['qb-menu']:openMenu(menu)
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue32', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ No one important. He'll be gone ina  week's time, another will come in his place", 7000)
+    Wait(7050)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ He pulled iron on you.", 4000)
+    Wait(4050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ He did. And he will pay for doing so.", 5000)
+end)
+
+RegisterNetEvent('lifepaths:streetkid:Dialogue33', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+    local PlayerName = PlayerData.charinfo.firstname
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ Pull up here.", 3000)
+    Wait(3050)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ Right here.", 3000)
+    Wait(3050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Here. Before you go.", 3000)
+    Wait(3050)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ Your number?", 3000)
+    Wait(3050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ Could be useful. Maybe we can also work together again - take ourselves back two years.", 7000)
+    Wait(7050)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ Thanks, Padre", 3000)
+    Wait(3050)
+    exports['tsrp-dialogue']:showTextUI("~r~"..PlayerName..": ~s~ Gotta go.", 3000)
+    Wait(3050)
+    exports['tsrp-dialogue']:showTextUI("~r~ Padre: ~s~ So go with God.", 3000)
+    LetPlayerOut()
 end)
 
 

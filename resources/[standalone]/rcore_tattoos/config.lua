@@ -26,7 +26,7 @@ Config.Locale = 'en' -- Shop language - en, es, de, cs, fr, it, kr, pl
 --    Frameworks.QBCORE
 --    Frameworks.STANDALONE - check documentation for this type of framework!
 Config.Framework = Frameworks.QBCORE
-Config.EnableGuidebookIntegration = true --enable rcore_guidebook integration https://store.rcore.cz/package/5041989
+Config.EnableGuidebookIntegration = false --enable rcore_guidebook integration https://store.rcore.cz/package/5041989
 Config.LicenseType = 'license' --license, steam, discord
 Config.LicenseWithoutPrefix = true --remove license:, steam: prefix from license
 
@@ -36,14 +36,17 @@ Config.TattooLists = {
     -- than your server's version (build number), otherwise the tattoos will still be in the menu, but will not show up
     -- more info in the documentation (link above)
     "BaseTattoos.json",
+    "rcoreAddonTattoos_technoscape.json",
     "DLC_mpvinewood.json", -- build 1737 (The Diamond Casino & Resort)
     "DLC_mpheist3.json", -- build 1868 (The Diamond Casino Heist)
     "DLC_mpheist4.json", -- build 2189 (The Cayo Perico Heist)
     "DLC_mpsecurity.json", -- build 2545 (The Contract)
-    -- "DLC_enterprise.json", -- build 2699 (The Criminal Enterprises)
+    "DLC_enterprise.json", -- build 2699 (The Criminal Enterprises)
     "DLC_mpchristmas3.json", -- build 2802 (Los Santos Drug Wars)
     "HairFades.json",
-    -- "HairFades2.json", -- 126 more hair fades
+    "rcoreAddonTattoos_valentine.json",
+    "rcoreAddonTattoos_christmas-tattoos.json",
+    "HairFades2.json", -- 126 more hair fades
 
     --Optional - have to be bought at link below to be able to use
     --RCore Addon tattoos - https://store.addon-tattoos.com/

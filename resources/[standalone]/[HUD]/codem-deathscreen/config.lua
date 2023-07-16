@@ -1,7 +1,7 @@
 
 Config = {}
 Config.Framework = 'newqb' -- esx - oldqb - newqb
-Config.GiveUpTime = 1 -- minute
+Config.GiveUpTime = 5 -- minute
 Config.PlayerWebhook = "" -- Only esx
 
 Config.KeyControl = {
@@ -28,5 +28,6 @@ Config.Locale = {
     ['HOSPITAL'] = 'The hospital has been notified.',
     ['MESSAGE'] = 'You ll have to wait a while for a new notification.',
     ['NOTWEAPON'] = 'You died of unknown causes.',
-    ['YOUAREWONDED'] = 'You are wounded with a'
+    ['YOUAREWONDED'] = 'You are wounded with a',
+    ['WAITFORTRAMATEAM'] = "Call For Trauma Team",
 }

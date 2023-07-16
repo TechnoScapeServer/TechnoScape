@@ -14,5 +14,13 @@
     "name": "RCORE_TEST",
     "price": 500,
     "zone": "ZONE_TORSO"
+  },
+  {
+    "price": 200,
+    "zone": "ZONE_TORSO",
+    "name": "cybernetic_wiring",
+    "hashMale": "",
+    "hashFemale": "",
+    "collection": "rcore_overlays"
   }
 ]

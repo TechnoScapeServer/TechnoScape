@@ -15,9 +15,16 @@ local skzone5 = {
     vector2(-550.86, -54.71),
     vector2(-544.65, -58.13)
 }
+local skzone6= {
+    vector2(-79.51, -552.81),
+    vector2(-81.6, -558.28),
+    vector2(-54.74, -567.35),
+    vector2(-52.73, -562.09)
+}
 local zonename = nil
 local currentZone = nil 
 local waitingForTrigger = false
+local waitingForTrigger2 = false
 Peds = {
     ['Bar'] = {},
     ['Gang'] = {},
@@ -141,6 +148,29 @@ function padreDrive()
     SetPedKeepTask(Peds['Bar'][3], true)
     waitingForTrigger = true
     TriggerEvent("lifepaths:streetkid:Dialogue23")
+end
+
+function PadreDriveAway()
+    TaskVehicleDriveToCoord(Peds['Bar'][3],vehicle,Config.LifepathSettings["streetkid"]['PadreDriveL2'].x,Config.LifepathSettings["streetkid"]['PadreDriveL2'].y,Config.LifepathSettings["streetkid"]['PadreDriveL2'].z,20.0,0,Config.LifepathSettings["streetkid"]['PadreVehicleModel'],387,2.0)
+    SetPedKeepTask(Peds['Bar'][3], true)
+    waitingForTrigger2 = true
+end
+
+function padreEnterVehicle()
+    FreezeEntityPosition(Peds['Bar'][2], false)
+    FreezeEntityPosition(Peds['Bar'][3], false)
+    TaskEnterVehicle(Peds['Bar'][2], vehicle, -1, 1, 1.0, 1, 0)
+    TaskEnterVehicle(Peds['Bar'][3], vehicle, -1, -1, 1.0, 1, 0)
+    TaskEnterVehicle(PlayerPedId(), vehicle, -1, 2, 1.0, 1, 0)
+end
+
+function LetPlayerOut()
+    SetVehicleDoorsLocked(vehicle,1)
+    TaskLeaveVehicle(PlayerPedId(), vehicle,0)
+    --Change Mission Text
+    ClearPedTasks(Peds['Bar'][3])
+    Wait(10000)
+    DeleteSKPeds()
 end
 
 function SpawnGangVehicle()
@@ -268,6 +298,18 @@ CreateThread(function()
             SpawnGangVehicle()
         end
     end)
+    Zones[2] = PolyZone:Create(skzone6, {
+        name = 'SKGOT',
+        minZ = 	38,
+        maxZ = 44,
+        debugPoly = true,
+    })
+    Zones[2]:onPlayerInOut(function(isPointInside)
+        if isPointInside and waitingForTrigger2 == true then
+            TriggerEvent("lifepaths:streetkid:Dialogue33")
+            waitingForTrigger2 = false
+        end
+    end)
 end)
 
 CreateThread(function()
@@ -295,6 +337,7 @@ CreateThread(function()
             gangMemberDistance = true
         end
         if GetDistanceBetweenCoords(gangMemberCoords,playerCoords, true) <= 10 and gangMemberDistance2 == false and gangMemberDistance == true then
+            TriggerEvent("lifepaths:streetkid:Dialogue28")
             gangMemberDistance2 = true
         end 
     end

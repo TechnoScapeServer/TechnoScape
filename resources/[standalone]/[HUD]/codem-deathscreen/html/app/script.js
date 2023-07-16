@@ -1,5 +1,5 @@
 
-var bar 
+var bar
 var death
 
 let notifications = []
@@ -63,48 +63,48 @@ window.addEventListener("message", function (event) {
 
     switch (item.action) {
         case "OPEN_MENU":
-        
-            app.showMenu(item.death,item.timer,item.reason,item.weapon);
-            
-            
-           setTimeout(() =>{
-            death = item.death
-            if(death){
-                if (document.querySelector('#progbar')) {
-                    bar = new ProgressBar.Circle('#progbar', {
-                        strokeWidth: 6,
-                        easing: 'easeInOut',
-                        duration: parseInt(item.giveuptime),
-                        color: '#FF0000',
-                        trailColor: '#ff000017',
-                     
-                        trailWidth: 6,
-                        svgStyle: null,
-                        strokeLinecap : 'round',
-                    });
-                    bar.animate(1.0);
-                }
-            }
-            }, 1000);
-           
 
-        break;  
+            app.showMenu(item.death, item.timer, item.reason, item.weapon);
+
+
+            setTimeout(() => {
+                death = item.death
+                if (death) {
+                    if (document.querySelector('#progbar')) {
+                        bar = new ProgressBar.Circle('#progbar', {
+                            strokeWidth: 6,
+                            easing: 'easeInOut',
+                            duration: parseInt(item.giveuptime),
+                            color: '#03d8f3',
+                            trailColor: '#ff000017',
+
+                            trailWidth: 6,
+                            svgStyle: null,
+                            strokeLinecap: 'round',
+                        });
+                        bar.animate(1.0);
+                    }
+                }
+            }, 1000);
+
+
+            break;
         case "KEYBIND":
-                app.keybind(item.key);
-        break;
+            app.keybind(item.key);
+            break;
         case "send_response":
             app.send_response(item.resourceName);
-        break;
+            break;
         case "NOTIFY":
             GenerateNotification(item.message, 'error');
-        break;
+            break;
         case "LOCALE":
             app.locale(item.locale);
-        break;
+            break;
 
-        
-        default: 
-        break;
+
+        default:
+            break;
 
     }
 });
@@ -116,16 +116,16 @@ const app = new Vue({
 
     data: {
         show: false,
-        killerWeapon : '',
-        killTimer : 0,
-        killTimerMinute :'',
-        keyBind : '',
-        resource : '',
-        reason : '',
-        locales : {}
-   
-            
-        
+        killerWeapon: '',
+        killTimer: 0,
+        killTimerMinute: '',
+        keyBind: '',
+        resource: '',
+        reason: '',
+        locales: {}
+
+
+
     },
     mounted() {
 
@@ -138,11 +138,11 @@ const app = new Vue({
                 isEscape = (evt.keyCode === 27);
             }
             if (isEscape) {
-             
+
 
             }
         };
-        
+
         this.UpdateTimesKill();
         setInterval(() => {
             this.UpdateTimesKill();
@@ -150,36 +150,36 @@ const app = new Vue({
 
         }, 1000)
 
-      
+
 
     },
 
     methods: {
 
-        locale(locale){
+        locale(locale) {
             this.locales = locale;
         },
-        send_response(resourceName){
+        send_response(resourceName) {
             this.resource = resourceName
             $.post(`https://${this.resource}/GetResponse`, JSON.stringify({}));
         },
-        keybind(val){
+        keybind(val) {
             this.keyBind = val;
-          
+
         },
-        showMenu(val,timer,reas,weapon){
+        showMenu(val, timer, reas, weapon) {
             this.show = val;
             this.killTimer = timer;
             this.reason = reas;
             this.killerWeapon = weapon;
-        
+
         },
         UpdateTimesKill: function () {
 
-            
+
             if (this.killTimer) {
-                if(this.killTimer >= 0 ){
-                    this.killTimer =  this.killTimer - 1;
+                if (this.killTimer >= 0) {
+                    this.killTimer = this.killTimer - 1;
                 }
                 let seconds = this.killTimer;
                 if (seconds <= 0) {
@@ -194,22 +194,22 @@ const app = new Vue({
 
         toHHMMSSkill: function (secs) {
 
-            if(secs >= 0 ) {
+            if (secs >= 0) {
                 var sec_num = parseInt(secs, 10);
                 var hours = Math.floor(sec_num / 3600);
                 var minutes = Math.floor(sec_num / 60) % 60;
                 var seconds = sec_num % 60;
                 return [hours, minutes, seconds]
-                .map((v) => (v < 10 ? "0" + v : v))
-                .filter((v, i) => v !== "00" || i > 0)
-                .join(":");
+                    .map((v) => (v < 10 ? "0" + v : v))
+                    .filter((v, i) => v !== "00" || i > 0)
+                    .join(":");
             }
-            
-        },
-        
-      
 
-    
+        },
+
+
+
+
     }
 
 
