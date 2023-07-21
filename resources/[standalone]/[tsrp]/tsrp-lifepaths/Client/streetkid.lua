@@ -306,6 +306,7 @@ CreateThread(function()
     })
     Zones[2]:onPlayerInOut(function(isPointInside)
         if isPointInside and waitingForTrigger2 == true then
+        elseif isPointInside == false and waitingForTrigger2 == true then
             TriggerEvent("lifepaths:streetkid:Dialogue33")
             waitingForTrigger2 = false
         end
