@@ -1,0 +1,1813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVehicleModelInfoVarGlobal>    
+  <Kits>
+    <Item>
+      <kitName>6596_galaradobyv_modkit</kitName>
+      <id value="6596" />	 	  
+      <kitType>MKT_SPECIAL</kitType>
+      <visibleMods>
+      <!-- Spoilers byV -->
+			<Item>
+          <modelName>galaradobyv_spl_1</modelName>
+          <modShopLabel>side_blade1</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_2</modelName>
+          <modShopLabel>side_blade2</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_3</modelName>
+          <modShopLabel>side_blade3</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_4</modelName>
+          <modShopLabel>side_blade4</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_5</modelName>
+          <modShopLabel>side_blade5</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_6</modelName>
+          <modShopLabel>side_blade6</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_7</modelName>
+          <modShopLabel>side_blade7</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_8</modelName>
+          <modShopLabel>side_blade8</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_9</modelName>
+          <modShopLabel>side_blade9</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_10</modelName>
+          <modShopLabel>side_blade10</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_11</modelName>
+          <modShopLabel>side_blade11</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_12</modelName>
+          <modShopLabel>side_blade12</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_13</modelName>
+          <modShopLabel>side_blade13</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_14</modelName>
+          <modShopLabel>side_blade14</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_15</modelName>
+          <modShopLabel>side_blade15</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_16</modelName>
+          <modShopLabel>side_blade16</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_17</modelName>
+          <modShopLabel>side_blade17</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_18</modelName>
+          <modShopLabel>side_blade18</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_19</modelName>
+          <modShopLabel>side_blade19</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_20</modelName>
+          <modShopLabel>side_blade20</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_21</modelName>
+          <modShopLabel>side_blade21</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_22</modelName>
+          <modShopLabel>side_blade22</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_23</modelName>
+          <modShopLabel>side_blade23</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_24</modelName>
+          <modShopLabel>side_blade24</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_25</modelName>
+          <modShopLabel>side_blade25</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_26</modelName>
+          <modShopLabel>side_blade26</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_27</modelName>
+          <modShopLabel>side_blade27</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_28</modelName>
+          <modShopLabel>side_blade28</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_29</modelName>
+          <modShopLabel>side_blade29</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_30</modelName>
+          <modShopLabel>side_blade30</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_spl_31</modelName>
+          <modShopLabel>side_blade31</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item></Item>
+          </turnOffBones>
+          <type>VMT_SPOILER</type>
+          <bone>mod_a</bone>
+          <collisionBone>mod_a</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <!-- Roof by V -->
+	<Item>
+          <modelName>galaradobyv_roof_1</modelName>
+          <modShopLabel>aero_1</modShopLabel>
+          <linkedModels />
+          <turnOffBones />
+          <type>VMT_ROOF</type>
+          <bone>mod_b</bone>
+          <collisionBone>mod_b</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_roof_2</modelName>
+          <modShopLabel>aero_2</modShopLabel>
+          <linkedModels />
+          <turnOffBones />
+          <type>VMT_ROOF</type>
+          <bone>mod_b</bone>
+          <collisionBone>mod_b</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_roof_3</modelName>
+          <modShopLabel>aero_3</modShopLabel>
+          <linkedModels />
+          <turnOffBones />
+          <type>VMT_ROOF</type>
+          <bone>mod_b</bone>
+          <collisionBone>mod_b</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_roof_4</modelName>
+          <modShopLabel>aero_4</modShopLabel>
+          <linkedModels />
+          <turnOffBones />
+          <type>VMT_ROOF</type>
+          <bone>mod_b</bone>
+          <collisionBone>mod_b</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+      <!-- Bodyshell  by V&V -->
+			<Item>
+          <modelName>galaradobyv_bodyshell_1</modelName>
+          <modShopLabel>chassis1</modShopLabel>
+          <linkedModels></linkedModels>
+          <turnOffBones><Item>mod_k</Item></turnOffBones>
+          <type>VMT_CHASSIS</type>
+          <bone>mod_c</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="2" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+			<Item>
+          <modelName>galaradobyv_bodyshell_2</modelName>
+          <modShopLabel>chassis2</modShopLabel>
+          <linkedModels></linkedModels>
+          <turnOffBones><Item>mod_k</Item></turnOffBones>
+          <type>VMT_CHASSIS</type>
+          <bone>mod_c</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="2" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <!-- Door  by V&V-->
+	<Item>
+          <modelName>galradobyv_leftdoor_1</modelName>
+          <modShopLabel>Door_1</modShopLabel>
+          <linkedModels>
+		<Item>galradobyv_rightdoor_1</Item>
+	  </linkedModels>
+          <turnOffBones></turnOffBones>
+          <type>VMT_INTERIOR5</type>
+          <bone>mod_d</bone>
+          <collisionBone>door_dside_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galradobyv_leftdoor_2</modelName>
+          <modShopLabel>Door_2</modShopLabel>
+          <linkedModels>
+		<Item>galradobyv_rightdoor_2</Item>
+	  </linkedModels>
+          <turnOffBones></turnOffBones>
+          <type>VMT_INTERIOR5</type>
+          <bone>mod_d</bone>
+          <collisionBone>door_dside_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galradobyv_leftdoor_3</modelName>
+          <modShopLabel>Door_3</modShopLabel>
+          <linkedModels>
+		<Item>galradobyv_rightdoor_2</Item>
+		<Item>galradobyv_leftdoor_2</Item>
+		<Item>galradobyv_rightdoor_3</Item>
+	  </linkedModels>
+          <turnOffBones>
+          <Item>mod_m</Item>
+          <Item>mod_n</Item>
+          </turnOffBones>
+          <type>VMT_INTERIOR5</type>
+          <bone>mod_f</bone>
+          <collisionBone>door_dside_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galradobyv_leftdoor_4</modelName>
+          <modShopLabel>Door_4</modShopLabel>
+          <linkedModels>
+		<Item>galradobyv_rightdoor_2</Item>
+		<Item>galradobyv_leftdoor_2</Item>
+		<Item>galradobyv_rightdoor_4</Item>
+	  </linkedModels>
+          <turnOffBones>
+          <Item>mod_m</Item>
+          <Item>mod_n</Item>
+          </turnOffBones>
+          <type>VMT_INTERIOR5</type>
+          <bone>mod_f</bone>
+          <collisionBone>door_dside_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galradobyv_leftdoor_5</modelName>
+          <modShopLabel>Door_5</modShopLabel>
+          <linkedModels>
+		<Item>galradobyv_rightdoor_2</Item>
+		<Item>galradobyv_leftdoor_2</Item>
+		<Item>galradobyv_rightdoor_5</Item>
+	  </linkedModels>
+          <turnOffBones>
+          <Item>mod_m</Item>
+          <Item>mod_n</Item>
+          </turnOffBones>
+          <type>VMT_INTERIOR5</type>
+          <bone>mod_f</bone>
+          <collisionBone>door_dside_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <!-- Bonnets  by V&V -->
+	<Item>
+          <modelName>galaradobyv_bonnet_1</modelName>
+          <modShopLabel>Bonnet1</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_l</Item></turnOffBones>
+          <type>VMT_BONNET</type>
+          <bone>mod_h</bone>
+          <collisionBone>bonnet</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bonnet_2</modelName>
+          <modShopLabel>Bonnet2</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_l</Item></turnOffBones>
+          <type>VMT_BONNET</type>
+          <bone>mod_h</bone>
+          <collisionBone>bonnet</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <!-- Bumper_Front by V&V-->
+	<Item>
+          <modelName>galaradobyv_bumperf_1</modelName>
+          <modShopLabel>Bumperf1</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_j</Item></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_i</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperf_2</modelName>
+          <modShopLabel>Bumperf2</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_j</Item></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_i</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperf_3</modelName>
+          <modShopLabel>Bumperf3</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_j</Item></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_i</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperf_4</modelName>
+          <modShopLabel>Bumperf4</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_j</Item></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_i</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperf_5</modelName>
+          <modShopLabel>Bumperf5</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_j</Item></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_i</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperf_6</modelName>
+          <modShopLabel>Bumperf6</modShopLabel>
+          <linkedModels />
+          <turnOffBones />
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_i</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperf_7</modelName>
+          <modShopLabel>Bumperf7</modShopLabel>
+          <linkedModels />
+          <turnOffBones></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_i</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperf_8</modelName>
+          <modShopLabel>Bumperf8</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_j</Item></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_i</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperf_9</modelName>
+          <modShopLabel>Bumperf9</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_j</Item></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_i</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperf_10</modelName>
+          <modShopLabel>Bumperf10</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_j</Item></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_i</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperf_11</modelName>
+          <modShopLabel>Bumperf11</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_j</Item></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_i</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperf_12</modelName>
+          <modShopLabel>Bumperf12</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_j</Item></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_i</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperf_13</modelName>
+          <modShopLabel>Bumperf13</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_j</Item></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_i</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <!-- Bumper_Rear by V&V-->
+	<Item>
+          <modelName>galaradobyv_bumperr_1</modelName>
+          <modShopLabel>BumperR1</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_o</Item></turnOffBones>
+          <type>VMT_BUMPER_R</type>
+          <bone>mod_p</bone>
+          <collisionBone>bumper_r</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperr_2</modelName>
+          <modShopLabel>BumperR2</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_o</Item></turnOffBones>
+          <type>VMT_BUMPER_R</type>
+          <bone>mod_p</bone>
+          <collisionBone>bumper_r</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperr_3</modelName>
+          <modShopLabel>BumperR3</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_o</Item></turnOffBones>
+          <type>VMT_BUMPER_R</type>
+          <bone>mod_p</bone>
+          <collisionBone>bumper_r</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperr_4</modelName>
+          <modShopLabel>BumperR4</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_o</Item></turnOffBones>
+          <type>VMT_BUMPER_R</type>
+          <bone>mod_p</bone>
+          <collisionBone>bumper_r</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperr_5</modelName>
+          <modShopLabel>BumperR5</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_o</Item></turnOffBones>
+          <type>VMT_BUMPER_R</type>
+          <bone>mod_p</bone>
+          <collisionBone>bumper_r</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>galaradobyv_bumperr_6</modelName>
+          <modShopLabel>BumperR6</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_o</Item></turnOffBones>
+          <type>VMT_BUMPER_R</type>
+          <bone>mod_p</bone>
+          <collisionBone>bumper_r</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+      </visibleMods>
+      <linkMods>
+        <!-- Door  by V&V-->
+      <Item>
+          <modelName>galradobyv_leftdoor_1</modelName>
+          <bone>mod_d</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galradobyv_rightdoor_1</modelName>
+          <bone>mod_e</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galradobyv_leftdoor_2</modelName>
+          <bone>mod_d</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galradobyv_rightdoor_2</modelName>
+          <bone>mod_e</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galradobyv_leftdoor_3</modelName>
+          <bone>mod_f</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galradobyv_rightdoor_3</modelName>
+          <bone>mod_g</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galradobyv_leftdoor_4</modelName>
+          <bone>mod_f</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galradobyv_rightdoor_4</modelName>
+          <bone>mod_g</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galradobyv_leftdoor_5</modelName>
+          <bone>mod_f</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galradobyv_rightdoor_5</modelName>
+          <bone>mod_g</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <!-- Bodyshell  by V&V -->
+      <Item>
+          <modelName>galaradobyv_bodyshell_1</modelName>
+          <bone>mod_c</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bodyshell_2</modelName>
+          <bone>mod_c</bone>
+          <turnOffExtra value="false" />
+        </Item>
+        <!-- Spoilers  by V&V -->
+      <Item>
+          <modelName>galaradobyv_spl_1</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_2</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_3</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_4</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_5</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_6</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_7</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_8</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_9</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_10</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_12</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_13</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_14</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_15</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_16</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_17</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_18</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_19</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_20</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_21</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_22</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_23</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_24</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_25</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_26</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_27</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_28</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_29</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_30</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_spl_31</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+        <!-- Roof  by V&V -->
+      <Item>
+          <modelName>galaradobyv_roof_1</modelName>
+          <bone>mod_b</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_roof_2</modelName>
+          <bone>mod_b</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_roof_3</modelName>
+          <bone>mod_b</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_roof_4</modelName>
+          <bone>mod_b</bone>
+          <turnOffExtra value="false" />
+        </Item>
+        <!-- Bonnets  by V&V -->
+      <Item>
+          <modelName>galaradobyv_bonnet_1</modelName>
+          <bone>mod_h</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bonnet_2</modelName>
+          <bone>mod_h</bone>
+          <turnOffExtra value="false" />
+        </Item>
+        <!-- Bumper_Front by V&V-->
+      <Item>
+          <modelName>galaradobyv_bumperf_1</modelName>
+          <bone>mod_i</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperf_2</modelName>
+          <bone>mod_i</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperf_3</modelName>
+          <bone>mod_i</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperf_4</modelName>
+          <bone>mod_i</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperf_5</modelName>
+          <bone>mod_i</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperf_6</modelName>
+          <bone>mod_i</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperf_7</modelName>
+          <bone>mod_i</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperf_8</modelName>
+          <bone>mod_i</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperf_9</modelName>
+          <bone>mod_i</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperf_10</modelName>
+          <bone>mod_i</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperf_11</modelName>
+          <bone>mod_i</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperf_12</modelName>
+          <bone>mod_i</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperf_13</modelName>
+          <bone>mod_i</bone>
+          <turnOffExtra value="false" />
+        </Item>
+        <!-- Bumper_Front by V&V-->
+      <Item>
+          <modelName>galaradobyv_bumperr_1</modelName>
+          <bone>mod_p</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperr_2</modelName>
+          <bone>mod_p</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperr_3</modelName>
+          <bone>mod_p</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperr_4</modelName>
+          <bone>mod_p</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      <Item>
+          <modelName>galaradobyv_bumperr_5</modelName>
+          <bone>mod_p</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      </linkMods>
+      <statMods>
+        <Item>
+          <identifier />
+          <modifier value="300" />
+          <audioApply value="1.000000" />
+          <weight value="20" />
+          <type>VMT_ENGINE</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="500" />
+          <audioApply value="1.000000" />
+          <weight value="20" />
+          <type>VMT_ENGINE</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="700" />
+          <audioApply value="1.000000" />
+          <weight value="20" />
+          <type>VMT_ENGINE</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="1000" />
+          <audioApply value="1.000000" />
+          <weight value="20" />
+          <type>VMT_ENGINE</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="1300" />
+          <audioApply value="1.000000" />
+          <weight value="20" />
+          <type>VMT_ENGINE</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="200" />
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <type>VMT_BRAKES</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="500" />
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <type>VMT_BRAKES</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="2000" />
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <type>VMT_BRAKES</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="2500" />
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <type>VMT_BRAKES</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="330" />
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <type>VMT_GEARBOX</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="340" />
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <type>VMT_GEARBOX</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="360" />
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <type>VMT_GEARBOX</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="50" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_ARMOUR</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="70" />
+          <audioApply value="1.000000" />
+          <weight value="10" />
+          <type>VMT_ARMOUR</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="90" />
+          <audioApply value="1.000000" />
+          <weight value="10" />
+          <type>VMT_ARMOUR</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="95" />
+          <audioApply value="1.000000" />
+          <weight value="10" />
+          <type>VMT_ARMOUR</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="100" />
+          <audioApply value="1.000000" />
+          <weight value="10" />
+          <type>VMT_ARMOUR</type>
+        </Item>
+        <Item>
+          <identifier>HORN_TRUCK</identifier>
+          <modifier value="1766676233" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HORN_COP</identifier>
+          <modifier value="2904189469" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HORN_CLOWN</identifier>
+          <modifier value="2543206147" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HORN_MUSICAL_1</identifier>
+          <modifier value="1732399718" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HORN_MUSICAL_2</identifier>
+          <modifier value="2046162893" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HORN_MUSICAL_3</identifier>
+          <modifier value="2194999691" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HORN_MUSICAL_4</identifier>
+          <modifier value="2508304100" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HORN_MUSICAL_5</identifier>
+          <modifier value="37070223535" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+		    <Item>
+          <identifier>HORN_SAD_TROMBONE</identifier>
+          <modifier value="632950117" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>MUSICAL_HORN_BUSINESS_1</identifier>
+          <modifier value="3628534289" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>MUSICAL_HORN_BUSINESS_2</identifier>
+          <modifier value="3892554122" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>MUSICAL_HORN_BUSINESS_3</identifier>
+          <modifier value="4112892878" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>MUSICAL_HORN_BUSINESS_4</identifier>
+          <modifier value="116877169" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>MUSICAL_HORN_BUSINESS_5</identifier>
+          <modifier value="2684983719" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>MUSICAL_HORN_BUSINESS_6</identifier>
+          <modifier value="2982690084" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+	    	</Item>
+	    	<Item>
+          <identifier>MUSICAL_HORN_BUSINESS_7</identifier>
+          <modifier value="3203290992" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+    		</Item>
+	    	<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_C0</identifier>
+          <modifier value="771284519" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+	    	</Item>
+	    	<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_D0</identifier>
+          <modifier value="2586621229" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+	    	</Item>
+	    	<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_E0</identifier>
+          <modifier value="283386134" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+	    	</Item>
+	    	<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_F0</identifier>
+          <modifier value="3884502400" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+    		</Item>
+    		<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_G0</identifier>
+          <modifier value="265723083" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+    		</Item>
+	    	<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_A0</identifier>
+          <modifier value="1746883687" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+    		</Item>
+	    	<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_B0</identifier>
+          <modifier value="1919870950" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+    		</Item>
+    		<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_C1</identifier>
+          <modifier value="10852770707" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+    		</Item>
+        <Item>
+          <identifier>HIPSTER_HORN_1</identifier>
+          <modifier value="444549672" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HIPSTER_HORN_2</identifier>
+          <modifier value="1603064898" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HIPSTER_HORN_3</identifier>
+          <modifier value="240366033" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HIPSTER_HORN_4</identifier>
+          <modifier value="960137118" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>INDEP_HORN_1</identifier>
+          <modifier value="3572144790" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>INDEP_HORN_2</identifier>
+          <modifier value="3801396714" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>INDEP_HORN_3</identifier>
+          <modifier value="2843657151" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>INDEP_HORN_4</identifier>
+          <modifier value="3341811489" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+	    	<Item>
+          <identifier>LUXE_HORN_1</identifier>
+          <modifier value="3199657341" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+	    	<Item>
+          <identifier>LUXE_HORN_2</identifier>
+          <modifier value="2900378064" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+	    	<Item>
+          <identifier>LUXE_HORN_3</identifier>
+          <modifier value="3956195248" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+		<!-- PREVIEW HORN - FOR MOD SHOP USE ONLY -->
+	    	<Item>
+          <identifier>LUXORY_HORN_1</identifier>
+          <modifier value="676333254" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+		<!-- PREVIEW HORN - FOR MOD SHOP USE ONLY -->
+    		<Item>
+          <identifier>LUXURY_HORN_2</identifier>
+          <modifier value="2099578296" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+		<!-- PREVIEW HORN - FOR MOD SHOP USE ONLY -->
+	    	<Item>
+          <identifier>LUXURY_HORN_3</identifier>
+          <modifier value="1373384483" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="8" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_SUSPENSION</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="15" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_SUSPENSION</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="18" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_SUSPENSION</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="23" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_SUSPENSION</type>
+        </Item>
+      </statMods>
+      <slotNames />
+      <liveryNames />
+    </Item>
+  </Kits>
+<Lights>
+   </Lights>
+</CVehicleModelInfoVarGlobal>

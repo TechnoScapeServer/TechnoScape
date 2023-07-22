@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CVehicleModelInfoVarGlobal>    
+<Kits>
+    <Item>
+      <kitName>7655_wraithbyv_modkit</kitName>
+      <id value="7655" />	 	  
+      <kitType>MKT_SPECIAL</kitType>
+      <visibleMods>
+      <!-- Liveries by V&V -->
+  <Item>
+          <modelName>wraithbyv_livery1</modelName>
+          <modShopLabel>livery_1</modShopLabel>
+          <linkedModels/>
+          <turnOffBones />
+          <type>VMT_LIVERY_MOD</type>
+          <bone>chassis</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.00000000"/>
+          <weight value="0"/>
+          <turnOffExtra value="false"/>
+          <disableBonnetCamera value="false"/>
+          <allowBonnetSlide value="true"/>
+        </Item>
+        <!-- Join V&V Discord : https://discord.com/invite/6HvfP2AQnz -->
+      <!-- Bodyshell  by V&V -->
+				<Item>
+          <modelName>wraithbyv_bodyshell_1</modelName>
+          <modShopLabel>bodyshell1</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+							<Item>mod_b</Item>
+          </turnOffBones>
+          <type>VMT_INTERIOR1</type>
+          <bone>mod_a</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="2" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+				<Item>
+          <modelName>wraithbyv_bodyshell_2</modelName>
+          <modShopLabel>bodyshell2</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+							<Item>mod_b</Item>
+          </turnOffBones>
+          <type>VMT_INTERIOR1</type>
+          <bone>mod_a</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="2" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+				<Item>
+          <modelName>wraithbyv_bodyshell_3</modelName>
+          <modShopLabel>bodyshell3</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+							<Item>mod_b</Item>
+          </turnOffBones>
+          <type>VMT_INTERIOR1</type>
+          <bone>mod_a</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="2" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <!-- Seats  by V&V -->
+				<Item>
+          <modelName>wraithbyv_seats_1</modelName>
+          <modShopLabel>Seat1</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item>mod_c</Item>
+          </turnOffBones>
+          <type>VMT_SEATS</type>
+          <bone>mod_d</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+				<Item>
+          <modelName>wraithbyv_seats_2</modelName>
+          <modShopLabel>Seat3</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item>mod_c</Item>
+          </turnOffBones>
+          <type>VMT_SEATS</type>
+          <bone>mod_d</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+				<Item>
+          <modelName>wraithbyv_seats_3</modelName>
+          <modShopLabel>Seat3</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item>mod_c</Item>
+          </turnOffBones>
+          <type>VMT_SEATS</type>
+          <bone>mod_d</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+				<Item>
+          <modelName>wraithbyv_seats_4</modelName>
+          <modShopLabel>Seat4</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+            <Item>mod_c</Item>
+          </turnOffBones>
+          <type>VMT_SEATS</type>
+          <bone>mod_d</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <!-- Bonnets  by V&V -->
+	<Item>
+          <modelName>wraithbyv_bonnet_1</modelName>
+          <modShopLabel>bon_1</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_e</Item></turnOffBones>
+          <type>VMT_BONNET</type>
+          <bone>mod_f</bone>
+          <collisionBone>bonnet</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>wraithbyv_bonnet_2</modelName>
+          <modShopLabel>bon_2</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_e</Item></turnOffBones>
+          <type>VMT_BONNET</type>
+          <bone>mod_f</bone>
+          <collisionBone>bonnet</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>wraithbyv_bonnet_3</modelName>
+          <modShopLabel>bon_3</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_e</Item></turnOffBones>
+          <type>VMT_BONNET</type>
+          <bone>mod_f</bone>
+          <collisionBone>bonnet</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <!-- Bumper_Front by V&V-->
+	<Item>
+          <modelName>wraithbyv_bumper_f_1</modelName>
+          <modShopLabel>fbumper_1</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_g</Item></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_h</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>wraithbyv_bumper_f_2</modelName>
+          <modShopLabel>fbumper_2</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_g</Item></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_h</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>wraithbyv_bumper_f_3</modelName>
+          <modShopLabel>fbumper_3</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_g</Item></turnOffBones>
+          <type>VMT_BUMPER_F</type>
+          <bone>mod_h</bone>
+          <collisionBone>bumper_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <!-- Bumper_Rear  by V&V-->
+  <Item>
+          <modelName>wraithbyv_bumper_r_1</modelName>
+          <modShopLabel>tail1</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+					<Item>mod_i</Item>
+					</turnOffBones>
+          <type>VMT_BUMPER_R</type>
+          <bone>mod_j</bone>
+          <collisionBone>bumper_r</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="2" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+  <Item>
+          <modelName>wraithbyv_bumper_r_2</modelName>
+          <modShopLabel>tail2</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+					<Item>mod_i</Item>
+					</turnOffBones>
+          <type>VMT_BUMPER_R</type>
+          <bone>mod_j</bone>
+          <collisionBone>bumper_r</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="2" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+  <Item>
+          <modelName>wraithbyv_bumper_r_3</modelName>
+          <modShopLabel>tail3</modShopLabel>
+          <linkedModels />
+          <turnOffBones>
+					<Item>mod_i</Item>
+					</turnOffBones>
+          <type>VMT_BUMPER_R</type>
+          <bone>mod_j</bone>
+          <collisionBone>bumper_r</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="2" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <!-- Door  by V&V-->
+	<Item>
+          <modelName>wraithbyv_ldoor_1</modelName>
+          <modShopLabel>Door_1</modShopLabel>
+          <linkedModels>
+		<Item>wraithbyv_rdoor_1</Item>
+	  </linkedModels>
+          <turnOffBones />
+          <type>VMT_INTERIOR5</type>
+          <bone>mod_k</bone>
+          <collisionBone>door_dside_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>wraithbyv_ldoor_2</modelName>
+          <modShopLabel>Door_2</modShopLabel>
+          <linkedModels>
+		<Item>wraithbyv_rdoor_2</Item>
+	  </linkedModels>
+          <turnOffBones>
+		<Item>mod_m</Item>
+		<Item>mod_n</Item>
+          </turnOffBones>
+          <type>VMT_INTERIOR5</type>
+          <bone>mod_k</bone>
+          <collisionBone>door_dside_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>wraithbyv_ldoor_3</modelName>
+          <modShopLabel>Door_3</modShopLabel>
+          <linkedModels>
+		<Item>wraithbyv_rdoor_3</Item>
+	  </linkedModels>
+          <turnOffBones>
+		<Item>mod_m</Item>
+		<Item>mod_n</Item>
+          </turnOffBones>
+          <type>VMT_INTERIOR5</type>
+          <bone>mod_k</bone>
+          <collisionBone>door_dside_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+	<Item>
+          <modelName>wraithbyv_ldoor_4</modelName>
+          <modShopLabel>Door_4</modShopLabel>
+          <linkedModels>
+		<Item>wraithbyv_rdoor_4</Item>
+	  </linkedModels>
+          <turnOffBones>
+		<Item>mod_m</Item>
+		<Item>mod_n</Item>
+          </turnOffBones>
+          <type>VMT_INTERIOR5</type>
+          <bone>mod_k</bone>
+          <collisionBone>door_dside_f</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <!-- Chassis by V&V-->
+        	<Item>
+          <modelName>wraithbyv_chassis_1</modelName>
+          <modShopLabel>Chassis_1</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_q</Item></turnOffBones>
+          <type>VMT_CHASSIS</type>
+          <bone>mod_r</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        	<Item>
+          <modelName>wraithbyv_chassis_2</modelName>
+          <modShopLabel>Chassis_2</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_q</Item></turnOffBones>
+          <type>VMT_CHASSIS</type>
+          <bone>mod_r</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        	<Item>
+          <modelName>wraithbyv_chassis_3</modelName>
+          <modShopLabel>Chassis_3</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_q</Item></turnOffBones>
+          <type>VMT_CHASSIS</type>
+          <bone>mod_r</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        <!-- Trunk by V&V-->
+        	<Item>
+          <modelName>wraithbyv_trunk_1</modelName>
+          <modShopLabel>Trunk1</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_u</Item></turnOffBones>
+          <type>VMT_TRUNK</type>
+          <bone>mod_t</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        	<Item>
+          <modelName>wraithbyv_trunk_2</modelName>
+          <modShopLabel>Trunk2</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_u</Item></turnOffBones>
+          <type>VMT_TRUNK</type>
+          <bone>mod_t</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+        	<Item>
+          <modelName>wraithbyv_trunk_3</modelName>
+          <modShopLabel>Trunk3</modShopLabel>
+          <linkedModels />
+          <turnOffBones><Item>mod_u</Item></turnOffBones>
+          <type>VMT_TRUNK</type>
+          <bone>mod_t</bone>
+          <collisionBone>chassis</collisionBone>
+          <cameraPos>VMCP_DEFAULT</cameraPos>
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <turnOffExtra value="false" />
+          <disableBonnetCamera value="false" />
+          <allowBonnetSlide value="true" />
+        </Item>
+      </visibleMods>
+      <linkMods>
+      <!-- Bodyshell by V&V-->
+			<Item>
+          <modelName>wraithbyv_bodyshell_1</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_bodyshell_2</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_bodyshell_3</modelName>
+          <bone>mod_a</bone>
+          <turnOffExtra value="false" />
+        </Item>
+        <!-- Seats  by V&V -->
+			<Item>
+          <modelName>wraithbyv_seats_1</modelName>
+          <bone>mod_d</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_seats_2</modelName>
+          <bone>mod_d</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_seats_3</modelName>
+          <bone>mod_d</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_seats_4</modelName>
+          <bone>mod_d</bone>
+          <turnOffExtra value="false" />
+        </Item>
+        <!-- Bonnets  by V&V -->
+			<Item>
+          <modelName>wraithbyv_bonnet_1</modelName>
+          <bone>mod_f</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_bonnet_2</modelName>
+          <bone>mod_f</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_bonnet_3</modelName>
+          <bone>mod_f</bone>
+          <turnOffExtra value="false" />
+        </Item>
+        <!-- Bumper_Rear  by V&V-->
+			<Item>
+          <modelName>wraithbyv_bumper_r_1</modelName>
+          <bone>mod_j</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_bumper_r_2</modelName>
+          <bone>mod_j</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_bumper_r_3</modelName>
+          <bone>mod_j</bone>
+          <turnOffExtra value="false" />
+        </Item>
+        <!-- Bumper_Front by V&V-->
+			<Item>
+          <modelName>wraithbyv_bumper_f_1</modelName>
+          <bone>mod_h</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_bumper_f_2</modelName>
+          <bone>mod_h</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_bumper_f_3</modelName>
+          <bone>mod_h</bone>
+          <turnOffExtra value="false" />
+        </Item>
+        <!-- Left_Door  by V&V-->
+			<Item>
+          <modelName>wraithbyv_ldoor_1</modelName>
+          <bone>mod_k</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_ldoor_2</modelName>
+          <bone>mod_k</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_ldoor_3</modelName>
+          <bone>mod_k</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_ldoor_4</modelName>
+          <bone>mod_k</bone>
+          <turnOffExtra value="false" />
+        </Item>
+        <!-- Right_Door  by V&V-->
+			<Item>
+          <modelName>wraithbyv_rdoor_1</modelName>
+          <bone>mod_l</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_rdoor_2</modelName>
+          <bone>mod_l</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_rdoor_3</modelName>
+          <bone>mod_l</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_rdoor_4</modelName>
+          <bone>mod_l</bone>
+          <turnOffExtra value="false" />
+        </Item>
+        <!-- Chassis by V&V-->
+			<Item>
+          <modelName>wraithbyv_chassis_1</modelName>
+          <bone>mod_r</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_chassis_2</modelName>
+          <bone>mod_r</bone>
+          <turnOffExtra value="false" />
+        </Item>
+  			<Item>
+          <modelName>wraithbyv_chassis_3</modelName>
+          <bone>mod_r</bone>
+          <turnOffExtra value="false" />
+        </Item>
+        <!-- Trunk by V&V-->
+			<Item>
+          <modelName>wraithbyv_trunk_1</modelName>
+          <bone>mod_t</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_trunk_2</modelName>
+          <bone>mod_t</bone>
+          <turnOffExtra value="false" />
+        </Item>
+			<Item>
+          <modelName>wraithbyv_trunk_3</modelName>
+          <bone>mod_t</bone>
+          <turnOffExtra value="false" />
+        </Item>
+      </linkMods>
+      <statMods>
+        <Item>
+          <identifier />
+          <modifier value="300" />
+          <audioApply value="1.000000" />
+          <weight value="20" />
+          <type>VMT_ENGINE</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="500" />
+          <audioApply value="1.000000" />
+          <weight value="20" />
+          <type>VMT_ENGINE</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="700" />
+          <audioApply value="1.000000" />
+          <weight value="20" />
+          <type>VMT_ENGINE</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="1000" />
+          <audioApply value="1.000000" />
+          <weight value="20" />
+          <type>VMT_ENGINE</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="200" />
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <type>VMT_BRAKES</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="500" />
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <type>VMT_BRAKES</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="2000" />
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <type>VMT_BRAKES</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="330" />
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <type>VMT_GEARBOX</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="340" />
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <type>VMT_GEARBOX</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="360" />
+          <audioApply value="1.000000" />
+          <weight value="5" />
+          <type>VMT_GEARBOX</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="50" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_ARMOUR</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="70" />
+          <audioApply value="1.000000" />
+          <weight value="10" />
+          <type>VMT_ARMOUR</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="90" />
+          <audioApply value="1.000000" />
+          <weight value="10" />
+          <type>VMT_ARMOUR</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="95" />
+          <audioApply value="1.000000" />
+          <weight value="10" />
+          <type>VMT_ARMOUR</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="100" />
+          <audioApply value="1.000000" />
+          <weight value="10" />
+          <type>VMT_ARMOUR</type>
+        </Item>
+        <Item>
+          <identifier>HORN_TRUCK</identifier>
+          <modifier value="1766676233" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HORN_COP</identifier>
+          <modifier value="2904189469" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HORN_CLOWN</identifier>
+          <modifier value="2543206147" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HORN_MUSICAL_1</identifier>
+          <modifier value="1732399718" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HORN_MUSICAL_2</identifier>
+          <modifier value="2046162893" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HORN_MUSICAL_3</identifier>
+          <modifier value="2194999691" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HORN_MUSICAL_4</identifier>
+          <modifier value="2508304100" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HORN_MUSICAL_5</identifier>
+          <modifier value="37070223535" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+		    <Item>
+          <identifier>HORN_SAD_TROMBONE</identifier>
+          <modifier value="632950117" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>MUSICAL_HORN_BUSINESS_1</identifier>
+          <modifier value="3628534289" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>MUSICAL_HORN_BUSINESS_2</identifier>
+          <modifier value="3892554122" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>MUSICAL_HORN_BUSINESS_3</identifier>
+          <modifier value="4112892878" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>MUSICAL_HORN_BUSINESS_4</identifier>
+          <modifier value="116877169" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>MUSICAL_HORN_BUSINESS_5</identifier>
+          <modifier value="2684983719" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>MUSICAL_HORN_BUSINESS_6</identifier>
+          <modifier value="2982690084" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+	    	</Item>
+	    	<Item>
+          <identifier>MUSICAL_HORN_BUSINESS_7</identifier>
+          <modifier value="3203290992" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+    		</Item>
+	    	<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_C0</identifier>
+          <modifier value="771284519" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+	    	</Item>
+	    	<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_D0</identifier>
+          <modifier value="2586621229" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+	    	</Item>
+	    	<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_E0</identifier>
+          <modifier value="283386134" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+	    	</Item>
+	    	<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_F0</identifier>
+          <modifier value="3884502400" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+    		</Item>
+    		<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_G0</identifier>
+          <modifier value="265723083" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+    		</Item>
+	    	<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_A0</identifier>
+          <modifier value="1746883687" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+    		</Item>
+	    	<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_B0</identifier>
+          <modifier value="1919870950" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+    		</Item>
+    		<Item>
+          <identifier>DLC_BUSI2_C_MAJOR_NOTES_C1</identifier>
+          <modifier value="10852770707" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+    		</Item>
+        <Item>
+          <identifier>HIPSTER_HORN_1</identifier>
+          <modifier value="444549672" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HIPSTER_HORN_2</identifier>
+          <modifier value="1603064898" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HIPSTER_HORN_3</identifier>
+          <modifier value="240366033" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>HIPSTER_HORN_4</identifier>
+          <modifier value="960137118" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>INDEP_HORN_1</identifier>
+          <modifier value="3572144790" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>INDEP_HORN_2</identifier>
+          <modifier value="3801396714" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>INDEP_HORN_3</identifier>
+          <modifier value="2843657151" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier>INDEP_HORN_4</identifier>
+          <modifier value="3341811489" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+	    	<Item>
+          <identifier>LUXE_HORN_1</identifier>
+          <modifier value="3199657341" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+	    	<Item>
+          <identifier>LUXE_HORN_2</identifier>
+          <modifier value="2900378064" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+	    	<Item>
+          <identifier>LUXE_HORN_3</identifier>
+          <modifier value="3956195248" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+		<!-- PREVIEW HORN - FOR MOD SHOP USE ONLY -->
+	    	<Item>
+          <identifier>LUXORY_HORN_1</identifier>
+          <modifier value="676333254" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+		<!-- PREVIEW HORN - FOR MOD SHOP USE ONLY -->
+    		<Item>
+          <identifier>LUXURY_HORN_2</identifier>
+          <modifier value="2099578296" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+		<!-- PREVIEW HORN - FOR MOD SHOP USE ONLY -->
+	    	<Item>
+          <identifier>LUXURY_HORN_3</identifier>
+          <modifier value="1373384483" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_HORN</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="8" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_SUSPENSION</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="15" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_SUSPENSION</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="18" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_SUSPENSION</type>
+        </Item>
+        <Item>
+          <identifier />
+          <modifier value="23" />
+          <audioApply value="1.000000" />
+          <weight value="0" />
+          <type>VMT_SUSPENSION</type>
+        </Item>
+      </statMods>
+      <slotNames />
+      <liveryNames />
+    </Item>
+  </Kits>
+  <Lights>
+	<Item>
+      <id value="910" />	
+      <indicator>
+        <intensity value="10.37500000"/>
+        <falloffMax value="2.50000000"/>
+        <falloffExponent value="8.00000000"/>
+        <innerConeAngle value="20.00000000"/>
+        <outerConeAngle value="50.00000000"/>
+        <emmissiveBoost value="true"/>
+        <color value="0xFFFF7300"/>
+        <textureName/>
+        <mirrorTexture value="true"/>
+      </indicator>
+      <rearIndicatorCorona>
+        <size value="0.35666000"/>
+        <size_far value="8.00000000"/>
+        <intensity value="8.00000000"/>
+        <intensity_far value="8.00000000"/>
+        <color value="0xFFFF7300"/>
+        <numCoronas value="1"/>
+        <distBetweenCoronas value="128"/>
+        <distBetweenCoronas_far value="255"/>
+        <xRotation value="0.00000000"/>
+        <yRotation value="0.00000000"/>
+        <zRotation value="0.00000000"/>
+        <zBias value="0.25000000"/>
+        <pullCoronaIn value="true"/>
+      </rearIndicatorCorona>
+      <frontIndicatorCorona>
+        <size value="0.35666000"/>
+        <size_far value="0.00000000"/>
+        <intensity value="0.00000000"/>
+        <intensity_far value="0.00000000"/>
+        <color value="0xFFFF7300"/>
+        <numCoronas value="1"/>
+        <distBetweenCoronas value="128"/>
+        <distBetweenCoronas_far value="255"/>
+        <xRotation value="0.00000000"/>
+        <yRotation value="0.00000000"/>
+        <zRotation value="0.00000000"/>
+        <zBias value="0.25000000"/>
+        <pullCoronaIn value="true"/>
+      </frontIndicatorCorona>
+      <tailLight>
+        <intensity value="0.25000000"/>
+        <falloffMax value="4.00000000"/>
+        <falloffExponent value="16.00000000"/>
+        <innerConeAngle value="45.00000000"/>
+        <outerConeAngle value="90.00000000"/>
+        <emmissiveBoost value="false"/>
+        <color value="0xFFFF0000"/>
+        <textureName/>
+        <mirrorTexture value="true"/>
+      </tailLight>
+      <tailLightCorona>
+        <size value="1.20000000"/>
+        <size_far value="2.50000000"/>
+        <intensity value="5.00000000"/>
+        <intensity_far value="1.00000000"/>
+        <color value="0xFFFF0F05"/>
+        <numCoronas value="1"/>
+        <distBetweenCoronas value="128"/>
+        <distBetweenCoronas_far value="255"/>
+        <xRotation value="0.00000000"/>
+        <yRotation value="0.00000000"/>
+        <zRotation value="0.00000000"/>
+        <zBias value="0.25000000"/>
+        <pullCoronaIn value="false"/>
+      </tailLightCorona>
+      <tailLightMiddleCorona>
+        <size value="0.00000000"/>
+        <size_far value="0.00000000"/>
+        <intensity value="0.00000000"/>
+        <intensity_far value="0.00000000"/>
+        <color value="0x00000000"/>
+        <numCoronas value="1"/>
+        <distBetweenCoronas value="128"/>
+        <distBetweenCoronas_far value="255"/>
+        <xRotation value="0.00000000"/>
+        <yRotation value="0.00000000"/>
+        <zRotation value="0.00000000"/>
+        <zBias value="0.25000000"/>
+        <pullCoronaIn value="false"/>
+      </tailLightMiddleCorona>
+      <headLight>
+        <intensity value="1.50000000"/>
+        <falloffMax value="35.00000000"/>
+        <falloffExponent value="16.00000000"/>
+        <innerConeAngle value="0.00000000"/>
+        <outerConeAngle value="60.00000000"/>
+        <emmissiveBoost value="true"/>
+        <color value="0xFF1F7CFF"/>
+        <textureName>VehicleLight_car_LED2</textureName>
+        <mirrorTexture value="false"/>
+      </headLight>
+      <headLightCorona>
+        <size value="0.20000000"/>
+        <size_far value="7.00000000"/>
+        <intensity value="7.00000000"/>
+        <intensity_far value="5.00000000"/>
+        <color value="0x2E85FF"/>
+        <numCoronas value="1"/>
+        <distBetweenCoronas value="128"/>
+        <distBetweenCoronas_far value="255"/>
+        <xRotation value="0.00000000"/>
+        <yRotation value="0.00000000"/>
+        <zRotation value="0.00000000"/>
+        <zBias value="0.25000000"/>
+        <pullCoronaIn value="false"/>
+      </headLightCorona>
+      <reversingLight>
+        <intensity value="0.50000000"/>
+        <falloffMax value="7.20000000"/>
+        <falloffExponent value="32.00000000"/>
+        <innerConeAngle value="20.00000000"/>
+        <outerConeAngle value="78.00000000"/>
+        <emmissiveBoost value="true"/>
+        <color value="0xFFFFFFFF"/>
+        <textureName/>
+        <mirrorTexture value="true"/>
+      </reversingLight>
+      <reversingLightCorona>
+        <size value="0.80000000"/>
+        <size_far value="2.00000000"/>
+        <intensity value="1.50000000"/>
+        <intensity_far value="1.00000000"/>
+        <color value="0x00F7F7F7"/>
+        <numCoronas value="1"/>
+        <distBetweenCoronas value="128"/>
+        <distBetweenCoronas_far value="255"/>
+        <xRotation value="0.00000000"/>
+        <yRotation value="0.00000000"/>
+        <zRotation value="0.00000000"/>
+        <zBias value="0.25000000"/>
+        <pullCoronaIn value="false"/>
+      </reversingLightCorona>
+      <name>wraithbyv</name>
+    </Item>
+  </Lights>
+</CVehicleModelInfoVarGlobal>
