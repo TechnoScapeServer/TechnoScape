@@ -1,4 +1,4 @@
-print("^2Jim^7-^2VanillaUnicorn ^7v^41^7.^47^7.^45 ^7- ^2Vanilla Unicorn Job Script by ^1Jimathy^7")
+
 
 -- If you need support I now have a discord available, it helps me keep track of issues and give better support.
 
@@ -12,7 +12,7 @@ Config = {
 	Lan = "en", -- Pick your language here
 
 	Core = "qb-core",
-	Inv = "qb",
+	Inv = "core_inventory",
 	Menu = "qb",
 	Notify = "qb",
 	ProgressBar = "qb",
@@ -20,7 +20,7 @@ Config = {
 	MultiCraft = true,
 	MultiCraftAmounts = { [1], [5], [10] },
 
-	JimShop = false, -- Enable this to use jim-shops for buying ingredients
+	JimShop = true, -- Enable this to use jim-shops for buying ingredients
 	JimConsumables = false,
 
 	--Stress
@@ -35,7 +35,7 @@ Config = {
 			zoneEnable = true,
 			job = "vanilla",
 			label = "Vanilla Unicorn",
-			MLO = "vu", -- Set to "van" for default -- Set to "gabz" for gabz vu
+			MLO = "gabz", -- Set to "van" for default -- Set to "gabz" for gabz vu
 			zones = {
 				vec2(98.32, -1321.1),
 				vec2(79.59, -1286.43),
@@ -46,10 +46,10 @@ Config = {
 			blip = vec3(111.05, -1287.96, 28.26), blipcolor = 61, blipsprite = 93, blipdisp = 6, blipscale = 0.7, blipcat = nil,
 			garage = { spawn = vector4(91.7, -1292.76, 29.22, 37.51), out = vector4(97.93, -1292.95, 29.22, 217.33), list = { ["panto"] = {}, ["burrito3"] = {} } },
 			Booth = {
-				enableBooth = false,
-				DefaultVolume = 0.1, -- 0.01 is lowest, 1.0 is max
-				radius = 30, -- The radius of the sound from the booth
-				coords = vec3(120.0, -1281.72, 29.48), -- Where the booth is located
+				enableBooth = true,
+				DefaultVolume = 0.3, -- 0.01 is lowest, 1.0 is max
+				radius = 50, -- The radius of the sound from the booth
+				coords = vec3(119.23, -1300.09, 29.22), -- Where the booth is located
 			},
 		},
 		{ 	--[[ BAHAMA MAMA MLO ]]--

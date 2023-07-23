@@ -194,6 +194,22 @@ Config.Stores = {
     },
     {
         type = "clothing",
+        coords = vector4(103.02, -1300.18, 29.22, 23.26),
+        size = vector3(4, 4, 4),
+        rotation = 45,
+        usePoly = false, -- false => uses the size + rotation to create the zone | true => uses points to create the zone
+        showBlip = false, -- overrides the blip visibilty configured above for the group
+        --targetModel = "s_m_m_doctor_01", -- overrides the target ped configured for the group
+        --targetScenario = "" -- overrides the target scenario configure for the group
+        points = {
+            vector3(1686.9018554688, 4829.8330078125, 42.07),
+            vector3(1698.8566894531, 4831.4604492188, 42.07),
+            vector3(1700.2448730469, 4817.7734375, 42.07),
+            vector3(1688.3682861328, 4816.2954101562, 42.07)
+        }
+    },
+    {
+        type = "clothing",
         coords = vector4(-705.5, -149.22, 37.42, 122),
         size = vector3(4, 4, 4),
         rotation = 45,
@@ -379,6 +395,20 @@ Config.Stores = {
         coords = vector4(-814.22, -183.7, 37.57, 116.91),
         size = vector3(4, 4, 4),
         rotation = 45,
+        usePoly = false,
+        points = {
+            vector3(-825.06127929688, -182.67497253418, 37.57),
+            vector3(-808.82415771484, -179.19134521484, 37.57),
+            vector3(-808.55261230469, -184.9720916748, 37.57),
+            vector3(-819.77899169922, -191.81831359863, 37.57)
+        }
+    },
+    {
+        type = "barber",
+        coords = vector4(106.66, -1303.31, 29.22, 204.58),
+        size = vector3(4, 4, 4),
+        rotation = 45,
+        showBlip = false,
         usePoly = false,
         points = {
             vector3(-825.06127929688, -182.67497253418, 37.57),

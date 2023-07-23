@@ -41,7 +41,7 @@ body {
     font-size: 1.3vh;
     line-height: 4vh;
     position: relative;
-    color: #ffffff;
+    color: #5ed8f7;
     z-index: 10;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
@@ -60,9 +60,14 @@ body {
 }
 
 .progress-bar {
-    background-color: #dc143c !important;
+    background-color: #dc143c48 !important;
+    border-right: 4px solid #d4423d;
+    border-bottom: 4px solid #d4423d;
+    box-shadow:1px 1px 2px #d4423d;
     width: 0%;
     height: 4vh;
     transition: width 0.3s;
     transition-timing-function: ease-out;
+
+    
 }

@@ -47,67 +47,67 @@ CreateThread(function()
 				CreateThread(function()
 
 					Targets["UniPrepared"] =
-						exports['qb-target']:AddBoxZone("UniPrepared", vec3(136.13, -1287.12, 29.27-1), 1.7, 0.8, { name="UniPrepared", heading = 30.0, debugPoly=Config.Debug, minZ = 28.37, maxZ = 29.97, },
+						exports['qb-target']:AddBoxZone("UniPrepared", vector3(114.16, -1279.44, 29.62), 4.2, 1, { name="UniPrepared", heading = 100, debugPoly=Config.Debug, minZ = 29.62, maxZ = 33.62, },
 							{ options = { {  event = "jim-vanillaunicorn:Stash", icon = "fas fa-box-open", label = "Prepared Food", stash = "UniStorage", job = v.job }, }, distance = 1.0 })
 					Targets["UniFridge"] =
-						exports['qb-target']:AddBoxZone("UniFridge", vec3(129.95, -1280.65, 29.27-1), 1.5, 0.6, { name="UniFridge", heading = 30.0, debugPoly=Config.Debug, minZ=28.22, maxZ=29.22 },
+						exports['qb-target']:AddBoxZone("UniFridge", vector3(113.28, -1283.08, 29.62), 1, 1, { name="UniFridge", heading = 300, debugPoly=Config.Debug, minZ=25.62, maxZ=29.62 },
 							{ options = { {  event = "jim-vanillaunicorn:Shop", icon = "fas fa-archive", label = Loc[Config.Lan].targetinfo["open_drink_fridge"], job = v.job, shop = Config.DrinkItems, shopname = "UniDrinkfrige" }, }, distance = 1.5 })
-					Targets["UniFridge2"] =
-						exports['qb-target']:AddBoxZone("UniFridge2", vec3(128.84, -1284.25, 29.27-1), 1.5, 0.6, { name="UniFridge2", heading = 30.0, debugPoly=Config.Debug, minZ=28.27, maxZ=29.27 },
-							{ options = { {  event = "jim-vanillaunicorn:Shop", icon = "fas fa-archive", label = Loc[Config.Lan].targetinfo["open_drink_fridge"], job = v.job, shop = Config.DrinkItems, shopname = "UniDrinkfrige" }, }, distance = 1.5 })
-					Targets["UniFridge3"] =
-						exports['qb-target']:AddBoxZone("UniFridge3", vec3(129.74, -1285.53, 29.27-1), 0.8, 0.4, { name="UniFridge3", heading = 30.0, debugPoly=Config.Debug, minZ=28.27, maxZ=29.27 },
-							{ options = { {  event = "jim-vanillaunicorn:Shop", icon = "fas fa-archive", label = Loc[Config.Lan].targetinfo["open_drink_fridge"], job = v.job, shop = Config.DrinkItems, shopname = "UniDrinkfrige" }, }, distance = 1.5 })
-					Targets["UniFridge4"] =
-						exports['qb-target']:AddBoxZone("UniFridge4", vec3(132.66, -1285.43, 29.27-1), 1.2, 0.6, { name="UniFridge4", heading = 30.0, debugPoly=Config.Debug, minZ=28.27, maxZ=29.27 },
-							{ options = { {  event = "jim-vanillaunicorn:Shop", icon = "fas fa-archive", label = Loc[Config.Lan].targetinfo["open_drink_fridge"], job = v.job, shop = Config.DrinkItems, shopname = "UniDrinkfrige" }, }, distance = 1.5 })
-					Targets["UniFridge5"] =
-						exports['qb-target']:AddBoxZone("UniFridge5", vec3(119.23, -1302.93, 29.27-1), 1.4, 0.6, { name="UniFridge5", heading = 300.0, debugPoly=Config.Debug, minZ=28.27, maxZ=29.27 },
-							{ options = { {  event = "jim-vanillaunicorn:Shop", icon = "fas fa-archive", label = Loc[Config.Lan].targetinfo["open_drink_fridge"], job = v.job, shop = Config.DrinkItems, shopname = "UniDrinkfrige" }, }, distance = 1.5 })
-					Targets["UniFridge6"] =
-						exports['qb-target']:AddBoxZone("UniFridge6", vec3(132.32, -1291.67, 29.27-1), 0.8, 0.6, { name="UniFridge6", heading = 30.0, debugPoly=Config.Debug, minZ = 28.27, maxZ = 30.07, },
-							{ options = { {  event = "jim-vanillaunicorn:Shop", icon = "fas fa-archive", label = Loc[Config.Lan].targetinfo["open_food_fridge"],"Open Food Fridge", job = v.job, shop = Config.FoodItems, shopname = "UniFoodfrige" }, }, distance = 2.0 })
+					-- Targets["UniFridge2"] =
+					-- 	exports['qb-target']:AddBoxZone("UniFridge2", vec3(128.84, -1284.25, 29.27-1), 1.5, 0.6, { name="UniFridge2", heading = 30.0, debugPoly=Config.Debug, minZ=28.27, maxZ=29.27 },
+					-- 		{ options = { {  event = "jim-vanillaunicorn:Shop", icon = "fas fa-archive", label = Loc[Config.Lan].targetinfo["open_drink_fridge"], job = v.job, shop = Config.DrinkItems, shopname = "UniDrinkfrige" }, }, distance = 1.5 })
+					-- Targets["UniFridge3"] =
+					-- 	exports['qb-target']:AddBoxZone("UniFridge3", vec3(129.74, -1285.53, 29.27-1), 0.8, 0.4, { name="UniFridge3", heading = 30.0, debugPoly=Config.Debug, minZ=28.27, maxZ=29.27 },
+					-- 		{ options = { {  event = "jim-vanillaunicorn:Shop", icon = "fas fa-archive", label = Loc[Config.Lan].targetinfo["open_drink_fridge"], job = v.job, shop = Config.DrinkItems, shopname = "UniDrinkfrige" }, }, distance = 1.5 })
+					-- Targets["UniFridge4"] =
+					-- 	exports['qb-target']:AddBoxZone("UniFridge4", vec3(132.66, -1285.43, 29.27-1), 1.2, 0.6, { name="UniFridge4", heading = 30.0, debugPoly=Config.Debug, minZ=28.27, maxZ=29.27 },
+					-- 		{ options = { {  event = "jim-vanillaunicorn:Shop", icon = "fas fa-archive", label = Loc[Config.Lan].targetinfo["open_drink_fridge"], job = v.job, shop = Config.DrinkItems, shopname = "UniDrinkfrige" }, }, distance = 1.5 })
+					-- Targets["UniFridge5"] =
+					-- 	exports['qb-target']:AddBoxZone("UniFridge5", vec3(119.23, -1302.93, 29.27-1), 1.4, 0.6, { name="UniFridge5", heading = 300.0, debugPoly=Config.Debug, minZ=28.27, maxZ=29.27 },
+					-- 		{ options = { {  event = "jim-vanillaunicorn:Shop", icon = "fas fa-archive", label = Loc[Config.Lan].targetinfo["open_drink_fridge"], job = v.job, shop = Config.DrinkItems, shopname = "UniDrinkfrige" }, }, distance = 1.5 })
+					-- Targets["UniFridge6"] =
+					-- 	exports['qb-target']:AddBoxZone("UniFridge6", vec3(132.32, -1291.67, 29.27-1), 0.8, 0.6, { name="UniFridge6", heading = 30.0, debugPoly=Config.Debug, minZ = 28.27, maxZ = 30.07, },
+					-- 		{ options = { {  event = "jim-vanillaunicorn:Shop", icon = "fas fa-archive", label = Loc[Config.Lan].targetinfo["open_food_fridge"],"Open Food Fridge", job = v.job, shop = Config.FoodItems, shopname = "UniFoodfrige" }, }, distance = 2.0 })
 					Targets["UniWash1"] =
-						exports['qb-target']:AddBoxZone("UniWash1", vec3(136.45, -1289.37, 29.27-1), 0.8, 0.8, { name="UniWash1", heading = 30.0, debugPoly=Config.Debug, minZ = 28.47, maxZ = 29.87, },
+						exports['qb-target']:AddBoxZone("UniWash1", vector3(107.84, -1283.32, 29.62), 1.8, 1, { name="UniWash1", heading = 30, debugPoly=Config.Debug, minZ = 25.82, maxZ = 29.82, },
 							{ options = { { event = "jim-vanillaunicorn:washHands", icon = "fas fa-hand-holding-water", label = Loc[Config.Lan].targetinfo["wash_hands"], job = v.job }, }, distance = 1.5	})
-					Targets["UniWash2"] =
-						exports['qb-target']:AddBoxZone("UniWash2", vec3(130.28, -1286.21, 29.27-1), 0.8, 0.6, { name="UniWash2", heading = 30.0, debugPoly=Config.Debug, minZ = 28.67, maxZ = 29.87, },
-							{ options = { { event = "jim-vanillaunicorn:washHands", icon = "fas fa-hand-holding-water", label = Loc[Config.Lan].targetinfo["wash_hands"], }, }, distance = 1.5 })
+					-- Targets["UniWash2"] =
+					-- 	exports['qb-target']:AddBoxZone("UniWash2", vec3(130.28, -1286.21, 29.27-1), 0.8, 0.6, { name="UniWash2", heading = 30.0, debugPoly=Config.Debug, minZ = 28.67, maxZ = 29.87, },
+					-- 		{ options = { { event = "jim-vanillaunicorn:washHands", icon = "fas fa-hand-holding-water", label = Loc[Config.Lan].targetinfo["wash_hands"], }, }, distance = 1.5 })
 					Targets["UniCounter"] =
-						exports['qb-target']:AddBoxZone("UniCounter", vec3(128.63, -1284.3, 29.27), 1.1, 1.0, { name="UniCounter", heading = 30.0, debugPoly=Config.Debug, minZ = 29.27, maxZ = 30.07, },
+						exports['qb-target']:AddBoxZone("UniCounter", vector3(111.18, -1284.22, 29.62), 2.0, 1, { name="UniCounter", heading = 300.0, debugPoly=Config.Debug, minZ = 26.02, maxZ = 30.02, },
 							{ options = { { event = "jim-vanillaunicorn:Stash", icon = "fas fa-hamburger", label = Loc[Config.Lan].targetinfo["open_counter"], stash = "UniCounter" }, }, distance = 2.0 })
 					Targets["UniReceipt"] =
-						exports['qb-target']:AddBoxZone("UniReceipt", vec3(129.19, -1284.95, 29.27), 0.6, 0.6, { name="UniReceipt", heading = 30.0, debugPoly=Config.Debug, minZ = 29.27, maxZ = 30.07, },
+						exports['qb-target']:AddBoxZone("UniReceipt", vector3(116.83, -1280.16, 29.62), 2.0, 1, { name="UniReceipt", heading = 205, debugPoly=Config.Debug, minZ = 26.22, maxZ = 30.22, },
 							{ options = { { event = "jim-payments:client:Charge", icon = "fas fa-credit-card", label = Loc[Config.Lan].targetinfo["charge_customer"], job = v.job,
 											img = "<center><p><img src=https://static.wikia.nocookie.net/gtawiki/images/1/10/VanillaUnicorn-GTAV-Logo.png/ width=225px></p>"
 											} }, distance = 2.0 })
-					Targets["UniReceipt2"] =
-						exports['qb-target']:AddBoxZone("UniReceipt2", vec3(133.0, -1286.0, 29.27), 0.6, 0.6, { name="UniReceipt2", heading = 30.0, debugPoly=Config.Debug, minZ = 29.27, maxZ = 30.07, },
-							{ options = { { event = "jim-payments:client:Charge", icon = "fas fa-credit-card", label = Loc[Config.Lan].targetinfo["charge_customer"], job = v.job,
-											img = "<center><p><img src=https://static.wikia.nocookie.net/gtawiki/images/1/10/VanillaUnicorn-GTAV-Logo.png/ width=225px></p>"
-											} }, distance = 2.0 })
-					Targets["UniReceipt3"] =
-						exports['qb-target']:AddBoxZone("UniReceipt3", vec3(118.96, -1303.18, 29.27), 0.6, 0.6, { name="UniReceipt3", heading = 30.0, debugPoly=Config.Debug, minZ = 29.07, maxZ = 29.87, },
-							{ options = { { event = "jim-payments:client:Charge", icon = "fas fa-credit-card", label = Loc[Config.Lan].targetinfo["charge_customer"], job = v.job,
-											img = "<center><p><img src=https://static.wikia.nocookie.net/gtawiki/images/1/10/VanillaUnicorn-GTAV-Logo.png/ width=225px></p>"
-											} }, distance = 2.0 })
+					-- Targets["UniReceipt2"] =
+					-- 	exports['qb-target']:AddBoxZone("UniReceipt2", vec3(133.0, -1286.0, 29.27), 0.6, 0.6, { name="UniReceipt2", heading = 30.0, debugPoly=Config.Debug, minZ = 29.27, maxZ = 30.07, },
+					-- 		{ options = { { event = "jim-payments:client:Charge", icon = "fas fa-credit-card", label = Loc[Config.Lan].targetinfo["charge_customer"], job = v.job,
+					-- 						img = "<center><p><img src=https://static.wikia.nocookie.net/gtawiki/images/1/10/VanillaUnicorn-GTAV-Logo.png/ width=225px></p>"
+					-- 						} }, distance = 2.0 })
+					-- Targets["UniReceipt3"] =
+					-- 	exports['qb-target']:AddBoxZone("UniReceipt3", vec3(118.96, -1303.18, 29.27), 0.6, 0.6, { name="UniReceipt3", heading = 30.0, debugPoly=Config.Debug, minZ = 29.07, maxZ = 29.87, },
+					-- 		{ options = { { event = "jim-payments:client:Charge", icon = "fas fa-credit-card", label = Loc[Config.Lan].targetinfo["charge_customer"], job = v.job,
+					-- 						img = "<center><p><img src=https://static.wikia.nocookie.net/gtawiki/images/1/10/VanillaUnicorn-GTAV-Logo.png/ width=225px></p>"
+					-- 						} }, distance = 2.0 })
 					Targets["UniCocktails"] =
-						exports['qb-target']:AddBoxZone("UniCocktails", vec3(130.3, -1281.51, 29.27), 0.6, 0.6, { name="UniCocktails", heading = 30.0, debugPoly=Config.Debug, minZ=28.87, maxZ=29.87 },
+						exports['qb-target']:AddBoxZone("UniCocktails", vector3(109.04, -1280.61, 29.62), 5.8, 1, { name="UniCocktails", heading = 280, debugPoly=Config.Debug, minZ=27.62, maxZ=31.62 },
 							{ options = { { event = "jim-vanillaunicorn:Crafting", icon = "fas fa-cocktail", label = Loc[Config.Lan].targetinfo["prepare_cocktails"], job = v.job, craftable = Crafting.Cocktails, header = Loc[Config.Lan].menu["cocktail"] }, }, distance = 2.0 })
 					Targets["UniTap"] =
-						exports['qb-target']:AddBoxZone("UniTap", vec3(128.0, -1283.14, 29.27), 0.6, 0.5, { name="UniTap", heading = 30.0, debugPoly=Config.Debug, minZ = 29.27, maxZ = 29.87, },
+						exports['qb-target']:AddBoxZone("UniTap", vector3(109.04, -1280.61, 29.62), 5.8, 1, { name="UniTap", heading = 280, debugPoly=Config.Debug, minZ = 27.62, maxZ = 31.62, },
 							{ options = { { event = "jim-vanillaunicorn:Crafting", icon = "fas fa-beer", label = Loc[Config.Lan].targetinfo["pour_beer"], job = v.job, craftable = Crafting.Beer, header = Loc[Config.Lan].menu["beer"] }, }, distance = 1.5 })
-					Targets["UniCoffee"] =
-						exports['qb-target']:AddBoxZone("UniCoffee", vec3(131.53, -1282.96, 29.27), 0.5, 0.5, { name="UniCoffee", heading = 30.0, debugPoly=Config.Debug, minZ = 28.87, maxZ = 30.07, },
-							{ options = { { event = "jim-vanillaunicorn:JustGive", icon = "fas fa-mug-hot", label = Loc[Config.Lan].targetinfo["pour_coffee"], job = v.job, id = "coffee"}, }, distance = 2.0 })
+					-- Targets["UniCoffee"] =
+					-- 	exports['qb-target']:AddBoxZone("UniCoffee", vec3(131.53, -1282.96, 29.27), 0.5, 0.5, { name="UniCoffee", heading = 30.0, debugPoly=Config.Debug, minZ = 28.87, maxZ = 30.07, },
+					-- 		{ options = { { event = "jim-vanillaunicorn:JustGive", icon = "fas fa-mug-hot", label = Loc[Config.Lan].targetinfo["pour_coffee"], job = v.job, id = "coffee"}, }, distance = 2.0 })
 					Targets["UniClockin"] =
-						exports['qb-target']:AddBoxZone("UniClockin", vec3(102.19, -1299.53, 28.77), 0.8, 0.3, { name="UniClockin", heading = 30.0, debugPoly=Config.Debug, minZ = 28.0, maxZ = 32.0, },
+						exports['qb-target']:AddBoxZone("UniClockin", vector3(98.06, -1295.25, 29.22), 5.8, 1, { name="UniClockin", heading = 300, debugPoly=Config.Debug, minZ = 26.82, maxZ = 30.82, },
 							{ options = { { type = "server", event = "QBCore:ToggleDuty", icon = "fas fa-user-check", label = Loc[Config.Lan].targetinfo["toggle_duty"], job = v.job }, }, distance = 2.0 })
 					Targets["UniBoss"] =
-						exports['qb-target']:AddBoxZone("UniBoss", vec3(96.19, -1292.77, 29.26), 0.6, 0.6, { name="UniBoss", heading = 45.0, debugPoly=Config.Debug, minZ = 28.0, maxZ = 32.0, },
+						exports['qb-target']:AddBoxZone("UniBoss", vector3(99.81, -1298.12, 35.58), 1.6, 1, { name="UniBoss", heading = 300, debugPoly=Config.Debug, minZ = 32.18, maxZ = 36.18, },
 							{ options = { { event = "qb-bossmenu:client:OpenMenu", icon = "fas fa-list", label = Loc[Config.Lan].targetinfo["open_bossmenu"], job = bossroles, }, }, distance = 2.0 })
 					Targets["UniOven"] =
-						exports['qb-target']:AddBoxZone("UniOven", vec3(134.24, -1290.51, 29.27-1), 0.6, 0.5, { name="UniOven", heading = 300.0, debugPoly=Config.Debug, minZ = 28.97, maxZ = 30.07, },
+						exports['qb-target']:AddBoxZone("UniOven", vector3(99.65, -1289.46, 29.22), 2.0, 1, { name="UniOven", heading = 210.0, debugPoly=Config.Debug, minZ = 26.62, maxZ = 30.62, },
 							{ options = { { event = "jim-vanillaunicorn:Crafting", icon = "fas fa-temperature-high", label = Loc[Config.Lan].targetinfo["use_oven"], job = v.job, craftable = Crafting.Food, header = Loc[Config.Lan].menu["oven"] }, }, distance = 2.0 })
 					if not Props["pole1"] then
 						Props[1] = makeProp({ prop = "prop_strip_pole_01", coords = vec4(108.8, -1289.3, 29.25, 0)}, 1, 0) SetEntityAlpha(Props[1], 0) DisableCamCollisionForEntity(Props[1])
@@ -116,13 +116,13 @@ CreateThread(function()
 					end
 					-- Prop Changes --
 					local proptable = {
-						{ prop = "prop_griddle_02", coords = vec4(134.23, -1290.51, 30.13, 210.0) }, { prop = "prop_trailr_fridge", coords = vec4(132.14, -1291.79, 29.27, 120.0) },
-						{ prop = "prop_ff_shelves_01", coords = vec4(131.33, -1290.37, 29.27, 120.0) }, { prop = "prop_ff_counter_03", coords = vec4(134.94, -1290.19, 29.27, 210.0) },
-						{ prop = "prop_ff_counter_01", coords = vec4(136.18, -1287.1, 29.27, 300.0) }, { prop = "prop_microwave_1", coords = vec4(135.61, -1289.76, 30.19, 210.0) },
-						{ prop = "prop_ff_sink_02", coords = vec4(136.72, -1289.26, 29.27, 210.0) }, { prop = "v_res_tt_platepile", coords = vec4(135.98, -1286.75, 30.19, 60.0) },
-						{ prop = "v_res_tt_platepile", coords = vec4(137.05, -1289.05, 30.13, 60.0) }, { prop = "v_res_tt_pizzaplate", coords = vec4(136.34, -1287.45, 30.18, 60.0) },
+						-- { prop = "prop_griddle_02", coords = vec4(134.23, -1290.51, 30.13, 210.0) }, { prop = "prop_trailr_fridge", coords = vec4(132.14, -1291.79, 29.27, 120.0) },
+						-- { prop = "prop_ff_shelves_01", coords = vec4(131.33, -1290.37, 29.27, 120.0) }, { prop = "prop_ff_counter_03", coords = vec4(134.94, -1290.19, 29.27, 210.0) },
+						-- { prop = "prop_ff_counter_01", coords = vec4(136.18, -1287.1, 29.27, 300.0) }, { prop = "prop_microwave_1", coords = vec4(135.61, -1289.76, 30.19, 210.0) },
+						-- { prop = "prop_ff_sink_02", coords = vec4(136.72, -1289.26, 29.27, 210.0) }, { prop = "v_res_tt_platepile", coords = vec4(135.98, -1286.75, 30.19, 60.0) },
+						-- { prop = "v_res_tt_platepile", coords = vec4(137.05, -1289.05, 30.13, 60.0) }, { prop = "v_res_tt_pizzaplate", coords = vec4(136.34, -1287.45, 30.18, 60.0) },
 					}
-					for _, prop in pairs(proptable) do Props[#Props+1] = makeProp(prop, true, false) end
+					for _, prop in pairs(proptable) do Props[#Props+1] = makeProp(prop, false, false) end
 					Wait(5000)
 					CreateModelHide(vec3(132.86, -1288.0, 29.27), 0.2, 1695461688, true)
 				end)

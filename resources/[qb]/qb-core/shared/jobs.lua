@@ -168,6 +168,58 @@ QBShared.Jobs = {
             },
         },
 	},
+    ['vanilla'] = {
+		label = 'Vanilla Unicorn',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'Trainee',
+                payment = 50
+            },
+			['1'] = {
+                name = 'Dancer',
+                payment = 75
+            },
+			['2'] = {
+                name = 'Bouncer',
+                payment = 100
+            },
+			['3'] = {
+                name = 'Manager',
+                payment = 125
+            },
+			['4'] = {
+                name = 'Owner',
+				isboss = true,
+                payment = 150
+            },
+        },
+	},
+    ['cybergarage'] = {
+		label = 'Cyber Garage',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'Trainee',
+                payment = 50
+            },
+			['1'] = {
+                name = 'Staff',
+                payment = 75
+            },
+			['2'] = {
+                name = 'Manager',
+                payment = 125
+            },
+			['3'] = {
+                name = 'Owner',
+				isboss = true,
+                payment = 150
+            },
+        },
+	},
 	['mechanic'] = {
 		label = 'Mechanic',
         type = "mechanic",

@@ -1,0 +1,113 @@
+--Name: VU Stash | 2023-07-22T19:29:48Z
+BoxZone:Create(vector3(114.16, -1279.44, 29.62), 4.2, 1, {
+  name="VU Stash",
+  heading=100,
+  --debugPoly=true,
+  minZ=29.62,
+  maxZ=33.62
+})
+
+--Name: VU Fridge | 2023-07-22T19:32:02Z
+BoxZone:Create(vector3(113.28, -1283.08, 29.62), 1, 1, {
+  name="VU Fridge",
+  heading=300,
+  --debugPoly=true,
+  minZ=25.62,
+  maxZ=29.62
+})
+
+--Name: VU Sink | 2023-07-22T19:34:53Z
+BoxZone:Create(vector3(107.84, -1283.32, 29.62), 1.8, 1, {
+  name="VU Sink",
+  heading=30,
+  --debugPoly=true,
+  minZ=25.82,
+  maxZ=29.82
+})
+
+--Name: VU Counter | 2023-07-22T19:37:23Z
+BoxZone:Create(vector3(111.18, -1284.22, 29.62), 2.0, 1, {
+  name="VU Counter",
+  heading=300,
+  --debugPoly=true,
+  minZ=26.02,
+  maxZ=30.02
+})
+
+--Name: VU Pay | 2023-07-22T19:39:41Z
+BoxZone:Create(vector3(116.83, -1280.16, 29.62), 2.0, 1, {
+  name="VU Pay",
+  heading=205,
+  --debugPoly=true,
+  minZ=26.22,
+  maxZ=30.22
+})
+
+--Name: VU Cock | 2023-07-22T19:42:11Z
+BoxZone:Create(vector3(109.26, -1280.28, 29.62), 5.6, 1, {
+  name="VU Cock",
+  heading=100,
+  --debugPoly=true
+})
+
+--Name: 1 | 2023-07-22T19:43:01Z
+BoxZone:Create(vector3(109.04, -1280.61, 29.62), 5.8, 1, {
+  name="1",
+  heading=280,
+  --debugPoly=true,
+  minZ=27.62,
+  maxZ=31.62
+})
+
+--Name: VU Cook | 2023-07-22T19:48:18Z
+BoxZone:Create(vector3(99.65, -1289.46, 29.22), 2.0, 1, {
+  name="VU Cook",
+  heading=210,
+  --debugPoly=true,
+  minZ=26.62,
+  maxZ=30.62
+})
+
+--Name: 1 | 2023-07-22T19:50:22Z
+BoxZone:Create(vector3(115.24, -1281.8, 29.62), 2.4, 1, {
+  name="1",
+  heading=300,
+  --debugPoly=true,
+  minZ=26.02,
+  maxZ=30.02
+})
+
+--Name: VU Clockin | 2023-07-22T19:59:40Z
+BoxZone:Create(vector3(98.06, -1295.25, 29.22), 5.8, 1, {
+  name="VU Clockin",
+  heading=300,
+  --debugPoly=true,
+  minZ=26.82,
+  maxZ=30.82
+})
+
+--Name: VU Boss | 2023-07-22T20:03:41Z
+BoxZone:Create(vector3(99.81, -1298.12, 35.58), 1.6, 1, {
+  name="VU Boss",
+  heading=300,
+  --debugPoly=true,
+  minZ=32.18,
+  maxZ=36.18
+})
+
+--Name: Cyber Clock | 2023-07-23T00:41:35Z
+BoxZone:Create(vector3(687.88, -776.31, 24.99), 3.8, 1, {
+  name="Cyber Clock",
+  heading=270,
+  --debugPoly=true,
+  minZ=21.39,
+  maxZ=25.59
+})
+
+--Name: Clock In | 2023-07-23T00:50:52Z
+BoxZone:Create(vector3(686.8, -775.96, 24.99), 1, 1, {
+  name="Clock In",
+  heading=0,
+  --debugPoly=true
+})
+
