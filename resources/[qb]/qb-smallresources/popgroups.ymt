@@ -6199,99 +6199,7 @@
       <Name>VEH_POOR</Name>
       <models>
         <Item>
-          <Name>asea</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>buccaneer</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>emperor2</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>intruder</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>ingot</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>manana</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>minivan</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>phoenix</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>picador</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>premier</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>primo</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>rancherxl</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>regina</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>sultan</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>stratum</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>youga</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>tornado3</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>vigero</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>tornado</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>warrener</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>glendale</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>rhapsody</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>panto</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>pigalle</Name>
+          <Name>hellarcher</Name>
           <Variations type="NULL"/>
         </Item>
       </models>
@@ -6301,75 +6209,7 @@
       <Name>VEH_POOR_MP</Name>
       <models>
         <Item>
-          <Name>asea</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>buccaneer</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>emperor2</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>intruder</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>ingot</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>manana</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>minivan</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>phoenix</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>picador</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>premier</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>primo</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>rancherxl</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>regina</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>sultan</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>stratum</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>youga</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>tornado3</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>vigero</Name>
+          <Name>hellarcher</Name>
           <Variations type="NULL"/>
         </Item>
       </models>
@@ -6398,6 +6238,10 @@
           <Name>quadraturbo</Name>
           <Variations type="NULL"/>
         </Item>
+        <Item>
+          <Name>hellarcher</Name>
+          <Variations type="NULL"/>
+        </Item>
       </models>
       <flags>POPGROUP_NETWORK_COMMON POPGROUP_SCENARIO POPGROUP_AMBIENT</flags>
     </Item>
@@ -6422,6 +6266,10 @@
         </Item>
         <Item>
           <Name>quadraturbo</Name>
+          <Variations type="NULL"/>
+        </Item>
+        <Item>
+          <Name>hellarcher</Name>
           <Variations type="NULL"/>
         </Item>
       </models>
@@ -6454,6 +6302,10 @@
           <Name>quadraturbo</Name>
           <Variations type="NULL"/>
         </Item>
+        <Item>
+          <Name>hellarcher</Name>
+          <Variations type="NULL"/>
+        </Item>
       </models>
       <flags>POPGROUP_SCENARIO POPGROUP_AMBIENT</flags>
     </Item>
@@ -6482,6 +6334,10 @@
         </Item>
         <Item>
           <Name>quadraturbo</Name>
+          <Variations type="NULL"/>
+        </Item>
+        <Item>
+          <Name>hellarcher</Name>
           <Variations type="NULL"/>
         </Item>
       </models>
@@ -6687,131 +6543,31 @@
       <Name>VEH_FREEWAY</Name>
       <models>
         <Item>
-          <Name>baller</Name>
+          <Name>aerondight</Name>
           <Variations type="NULL"/>
         </Item>
         <Item>
-          <Name>baller2</Name>
+          <Name>t66jr</Name>
           <Variations type="NULL"/>
         </Item>
         <Item>
-          <Name>burrito</Name>
+          <Name>t66ts</Name>
           <Variations type="NULL"/>
         </Item>
         <Item>
-          <Name>buffalo</Name>
+          <Name>t66avenger</Name>
           <Variations type="NULL"/>
         </Item>
         <Item>
-          <Name>burrito3</Name>
+          <Name>t66cthulhu</Name>
           <Variations type="NULL"/>
         </Item>
         <Item>
-          <Name>pony</Name>
+          <Name>quadraturbo</Name>
           <Variations type="NULL"/>
         </Item>
         <Item>
-          <Name>speedo</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>utillitruck3</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>utillitruck2</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>bobcatxl</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>cavalcade2</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>coach</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>bison</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>sadler</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>bison3</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>benson</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>hauler</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>journey</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>flatbed</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>mixer</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>mixer2</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>packer</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>phantom</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>pounder</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>regina</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>rubble</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>scrap</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>surfer</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>towtruck</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>towtruck2</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>tiptruck</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>tiptruck2</Name>
+          <Name>hellarcher</Name>
           <Variations type="NULL"/>
         </Item>
       </models>
@@ -6821,123 +6577,31 @@
       <Name>VEH_FREEWAY_MP</Name>
       <models>
         <Item>
-          <Name>baller</Name>
+          <Name>aerondight</Name>
           <Variations type="NULL"/>
         </Item>
         <Item>
-          <Name>baller2</Name>
+          <Name>t66jr</Name>
           <Variations type="NULL"/>
         </Item>
         <Item>
-          <Name>burrito</Name>
+          <Name>t66ts</Name>
           <Variations type="NULL"/>
         </Item>
         <Item>
-          <Name>buffalo</Name>
+          <Name>t66avenger</Name>
           <Variations type="NULL"/>
         </Item>
         <Item>
-          <Name>burrito3</Name>
+          <Name>t66cthulhu</Name>
           <Variations type="NULL"/>
         </Item>
         <Item>
-          <Name>cavalcade2</Name>
+          <Name>quadraturbo</Name>
           <Variations type="NULL"/>
         </Item>
         <Item>
-          <Name>pony</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>speedo</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>utillitruck3</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>utillitruck3</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>utillitruck2</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>bobcatxl</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>coach</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>bison</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>sadler</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>bison3</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>hauler</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>journey</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>flatbed</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>mixer</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>mixer2</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>packer</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>phantom</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>pounder</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>regina</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>rubble</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>scrap</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>surfer</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>tiptruck</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>tiptruck2</Name>
+          <Name>hellarcher</Name>
           <Variations type="NULL"/>
         </Item>
       </models>
@@ -7393,39 +7057,7 @@
           <Variations type="NULL"/>
         </Item>
         <Item>
-          <Name>penumbra</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>blista</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>tailgater</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>jackal</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>bjxl</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>radi</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>mesa</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>fq2</Name>
-          <Variations type="NULL"/>
-        </Item>
-        <Item>
-          <Name>tornado</Name>
+          <Name>hellarcher</Name>
           <Variations type="NULL"/>
         </Item>
       </models>
