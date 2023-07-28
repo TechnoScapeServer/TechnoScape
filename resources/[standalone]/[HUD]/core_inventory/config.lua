@@ -61,7 +61,7 @@ Config = {
     },
 
    -- WEAPON UI
-   EnableWeaponUI = true,
+   EnableWeaponUI = false,
    WeaponUIRight = 0,
    WeaponUITop = 20,
 
