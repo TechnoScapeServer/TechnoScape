@@ -1,4 +1,5 @@
 
+local QBCore = exports['qb-core']:GetCoreObject()
 local isUIOpen = false -- Track the state of the UI
 local pedsSpawned = false
 local lifepath = nil
@@ -87,16 +88,23 @@ end)
 RegisterNetEvent('lifepath:StartTutorial')
 AddEventHandler('lifepath:StartTutorial', function()
     if lifepath == "corpo" then
-        print("You have chosen Corpo")
+        TriggerServerEvent("tsrp-lifepaths:server:SyncLifepathMetadata","corpo")
     elseif lifepath == "streetkid" then
-        StreetkidLifepath()
+        TriggerServerEvent("tsrp-lifepaths:server:SyncLifepathMetadata","streetkid")
     elseif lifepath == "nomad" then
-        print("You have chosen Nomad")
+        TriggerServerEvent("tsrp-lifepaths:server:SyncLifepathMetadata","nomad")
     elseif lifepath == "ncpd" then
-        print("You have chosen NCPD")
+        TriggerServerEvent("tsrp-lifepaths:server:SyncLifepathMetadata","ncpd")
     elseif lifepath == "trauma" then
-        print("You have chosen Trauma Team")
+        TriggerServerEvent("tsrp-lifepaths:server:SyncLifepathMetadata","trauma")
     end
+end)
+
+RegisterNetEvent('tsrp-lifepaths:server:CheckLifepath')
+AddEventHandler('tsrp-lifepaths:server:CheckLifepath', function()
+    local PlayerData = QBCore.Functions.GetPlayerData()
+	local lifepath = PlayerData.metadata.lifepath
+    print(lifepath)
 end)
 
 -- UI page initialization

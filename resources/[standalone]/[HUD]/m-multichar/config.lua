@@ -3,7 +3,7 @@ Config.QBCoreVersion = "newqb" -- newqb or oldqb || only working qbcore
 Config.Clothes = "illenium-appearance" -- default - illenium-appanceare 
 Config.MySQL = "oxmysql" -- oxmysql , mysql-async , ghmattimysql
 Config.UseQBApartments = false
-Config.DefaultSpawn = vector3(-1035.71, -2731.87, 12.86) -- Default spawn coords if you have start apartments disabled
+Config.DefaultSpawn = vector3(5.75, -1750.18, 542.32) -- Default spawn coords if you have start apartments disabled
 Config.HiddenCoords = vector4(-812.23, 182.54, 76.74, 156.5) -- 156.5 == heading
 Config.Slots = {
     [1] = {tebex = false, id = 1},

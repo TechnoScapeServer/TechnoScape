@@ -10,7 +10,7 @@ Config.SurgeonCost = 100
 Config.ChargePerTattoo = true -- Charge players per tattoo. Config.TattooCost will become the cost of 1 tattoo. The cost can be overridden by adding `cost` key in shared/tattoos.lua for specific tattoos
 
 -- Only set this to true if you're using rcore_tattoos
-Config.RCoreTattoosCompatibility = false
+Config.RCoreTattoosCompatibility = true
 
 Config.AsynchronousLoading = false -- Change this to false if you want the NUI data to load before displaying the appearance UI
 
