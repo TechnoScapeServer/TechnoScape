@@ -456,7 +456,7 @@ Config.VehicleSeats = {
 }
 
 Config.JobInteractions = {
-    ["ambulance"] = {
+    ["traumateam"] = {
         {
             id = 'statuscheck',
             title = 'Check Health Status',
