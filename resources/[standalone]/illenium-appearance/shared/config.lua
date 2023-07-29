@@ -847,7 +847,7 @@ Config.Outfits = {
             }
         }
     },
-    ["ambulance"] = {
+    ["traumateam"] = {
         ["Male"] = {
             {
                 name = "T-Shirt",

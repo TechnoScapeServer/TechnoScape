@@ -462,26 +462,26 @@ const app = Vue.createApp({
 
         // version 1.5.0
 
-        mainSettings : [
+        mainSettings: [
             {
-                image : 'totalshowplayers',
-                label : 'Total Players',
-                value : 0,
+                image: 'totalshowplayers',
+                label: 'Total Players',
+                value: 0,
             },
             {
-                image : 'totalshowmoney',
-                label : 'Total Cash',
-                value : 0,
+                image: 'totalshowmoney',
+                label: 'Total Cash',
+                value: 0,
             },
             {
-                image : 'totalshowbank',
-                label : 'Total Bank',
-                value : 0,
+                image: 'totalshowbank',
+                label: 'Total Bank',
+                value: 0,
             }
         ],
-        moneyData : '',
-        totalMoney : 0,
-        totalBank : 0,
+        moneyData: '',
+        totalMoney: 0,
+        totalBank: 0,
     }),
 
     methods: {
@@ -876,14 +876,14 @@ const app = Vue.createApp({
 
         setPlayerSelection(value) {
             this.playerSelect = false
-           
+
             this.playerSelect = value;
             this.checkPlayerPermissionChangeTable(this.playerSelect.rankname);
             this.playerSelectButton[value.id] = !this.playerSelectButton[value.id];
         },
 
         getPlayerScoreBoardData(value) {
-       
+
             if (value) {
                 clicksound("click");
                 if (this.bannedButton) {
@@ -913,50 +913,50 @@ const app = Vue.createApp({
         },
 
         checkPlayerPermissionChangeTable(rankname) {
-                
-         
+
+
             const permissionMapping = {
-                'staff':        { perm: 'givestaff', labelRemove: this.locale.removestaff, labelGive: this.locale.givestaff },
-                'admin':        { perm: 'giveadmin', labelRemove: this.locale.removeadmin, labelGive: this.locale.giveadmin },
-                'superadmin':   { perm: 'givesuperadmin', labelRemove: this.locale.removesadmin, labelGive: this.locale.givesadmin },
-                'vip':          { perm: 'givevip',       labelRemove: this.locale.removevip, labelGive: this.locale.givevip },
-           
+                'staff': { perm: 'givestaff', labelRemove: this.locale.removestaff, labelGive: this.locale.givestaff },
+                'admin': { perm: 'giveadmin', labelRemove: this.locale.removeadmin, labelGive: this.locale.giveadmin },
+                'superadmin': { perm: 'givesuperadmin', labelRemove: this.locale.removesadmin, labelGive: this.locale.givesadmin },
+                'vip': { perm: 'givevip', labelRemove: this.locale.removevip, labelGive: this.locale.givevip },
+
             };
 
-            if(rankname !== 'user' && rankname !== 'owner'  ){
+            if (rankname !== 'user' && rankname !== 'owner') {
                 let permissionInfo = permissionMapping[rankname];
-            
+
                 if (permissionInfo) {
-            
+
                     this.forPlayerAdminPermissions.forEach((element, index) => {
-                        
-                        
-                      
+
+
+
                         if (element.name == permissionInfo.perm) {
-                         
+
                             element.label = permissionInfo.labelRemove;
                             this.interactionAdminPermissions[permissionInfo.perm].placeholder = this.locale.textPlayer2 + permissionInfo.perm + ' ?';
-                        
-                        }else if(element.name == 'givestaff'){
-                       
+
+                        } else if (element.name == 'givestaff') {
+
                             element.label = this.locale.givestaff;
                             this.interactionAdminPermissions[permissionInfo.perm].placeholder = this.locale.textPlayer2 + permissionInfo.perm + ' ?';
-                        }else if(element.name == 'giveadmin'){
-                         
+                        } else if (element.name == 'giveadmin') {
+
                             element.label = this.locale.giveadmin;
                             this.interactionAdminPermissions[permissionInfo.perm].placeholder = this.locale.textPlayer2 + permissionInfo.perm + ' ?';
-                        }else if(element.name == 'givesuperadmin'){
-                         
+                        } else if (element.name == 'givesuperadmin') {
+
                             element.label = this.locale.givesadmin;
                             this.interactionAdminPermissions[permissionInfo.perm].placeholder = this.locale.textPlayer2 + permissionInfo.perm + ' ?';
-                        }else if(element.name == 'givevip'){
-                          
+                        } else if (element.name == 'givevip') {
+
                             element.label = this.locale.givevip;
                             this.interactionAdminPermissions[permissionInfo.perm].placeholder = this.locale.textPlayer2 + permissionInfo.perm + ' ?';
-                        }else{
+                        } else {
                             if (element.name == 'givestaff' || element.name == 'giveadmin' || element.name == 'givesuperadmin' || element.name == 'givevip') {
                                 if (element.name == permissionInfo.perm) {
-                          
+
                                     element.label = permissionInfo.labelRemove;
                                     this.interactionAdminPermissions[permissionInfo.perm].placeholder = this.locale.textPlayer2 + permissionInfo.perm + ' ?';
                                 }
@@ -964,23 +964,23 @@ const app = Vue.createApp({
                         }
                     });
                 }
-            }else{
-                for(let rank in permissionMapping){
+            } else {
+                for (let rank in permissionMapping) {
                     let permissionInfo = permissionMapping[rank];
                     if (permissionInfo) {
                         this.updatePermissionTable2(permissionInfo.perm, permissionInfo.labelGive);
                     }
                 }
             }
-        
-    },
+
+        },
         updatePermissionTable2(permName, giveLabel) {
             this.forPlayerAdminPermissions.forEach((element, index) => {
                 if (element.name == permName) {
-                 
-                        element.label = giveLabel;
-               
-                    
+
+                    element.label = giveLabel;
+
+
                 }
             });
         },
@@ -1362,8 +1362,8 @@ const app = Vue.createApp({
                             });
                         }
                     } else if (name == 'giveadmin') {
-                      
-                    
+
+
                         if (this.playerSelect.rankname == 'admin') {
                             if (this.playerSelect.id == this.selfStaffData.id) {
                                 postNUI("selectPlayerValue", {
@@ -1371,7 +1371,7 @@ const app = Vue.createApp({
                                     plyid: this.playerSelect.id
                                 });
                             } else {
-                            
+
                                 this.checkPlayerPermissionRemoveChangeTable('admin');
                                 postNUI("selectPlayerValue", {
                                     name: 'removestaff',
@@ -1380,7 +1380,7 @@ const app = Vue.createApp({
                             }
 
                         } else {
-                         
+
                             postNUI("selectPlayerValue", {
                                 name: name,
                                 plyid: this.playerSelect.id
@@ -1448,7 +1448,7 @@ const app = Vue.createApp({
         },
         checkPlayerPermissionRemoveChangeTable(rankname) {
             if (rankname) {
-          
+
                 const rankMap = {
                     'staff': 'staff',
                     'admin': 'admin',
@@ -1574,7 +1574,7 @@ const app = Vue.createApp({
                 } else if (value === "staff") {
                     this.filterScoreBoardData = this.scoreBoardData.filter(player => ['staff', 'admin', 'superadmin', 'owner'].includes(player.rankname));
                 } else {
-           
+
                     this.filterScoreBoardData = this.scoreBoardData.filter(player => player.jobname === value);
                 }
 
@@ -1604,7 +1604,7 @@ const app = Vue.createApp({
             const colorMap = {
                 "staff": { background: "rgba(50, 189, 64, 0.06)", "border-bottom": "2px solid #32BD40" },
                 "police": { background: "rgba(0, 0, 255, 0.06)", "border-bottom": "2px solid #0000FF" },
-                "ambulance": { background: "rgba(255, 101, 184, 0.06)", "border-bottom": "2px solid #FF65B8" },
+                "traumateam": { background: "rgba(255, 101, 184, 0.06)", "border-bottom": "2px solid #FF65B8" },
                 "mechanic": { background: "rgba(172, 67, 255, 0.06)", "border-bottom": "2px solid #AC43FF" },
                 "search": { background: "rgba(255, 255, 255, 0.06)", "border-bottom": "2px solid white" },
                 "banned": { background: "rgba(255, 0, 0, 0.06)", "border-bottom": "2px solid #FF0000" }
@@ -1760,10 +1760,10 @@ const app = Vue.createApp({
                     break;
                 case "openAdminMenu":
                     clicksound("openmenu");
-                   
+
                     (this.stafMenuPage = "main"), (this.scoreBoardData = event.data.players), (this.filterScoreBoardData = [...this.scoreBoardData]);
                     this.selfStaffData = event.data.players.find(player => parseInt(player.id) == parseInt(event.data.myId));
-       
+
                     this.onlineStaff = event.data.onlineAdmin;
                     this.scoreBoardChangeResult('all')
                     this.mainSettings[0].value = this.filterScoreBoardData.length
@@ -1880,33 +1880,33 @@ const app = Vue.createApp({
                     }
                     break;
                 case "updatePlayerSelf":
-                    
+
                     if (event.data.value && this.playerSelect) {
 
                         let playerIndex = this.filterScoreBoardData.findIndex(player => parseInt(player.id) == parseInt(event.data.value.id));
                         if (playerIndex != -1) {
-                        
-                             this.filterScoreBoardData[playerIndex] = event.data.value;
-                             if(parseInt(this.playerSelect.id) == parseInt(event.data.value.id)){
-                                 this.playerSelect = event.data.value
-                             
-                              
-                             }
-                             this.checkPlayerPermissionChangeTable(event.data.value.rankname)
-                             if (this.selfStaffData && this.selfStaffData.id == this.filterScoreBoardData[playerIndex].id) {
-                                 this.selfStaffData = event.data.value;
-                            
-                             }
+
+                            this.filterScoreBoardData[playerIndex] = event.data.value;
+                            if (parseInt(this.playerSelect.id) == parseInt(event.data.value.id)) {
+                                this.playerSelect = event.data.value
+
+
+                            }
+                            this.checkPlayerPermissionChangeTable(event.data.value.rankname)
+                            if (this.selfStaffData && this.selfStaffData.id == this.filterScoreBoardData[playerIndex].id) {
+                                this.selfStaffData = event.data.value;
+
+                            }
                         }
                         let playerIndex2 = this.scoreBoardData.findIndex(player => parseInt(player.id) == parseInt(event.data.value.id));
                         if (playerIndex2 != -1) {
-                        
-                             this.scoreBoardData[playerIndex] = event.data.value;
-                 
+
+                            this.scoreBoardData[playerIndex] = event.data.value;
+
                         }
                     } else {
-                        if(event.data.value){
-                        
+                        if (event.data.value) {
+
                             this.playerSelect = event.data.value;
 
                             let playerIndex = this.filterScoreBoardData.findIndex(player => parseInt(player.id) == parseInt(event.data.value.id));
@@ -1915,40 +1915,40 @@ const app = Vue.createApp({
                                 this.checkPlayerPermissionChangeTable(this.playerSelect.rankname)
                                 if (this.selfStaffData && this.selfStaffData.id == this.filterScoreBoardData[playerIndex].id) {
                                     this.selfStaffData = event.data.value;
-    
+
                                 }
                                 this.playerSelect = false;
                             }
                             let playerIndex2 = this.scoreBoardData.findIndex(player => parseInt(player.id) == parseInt(event.data.value.id));
                             if (playerIndex2 != -1) {
-                            
-                                 this.scoreBoardData[playerIndex] = event.data.value;
-                     
+
+                                this.scoreBoardData[playerIndex] = event.data.value;
+
                             }
-                        }else{
+                        } else {
                             this.playerSelect = false;
                         }
-                       
-                      
+
+
                     }
                     break;
 
                 case "removePlayerSelf":
-               
+
                     if (event.data.value && this.playerSelect) {
-                      
+
                         let playerIndex = this.filterScoreBoardData.findIndex(player => parseInt(player.id) == parseInt(event.data.value.id));
                         if (playerIndex != -1) {
-                            if(this.playerSelect.id == event.data.value.id){
-                                this.playerSelect= false
+                            if (this.playerSelect.id == event.data.value.id) {
+                                this.playerSelect = false
                             }
                             this.filterScoreBoardData.splice(playerIndex, 1);
-                        }else{
+                        } else {
                             console.log("PLACE CONTACT CODEM", JSON.stringify(event.data.value))
                         }
-                     
-                      
-                        
+
+
+
                         if (this.spectateMenu) {
                             this.spectateModel = false;
                             this.spectateModelLet = false;
@@ -1960,14 +1960,14 @@ const app = Vue.createApp({
                             }, 1200);
                         }
 
-                    }else{
-                        if(event.data.value){
+                    } else {
+                        if (event.data.value) {
                             let playerIndex = this.filterScoreBoardData.findIndex(player => parseInt(player.id) == parseInt(event.data.value.id));
                             if (playerIndex != -1) {
                                 this.filterScoreBoardData.splice(playerIndex, 1);
                             }
                         }
-                   
+
                     }
 
                     break;
@@ -2065,28 +2065,28 @@ const app = Vue.createApp({
                     this.backToStatePage();
                     this.stafMenuPage = false;
                     postNUI("closeAdminMenu");
-                break;
+                    break;
 
                 // version 1.5.0
                 case "playermoneyData":
-                    if(event.data.moneyData){
+                    if (event.data.moneyData) {
                         this.moneyData = event.data.moneyData;
-                        for(let player in event.data.moneyData){
-                    
+                        for (let player in event.data.moneyData) {
+
                             this.totalMoney += event.data.moneyData[player].totalmoney;
                             this.totalBank += event.data.moneyData[player].totalbank;
                         }
-                        this.mainSettings[1].value = this.totalMoney+ '$';
+                        this.mainSettings[1].value = this.totalMoney + '$';
                         this.mainSettings[2].value = this.totalBank + '$';
                         this.mainSettings[0].value = this.scoreBoardData.length;
-                   
+
                     }
-                break;
-                
+                    break;
+
                 case "banneddata":
 
-                     this.filterScoreBoardData = event.data.data;
-                break;
+                    this.filterScoreBoardData = event.data.data;
+                    break;
 
                 // case "deleteMoneyData":
                 //     if(event.data.identifier){
@@ -2162,7 +2162,7 @@ const staffClipToBoard = str => {
 };
 
 $(document).on("focusout", "input", () => {
-    
+
     postNUI('OnInputFocusRemove')
 })
 
