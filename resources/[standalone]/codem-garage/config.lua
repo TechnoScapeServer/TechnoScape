@@ -14,7 +14,7 @@ Config.NewESX = true
 Config.SQL = "oxmysql" -- oxmysql, ghmattimysql, mysql-async
 Config.Blip = true -- true or false
 Config.RealParking = false -- if false all garages are shared (you can get every car from every garage) / if true you can only get cars from the garage where it was stored before
-Config.InteractionHandler = "drawtext" -- "qb-target","drawtext","custom" is a custom interaction handler
+Config.InteractionHandler = "qb-target" -- "qb-target","drawtext","custom" is a custom interaction handler
 Config.InteractionHandler2 = "drawmarker"  -- "drawtext", "drawmarker","custom" is a custom interaction handler
 Config.Sell = true -- if you are using vehicle sell please set this to true 
 Config.Transfer = true -- if you are using vehicle transfer please set this to true
@@ -38,7 +38,7 @@ Config.Debug = false -- if you want to see debug messages set this to true
 Config.PlateLetters  = 4 -- plate letters
 Config.PlateNumbers  = 4 -- plate numbers
 Config.PlateUseSpace = false -- use space in plate
-Config.MileageFormat = "KM" -- "KM" "MI"
+Config.MileageFormat = "MI" -- "KM" "MI"
 Config.UseLegacyFuel = false -- true or false (if you are using legacy fuel set this to true)
 Config.DefaultSellPrice = 10000 -- default price for vehicles that are not in the database
 Config.Vehiclekey = true -- if you are using vehicle key system please set this to true and adjust function vehiclkeys 
@@ -176,12 +176,11 @@ Config.ManuelCarName = {
 
 Config.CarLogo = { -- 
     ['tribike3'] = "Western", -- ['Carname'] = "LogoName"
-    ['08charger'] = "Western",
+    ['Zetatech Atlus'] = "Zetatech",
 }
 
 Config.CarImage = { -- you have to write here the car name you saw in the garage.
-    ['Porsche Panemara'] = "porschepanemara", -- ['Carname'] = "Image Name"
-    ['Police Car'] = "t20",
+    ['Zetatech Atlus'] = "Atlus", -- ['Carname'] = "Image Name"
 }
 
 Config.Weight = {
@@ -1122,13 +1121,13 @@ Config.Garages = {
         },
     },
 
-    ["ambulance"] = { 
+    ["traumateam"] = { 
         ["garage"] = "jobgarage", -- "normal" - "aircraft" - "boat" - "jobgarage" - "impound"
         ["gang"] = "none", 
-        ["access"] = "ambulance",
+        ["access"] = "traumateam",
         ["blip"] = {
             ["show"] = true,  -- true or false
-            ["blipName"] = "Ambulance Garage",
+            ["blipName"] = "Night City Medical Center Garage",
             ["blipType"] = 357,
             ["blipColour"] =  3
         },
@@ -1144,7 +1143,7 @@ Config.Garages = {
         ["cars"] = {
             [1] = {
                 grade = 0,
-                model = 'ambulance'
+                model = 'atlus'
             }
         },
         ["camera"] = { 

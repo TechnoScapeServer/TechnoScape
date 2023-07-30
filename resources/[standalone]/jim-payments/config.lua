@@ -87,7 +87,7 @@ Config = {
 	-- No tickets for these, it's just commission (0.25 = 25%)
 	FineJobs = {
 		['police'] = { Commission = 0.25, },
-		['ambulance'] = { Commission = 0.25, },
+		['traumateam'] = { Commission = 0.25, },
 	},
 	FineJobConfirmation = false, --"true" makes it so fines need confirmation, "false" skips this ands just removes the money
 	FineJobList = true, -- "true" to use nearby player list feature in the cash registers, "false" for manual id entry
