@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ap-medicaltrauma</title>
+    <link rel="stylesheet" href="./ap-styles.css">
+    <link rel="stylesheet" href="./Partials/coloris.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="TheMainShow" class="TheMainShow Invisible">
+    
+    <!-- Main Hud Background -->
+    <div class="ap-HudBackground">
+        <image  src="./assets/TraumaLogo.svg" class="ap-TraumaLogo NoSelect"></image>
+        <h3 class="MedicalTextStream NoSelect">Medical Card</h3>
+        <h3 class="MedicalTextStream NoSelect" style="margin-top: 38px; font-size: 13px;">Select Your Tier</h3>
+
+        <!-- Tier Text -->
+        <div class="TierTiers">
+            <div>
+                <h3 class="TitleText">Silver</h3>
+                <h3 class="SubText" style="width: 290px;">Standard Medical Card</h3>
+            </div>
+            <div>
+                <h3 class="TitleText" style="top: 306px;">Gold</h3>
+                <h3 class="SubText" style="top: 331px; width: 220px;">Gold Standard, The All-In-One Package</h3>
+            </div>
+            <div>
+                <h3 class="TitleText" style="top: 395px;">Platinum</h3>
+                <h3 class="SubText" style="top: 420px; width: 290px;">Our Highest Package - #1 Priority, guaranteed.</h3>
+            </div>
+        </div>
+
+        <image src="./assets/bghud.svg" class="ap-GrayLeft NoSelect"></image>
+        <image src="./assets/Tiers.svg" class="ap-TierDesign NoSelect"></image>
+        <button class="SelectCardButton" style="top: 38%;" onclick="SelectTier('Silver')"><h3 style="font-size: 9px; font-family: Aldrich; margin-top: 2px;">View Silver Card</h3></button>
+        <button class="SelectCardButton" style="top: 49.8%;" onclick="SelectTier('Gold')"><h3 style="font-size: 9px; font-family: Aldrich; margin-top: 2px;">View Gold Card</h3></button>
+        <button class="SelectCardButton" onclick="SelectTier('Platinum')"><h3 style="font-size: 9px; font-family: Aldrich; margin-top: 2px;">View Platinum Card</h3></button>
+        <span class="LineTop"></span>
+    </div>
+
+    <!-- Right Side Container -->
+    <div class="RightSideContainer">
+        <h3 class="MakeItYours NoSelect" id="MakeItYours">Make It Yours.</h3>
+        <h3 class="EnterBasicInformation NoSelect" id="EnterBasicInformation">Enter Some Basic Information & We'll Process Your Details.</h3>
+        <image src="./assets/SubmitMedicalDetails.svg" class="ap-actionButtonsBg" style="top: 72%; left: 48%;"></image>
+        <button class="SubmitMedicalDetailsTxt" onclick="SubmitMedicalDetails()">Submit Medical Details</button>
+        <image src="./assets/ButtonBackground.svg" class="ap-actionButtonsBg" style="left: 50%;"></image>
+        <image src="./assets/ButtonBackground.svg" class="ap-actionButtonsBg" style="left: 83%;"></image>
+        <image src="./assets/ButtonBackground.svg" class="ap-actionButtonsBg"></image>
+        <image src="./assets/MedicalCardClean.svg" class="ap-medicalcard NoSelect">
+            <div class="ChangeableColorCard" id="ChangeableColorCard"></div>
+        </image>
+
+        <!-- The Action Button Hinters -->
+        <div>
+            <h3 class="ActionButtons NoSelect">Full Name</h3>
+            <h3 class="ActionButtons NoSelect" style="top: 24.8%; opacity: 0.6;">Player Name</h3>
+            <h3 class="ActionButtons NoSelect" style="top: 24.8%; left: 50%; opacity: 0.6;">Players Blood Type</h3>
+            <input id="ActionColorValue" onchange="test()" class="ColorButton" placeholder="Select Color" autocomplete="false" name="hidden" type="text" data-coloris></input>
+            <h3 class="ActionButtons NoSelect" style="left: 50%;">Blood Type</h3>
+            <h3 class="ActionButtons NoSelect" style="left: 83%;">Card Color</h3>
+        </div>
+
+    </div>
+
+    <!-- Processing Details UI -->
+    <div id="BlurBackgroundForProcessing" class="BlurBackgroundForProcessing NoSelect" onclick="HideHudeOnOutsideClick()"></div>
+    <div id=ProcessingDetails class="ProcessingDetails NoSelect"> 
+        <div class="spinner centralSpinner NoSelect">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        <h3 class="CreationText NoSelect">Creating Your Card</h3>
+        <h3 class="CreationText NoSelect" style="font-size: 12px; font-weight: normal; width: 500px; top: 125px; left: 320px;">Your details are being checked & your card is being made.</h3>
+        <h3 class="CreationText NoSelect" id="CreationProgressText" style="top: 310px; font-size: 12px; opacity: 0.7;">Progression Text Here</h3>
+    </div>
+
+    <!-- Show Card Details UI -->
+    <div id="TierDetails" class="TierDetails">
+        <!-- font awesome checkbox -->
+        <button class="TierDetailsClose" onclick="HideHudeOnOutsideClick()">X</button>
+        <i class="fa fa-check-circle" style="font-size: 30px; position: absolute; top: 70px; left: 20px;"></i>
+        <i class="fa fa-check-circle" style="font-size: 30px; position: absolute; top: 120px; left: 20px;"></i>
+        <i class="fa fa-check-circle" style="font-size: 30px; position: absolute; top: 170px; left: 20px;"></i>
+        <i class="fa fa-check-circle" style="font-size: 30px; position: absolute; top: 220px; left: 20px;"></i>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+</body>
+<script src="./ap-script.js"></script>
+<script src="./Partials/coloris.min.js"></script>
+</html>

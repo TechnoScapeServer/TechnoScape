@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css?family=Aldrich&display=swap");
+
+.TheMainShow {
+  font-family: "Aldrich", sans-serif;
+}
+
+.ap-HudBackground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Invisible {
+  display: none;
+}
+
+.ap-TierDesign {
+  position: absolute;
+  top: 47%;
+  left: 20px;
+  transform: translate(0%, -50%);
+}
+
+.LineTop {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 500px;
+  height: 2px;
+  animation-name: to-right;
+  background: linear-gradient(to right, transparent, #ff1e00);
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+}
+
+.TierTiers {
+  position: absolute;
+  z-index: 1;
+  color: white;
+}
+
+.TitleText {
+  color: white;
+  position: absolute;
+  font-size: 16px;
+  top: 220px;
+  left: 30px;
+  margin-left: 5px;
+}
+
+.SubText {
+  color: white;
+  position: absolute;
+  font-size: 11px;
+  top: 245px;
+  left: 30px;
+  margin-left: 5px;
+}
+
+.ProcessingDetails {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  display: none;
+}
+
+.BlurBackgroundForProcessing {
+  position: absolute;
+  top: 49.7%;
+  border-radius: 0px 50px 50px 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1286px;
+  height: 740px;
+  background: #252525;
+  opacity: 0.8;
+  display: none;
+}
+
+.CreationText {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centralSpinner {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.TierDetails {
+  position: absolute;
+  top: 45%;
+  left: 28.5%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 430px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  display: none;
+}
+
+.TierDetailsClose {
+  background: none;
+  font-family: "Aldrich", sans-serif;
+  /* top right of div */
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.NoSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+}
+
+.spinner {
+  width: 44.8px;
+  height: 44.8px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
+}
+
+.spinner > div {
+  background-color: rgba(71, 75, 255, 0.2);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2.2px solid #474bff;
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-22.4px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(22.4px);
+}
+
+@keyframes spinner-y0fdc1 {
+  0% {
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+
+.ChangeableColorCard {
+  position: absolute;
+  top: 225px;
+  left: 100px;
+  background: white;
+  width: 35px;
+  height: 215px;
+  border-radius: 20px 0px 0px 0px;
+}
+
+@keyframes to-top {
+  to {
+    top: -10%;
+  }
+}
+@keyframes to-bottom {
+  to {
+    top: 33%;
+  }
+}
+@keyframes to-left {
+  to {
+    right: 20%;
+  }
+}
+@keyframes to-right {
+  to {
+    left: 62%;
+  }
+}
+
+.MedicalTextStream {
+  position: absolute;
+  color: white;
+  margin-left: 65px;
+}
+
+.ap-TraumaLogo {
+  position: absolute;
+  padding: 20px;
+}
+
+.RightSideContainer {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  margin-left: 230px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.MakeItYours {
+  position: absolute;
+  font-size: 24px;
+  top: 9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.EnterBasicInformation {
+  position: absolute;
+  font-size: 11px;
+  top: 14%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.ap-actionButtonsBg {
+  position: absolute;
+  font-size: 11px;
+  top: 27%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+}
+
+.ActionButtons {
+  color: white;
+  font-size: 11px;
+  position: absolute;
+  top: 21%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+}
+
+.ColorButton {
+  font-size: 11px;
+  background: none;
+  background-color: none;
+  border: none;
+  font-family: "Aldrich", sans-serif;
+  position: absolute;
+  top: 162px;
+  left: 552px;
+  width: 70px;
+  z-index: 1;
+  color: white;
+}
+
+.ColorButton:hover {
+  animation: colorchange 1s infinite;
+  cursor: pointer;
+}
+
+.SelectCardButton {
+  position: absolute;
+  width: 200px;
+  height: 18px;
+  top: 61.5%;
+  left: 10.5%;
+  transform: translate(-50%, -50%);
+  background: #2e0000;
+  border: red 1px solid;
+  border-radius: 5px 10px 10px 5px;
+  font-weight: 9px;
+  color: white;
+  z-index: 999;
+}
+
+.SelectCardButton:hover {
+  background: #2e0000;
+  border: red 2px solid;
+  border-radius: 5px 10px 10px 5px;
+  font-weight: 20px;
+  color: red;
+  animation: colorchange 1s infinite;
+  cursor: pointer;
+}
+
+.SubmitMedicalDetailsTxt {
+  position: absolute;
+  font-size: 11px;
+  top: 71.5%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Aldrich", sans-serif;
+  background: none;
+  border: none;
+  height: 45px;
+  width: 320px;
+  z-index: 1;
+}
+
+.SubmitMedicalDetailsTxt:hover {
+  background: none;
+  border: none;
+  color: red;
+  font-family: "Aldrich", sans-serif;
+  animation: colorchange 1s infinite;
+  cursor: pointer;
+}
+
+@keyframes colorchange {
+  0% {
+    color: white;
+  }
+
+  50% {
+    color: red;
+  }
+
+  100% {
+    color: white;
+  }
+}
+
+.ap-medicalcard {
+  position: absolute;
+  font-size: 24px;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}

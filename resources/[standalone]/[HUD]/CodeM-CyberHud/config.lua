@@ -28,22 +28,22 @@ Config.EnableSpamNotification = true
 Config.Notifications = {
     ["took_off_seatbelt"] = {
         type = "error",
-        message = "You took off seatbelt.",
+        message = "Seatbelt Off.",
         time = 2500
     },
     ["took_seatbelt"] = {
-        type = "succes",
-        message = "You took seatbelt.",
+        type = "success",
+        message = "Seatbelt On.",
         time = 2500
     },
     ["cruise_actived"] = {
         type = "info",
-        message = "Cruise actived.",
+        message = "Cruise Control Activated.",
         time = 2500
     },
     ["cruise_disabled"] = {
         type = "error",
-        message = "Cruise disabled.",
+        message = "Cruise Disabled.",
         time = 2500
     },
     ["spam"] = {
