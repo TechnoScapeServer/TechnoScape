@@ -44,8 +44,8 @@ QBShared.Jobs = {
             },
         },
 	},
-	['ambulance'] = {
-		label = 'EMS',
+	['traumateam'] = {
+		label = 'Trauma Team',
         type = 'ems',
 		defaultDuty = true,
 		offDutyPay = false,

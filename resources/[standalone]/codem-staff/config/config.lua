@@ -367,7 +367,7 @@ Config.ScoreBoardSearchIcon = {
 
     },
     {
-        name= "ambulance", -- jobname
+        name= "traumateam", -- jobname
         image= "scoreboardsearchambulance",  -- not change
 
     },
@@ -386,7 +386,7 @@ Config.ScoreBoard = {
     ['police'] = {
         image = 'scoreboardpolice',
     },
-    ['ambulance'] = {
+    ['traumateam'] = {
         image = 'scoreboardambulance',
     },
     ['mechanic'] = {
