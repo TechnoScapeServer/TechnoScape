@@ -1,4 +1,5 @@
 -- Variables
+-- This is a comment. 
 local QBCore = exports['qb-core']:GetCoreObject()
 local frozen = false
 local permissions = {

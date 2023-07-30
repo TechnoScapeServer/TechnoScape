@@ -66,9 +66,9 @@ Config.Animations = {
             },
         }
     },
-    ["traumateam"] = {
+    ["ambulance"] = {
         camwiewcoord = {coord = vector3(301.9914, -1439.41, 29.998), rot = 140.0}, 
-        car = {coord = vector4(297.3335, -1444.75, 29.860, 0.0), hash = "atlus"}, -- car hash
+        car = {coord = vector4(297.3335, -1444.75, 29.860, 0.0), hash = "ambulance"}, -- car hash
         Peds = {
             {
                 coord = vector4(297.7074, -1441.08, 29.797, -40.0),

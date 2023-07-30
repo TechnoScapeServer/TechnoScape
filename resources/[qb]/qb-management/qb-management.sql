@@ -11,7 +11,7 @@ KEY `type` (`type`)
 
 INSERT INTO `management_funds` (`job_name`, `amount`, `type`) VALUES
 ('police', 0, 'boss'),
-('traumateam', 0, 'boss'),
+('ambulance', 0, 'boss'),
 ('realestate', 0, 'boss'),
 ('taxi', 0, 'boss'),
 ('cardealer', 0, 'boss'),
