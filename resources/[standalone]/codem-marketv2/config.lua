@@ -196,45 +196,6 @@ Config.Market = {
 --Categories ::   fruits , drinks ,fastfood , medicals , tools ,alcohols
 
 Config.Bestsellers = {   --max 5
-   {
-      name = 'Phone',
-      itemName = 'phone',
-      itemImage = 'phone',
-      itemPrice = 1000,
-      itemCategories = 'drinks'
-
-   },
-   {
-      name = 'Water',
-      itemName = 'water',
-      itemImage = 'water',
-      itemPrice = 1000,
-      itemCategories = 'drinks'
-
-   },
-   {
-      name = 'Hamburger',
-      itemName = 'hamburger',
-      itemImage = 'hamburger',
-      itemPrice = 1000,
-      itemCategories = 'fastfood'
-
-   },
-   {
-      name = 'Cola',
-      itemName = 'cola',
-      itemImage = 'cola',
-      itemPrice = 1000,
-      itemCategories = 'drinks'
-   },
-
-   {
-      name = 'Donut',
-      itemName = 'donut',
-      itemImage = 'donut',
-      itemPrice = 1000,
-      itemCategories = 'drinks'
-   },
 
 }
 
@@ -246,1255 +207,362 @@ Config.MarketItems = {
 
       {
          name = 'Water',
-         itemName = 'water',
+         itemName = 'water_bottle',
          itemImage = 'water',
          itemPrice = 1000,
          itemCategories = 'drinks'
       },
 
       {
-         name = 'Cola',
-         itemName = 'cola',
+         name = 'NiCola',
+         itemName = 'nicola',
          itemImage = 'cola',
          itemPrice = 1000,
          itemCategories = 'drinks'
       },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
 
    },
 
    [2] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [3] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [4] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [5] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [6] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [7] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [8] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [9] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [10] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [11] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [12] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [13] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [14] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [15] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [16] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [17] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [18] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
    [19] = { -- Config.Market  number market ---
 
-      {
-         name = 'Water',
-         itemName = 'water',
-         itemImage = 'water',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
+   {
+      name = 'Water',
+      itemName = 'water_bottle',
+      itemImage = 'water',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
-      {
-         name = 'Cola',
-         itemName = 'cola',
-         itemImage = 'cola',
-         itemPrice = 1000,
-         itemCategories = 'drinks'
-      },
-
-      {
-         name = 'Bread',
-         itemName = 'bread',
-         itemImage = 'bread',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-      {
-         name = 'Hamburger',
-         itemName = 'hamburger',
-         itemImage = 'hamburger',
-         itemPrice = 1000,
-         itemCategories = 'fastfood'
-      },
-
-
-      {
-         name = 'Medkit',
-         itemName = 'MedArmor',
-         itemImage = 'MedArmor',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-      {
-         name = 'Bandage',
-         itemName = 'bandage',
-         itemImage = 'bandage',
-         itemPrice = 1000,
-         itemCategories = 'medicals'
-      },
-
-      {
-         name = 'Repairkit',
-         itemName = 'fixkit',
-         itemImage = 'fixkit',
-         itemPrice = 1000,
-         itemCategories = 'tools'
-      },
-
-      {
-         name = 'Orange',
-         itemName = 'portakal',
-         itemImage = 'portakal',
-         itemPrice = 1000,
-         itemCategories = 'fruits'
-      }
+   {
+      name = 'NiCola',
+      itemName = 'nicola',
+      itemImage = 'cola',
+      itemPrice = 1000,
+      itemCategories = 'drinks'
+   },
 
    },
  
