@@ -22,7 +22,7 @@ Config = {
 
     CloseAfterUse = {'lockpick', 'phone'}, -- Closes inventory if these items are used
 
-    SyncBackpacks = true, -- If you have a eligible backpack in your inventory it will add it on you as clothes
+    SyncBackpacks = false, -- If you have a eligible backpack in your inventory it will add it on you as clothes
 
     EnableDiscovery = true, -- Items need to be discovered with right click so they can be used (NEW)
 
