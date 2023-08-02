@@ -860,7 +860,7 @@ function OnStorageOpen(id,hash,owner,date)
             TriggerServerEvent('hrs_base_building:oxLoad',id,hash)
             exports.ox_inventory:openInventory('stash', text)
         end
-    elseif Config.inventory == 'qb-inventory' then   
+    elseif Config.inventory == 'lj-inventory' then   
         if Config.usingOldInventoryMethod then
             text = 'HRS'..hash..""..id..""..date
             text = string.gsub(text, "-", "_")

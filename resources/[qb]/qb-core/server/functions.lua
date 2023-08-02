@@ -357,8 +357,8 @@ end
 ---@param source any
 ---@param item string
 function QBCore.Functions.UseItem(source, item)
-    if GetResourceState('qb-inventory') == 'missing' then return end
-    exports['qb-inventory']:UseItem(source, item)
+    if GetResourceState('lj-inventory') == 'missing' then return end
+    exports['lj-inventory']:UseItem(source, item)
 end
 
 ---Kick Player

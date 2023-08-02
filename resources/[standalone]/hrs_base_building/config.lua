@@ -29,8 +29,8 @@ end
 
 if GetResourceState('ox_inventory') ~= 'missing' then 
     Config.inventory = 'ox_inventory'
-elseif GetResourceState('qb-inventory') ~= 'missing' then 
-    Config.inventory = 'qb-inventory'
+elseif GetResourceState('lj-inventory') ~= 'missing' then 
+    Config.inventory = 'lj-inventory'
 elseif GetResourceState('chezza_inventory') ~= 'missing' then 
     Config.inventory = 'chezza_inventory'
 elseif GetResourceState('core_inventory') ~= 'missing' then 

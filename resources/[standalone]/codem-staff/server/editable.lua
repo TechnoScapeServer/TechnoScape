@@ -215,7 +215,7 @@ function clearInventoryFunction(plyid)
     else
         local xPlayer = GetPlayer(plyid)
         if xPlayer and plyid then
-            exports['qb-inventory']:ClearInventory(plyid)
+            exports['lj-inventory']:ClearInventory(plyid)
         end
     end 
 end

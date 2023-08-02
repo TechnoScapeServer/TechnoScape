@@ -10,7 +10,7 @@ https://discord.gg/xKgQZ6wZvS
 
 Add the item images to your inventory script
 For Example:
-	`[qb]` > `qb-inventory` > `html` > `images`
+	`[qb]` > `lj-inventory` > `html` > `images`
 
 THESE GO IN YOUR SHARED.LUA IN qb-core:
 
