@@ -19,7 +19,7 @@ Citizen.CreateThread(function()
         local ped = PlayerPedId()
         local pos = GetEntityCoords(ped)
         QBCore.Functions.TriggerCallback('tk-fishing:server:CheckForFishingRod', function(result)
-            if IsFacingWater() and GetVehiclePedIsIn(PlayerPedId(),false) == 0 and IsPedSwimming(PlayerPedId()) == false and isFishing == false then
+            if isLoggedIn == true and IsFacingWater() and GetVehiclePedIsIn(PlayerPedId(),false) == 0 and IsPedSwimming(PlayerPedId()) == false and isFishing == false then
                 if result == true then
                     ShowHelpNotification(Lang:t("notify.fishing_input"))
                     if IsControlJustReleased(0,304) then
