@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CPtFxAssetInfoMgr>
+  <ptfxAssetDependencyInfos>
+<!--    <Item type="CPtFxAssetDependencyInfo">
+      <parentName>veh_deluxo</parentName>
+      <childName>weap_xs_weapons</childName>
+    </Item>-->
+    <Item type="CPtFxAssetDependencyInfo">
+      <parentName>weap_xs_weapons</parentName>
+      <childName>weap_digi_vehicle_weapons</childName>
+    </Item>
+    <Item type="CPtFxAssetDependencyInfo">
+      <parentName>weap_digi_vehicle_weapons</parentName>
+      <childName>veh_digi_torero2</childName>
+    </Item>
+  </ptfxAssetDependencyInfos>
+</CPtFxAssetInfoMgr>
