@@ -18,7 +18,7 @@ Config.EnableDiscordRoles = false
 
 
 Config.AutoMessages = {
-    enable = true,
+    enable = false,
     timeout = 5, -- in minutes
     messages = {
        "https://discord.gg/JapCHXjq58",
