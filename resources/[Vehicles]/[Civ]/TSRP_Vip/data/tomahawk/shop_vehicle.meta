@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ShopVehicleDataArray>
+	<Vehicles>
+
+		<Item>
+			<lockHash>CU_VEH_TOMAHAWK</lockHash>
+			<modelNameHash>tomahawk</modelNameHash>
+			<cost value="100"/>
+			<textLabel>Tomahawk</textLabel>
+			<vehicleMods></vehicleMods>
+		</Item>
+
+	</Vehicles>	
+</ShopVehicleDataArray>

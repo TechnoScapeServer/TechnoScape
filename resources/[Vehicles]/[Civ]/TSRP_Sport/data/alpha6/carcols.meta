@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CVehicleModelInfoVarGlobal>    
+  <Wheels>
+    <Item> <!-- VWT_SPORT -->
+      <Item>
+        <wheelName>wheel_spt_vossenHC3</wheelName>
+        <wheelVariation />
+        <modShopLabel>VOSSEN_HC3</modShopLabel>
+        <rimRadius value="0.348500"/>
+        <rear value="false"/>
+      </Item>
+      <Item>
+        <wheelName>wheel_spt_vossenMLX1</wheelName>
+        <wheelVariation />
+        <modShopLabel>VOSSEN_MLX1</modShopLabel>
+        <rimRadius value="0.348500"/>
+        <rear value="false"/>
+      </Item>
+	</Item>  
+    <Item/> <!-- VWT_MUSCLE -->
+    <Item/> <!-- VWT_BIKE -->
+    <Item/> <!-- VWT_HIEND -->
+    <Item/> <!-- VWT_SUPERMOD1 -->
+    <Item/> <!-- VWT_SUPERMOD2 -->
+    <Item/>
+  </Wheels>
+</CVehicleModelInfoVarGlobal>
