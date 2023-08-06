@@ -1,6 +1,6 @@
 Config = {}
 
-Config.Framework = "standalone"  -- types (standalone, qbcore, esx)
+Config.Framework = "qbcore"  -- types (standalone, qbcore, esx)
 
 Config.ESXFramework = {
 	newversion = true, -- use this if you using new esx version (if you get error with old esxsharedobjectmethod in console)
@@ -26,7 +26,7 @@ Config.ThemeParkItemsSettings = {givedistance = 2.0, givekey = "G", throwkey = "
 
 Config.MaximumParkDistance = 500.0 -- distance of view of attractions
 
-Config.Target = false -- enable this if you want use target
+Config.Target = true -- enable this if you want use target
 
 Config.Targettype = "qtarget" -- types - qtarget, qbtarget, oxtarget
 
@@ -40,7 +40,7 @@ Config.ThemeParkExitKey = "F" -- theme park key for exit
 
 Config.ThemeParkAnimChangeKey = "E" -- theme park key for change anim
 
-Config.ThemeParkDisableExit = false -- turn this feature on if you don't want players to leave the attraction during the ride.
+Config.ThemeParkDisableExit = true -- turn this feature on if you don't want players to leave the attraction during the ride.
 
 Config.ThemeParkPass = false --  -- enable this if you want use theme park pass item, you need create item with name "themeparkpass" in your inventory/framework, also for standalone you need create usable item, example is in server/other.lua
 
@@ -54,7 +54,7 @@ Config.AttractionsSettings = {
 		exitcoords = {coords = vector3(-1640.03, -1075.81, 12.15), heading = 52.5}, -- coordinates for exit the attraction
 		animcooldown = 1000, -- in miliseconds
 		ticketprice = 10, -- price for ticket
-		speedmodifier = 5.0, -- attraction speed, default speed is 1.0
+		speedmodifier = 1.0, -- attraction speed, default speed is 1.0
 		maxrounds = 10, -- change this you want more rounds at maximum speed (changing this number to a higher number will change the duration of the attraction)
 	},
 	topscan = {
@@ -64,7 +64,7 @@ Config.AttractionsSettings = {
 		exitcoords = {coords = vector3(-1619.91, -1073.14, 12.01), heading = 345.5}, -- coordinates for exit the attraction
 		animcooldown = 1000, -- in miliseconds		
 		ticketprice = 10, -- price for ticket
-		speedmodifier = 5.0, -- attraction speed, default speed is 1.0
+		speedmodifier = 1.0, -- attraction speed, default speed is 1.0
 		maxrounds = 20, -- change this you want more rounds at maximum speed (changing this number to a higher number will change the duration of the attraction)
 		normalstyle = true, -- change this if you want different style of top scan (Top Scan starts spinning at a different angle)
 	},	
@@ -75,7 +75,7 @@ Config.AttractionsSettings = {
 		exitcoords = {coords = vector3(-1702.23, -1105.6, 12.15), heading = 321.5}, -- coordinates for exit the attraction
 		animcooldown = 1000,			
 		ticketprice = 10, -- price for ticket
-		speedmodifier = 5.0, -- attraction speed, default speed is 1.0
+		speedmodifier = 1.0, -- attraction speed, default speed is 1.0
 		maxrounds = 2, -- change this you want more rounds at maximum speed (changing this number to a higher number will change the duration of the attraction)
 	},	
 	detonator = {
@@ -84,7 +84,7 @@ Config.AttractionsSettings = {
 		waitforplayers = 20000, -- in miliseconds
 		exitcoords = {coords = vector3(-1685.04, -1115.26, 12.15), heading = 352.5}, -- coordinates for exit the attraction		
 		ticketprice = 10, -- price for ticket
-		speedmodifier = 5.0, -- attraction speed, default speed is 1.0
+		speedmodifier = 1.0, -- attraction speed, default speed is 1.0
 		timeontop = 10000, -- in miliseconds (the time that the detonator will wait at the top before going down.)
 	},	
 	boat = {
@@ -94,7 +94,7 @@ Config.AttractionsSettings = {
 		exitcoords = {coords = vector3(-1660.67, -1115.0, 12.04), heading = 50.5}, -- coordinates for exit the attraction
 		animcooldown = 1000, -- in miliseconds		
 		ticketprice = 10, -- price for ticket
-		speedmodifier = 5.0, -- attraction speed, default speed is 1.0
+		speedmodifier = 1.0, -- attraction speed, default speed is 1.0
 		maxrounds = 5, -- change this you want more rounds at maximum speed (changing this number to a higher number will change the duration of the attraction)
 	},	
 	bumpercars = {
