@@ -12,6 +12,11 @@ client_scripts({
     'client/*.lua'
 });
 
+-- shared
+shared_script({
+    'config.lua'
+});
+
 files ({
     'html/index.html',
     'html/*.css',
