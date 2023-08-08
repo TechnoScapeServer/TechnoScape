@@ -566,7 +566,7 @@ Config.JobInteractions = {
             shouldClose = true
         }
     },
-    ["police"] = {
+    ["ncpd"] = {
         {
             id = 'emergencybutton',
             title = 'Emergency button',

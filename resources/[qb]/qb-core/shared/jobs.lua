@@ -15,8 +15,8 @@ QBShared.Jobs = {
             },
         },
 	},
-	['police'] = {
-		label = 'Law Enforcement',
+	['ncpd'] = {
+		label = 'Night City Police Department',
         type = "leo",
 		defaultDuty = true,
 		offDutyPay = false,
