@@ -160,7 +160,7 @@ end
 local function IsArmoryWhitelist() -- being removed
     local retval = false
 
-    if QBCore.Functions.GetPlayerData().job.name == 'police' then
+    if QBCore.Functions.GetPlayerData().job.name == 'ncpd' then
         retval = true
     end
     return retval
@@ -377,7 +377,7 @@ end)
 
 RegisterNetEvent('police:client:CheckStatus', function()
     QBCore.Functions.GetPlayerData(function(PlayerData)
-        if PlayerData.job.name == "police" then
+        if PlayerData.job.name == "ncpd" then
             local player, distance = GetClosestPlayer()
             if player ~= -1 and distance < 5.0 then
                 local playerId = GetPlayerServerId(player)
@@ -511,16 +511,16 @@ RegisterNetEvent('qb-police:client:spawnHelicopter', function(k)
 end)
 
 RegisterNetEvent("qb-police:client:openStash", function()
-    TriggerServerEvent("inventory:server:OpenInventory", "stash", "policestash_"..QBCore.Functions.GetPlayerData().citizenid)
-    TriggerEvent("inventory:client:SetCurrentStash", "policestash_"..QBCore.Functions.GetPlayerData().citizenid)
+    TriggerServerEvent("inventory:server:OpenInventory", "stash", "ncpdstash_"..QBCore.Functions.GetPlayerData().citizenid)
+    TriggerEvent("inventory:client:SetCurrentStash", "ncpdstash_"..QBCore.Functions.GetPlayerData().citizenid)
 end)
 
 RegisterNetEvent('qb-police:client:openTrash', function()
-    TriggerServerEvent("inventory:server:OpenInventory", "stash", "policetrash", {
+    TriggerServerEvent("inventory:server:OpenInventory", "stash", "ncpdtrash", {
         maxweight = 4000000,
         slots = 300,
     })
-    TriggerEvent("inventory:client:SetCurrentStash", "policetrash")
+    TriggerEvent("inventory:client:SetCurrentStash", "ncpdtrash")
 end)
 
 --##### Threads #####--
@@ -530,7 +530,7 @@ local function dutylistener()
     dutylisten = true
     CreateThread(function()
         while dutylisten do
-            if PlayerJob.name == "police" then
+            if PlayerJob.name == "ncpd" then
                 if IsControlJustReleased(0, 38) then
                     TriggerServerEvent("QBCore:ToggleDuty")
                     TriggerServerEvent("police:server:UpdateCurrentCops")
@@ -551,11 +551,11 @@ local function stash()
     CreateThread(function()
         while true do
             Wait(0)
-            if inStash and PlayerJob.name == "police" then
+            if inStash and PlayerJob.name == "ncpd" then
                 if PlayerJob.onduty then sleep = 5 end
                 if IsControlJustReleased(0, 38) then
-                    TriggerServerEvent("inventory:server:OpenInventory", "stash", "policestash_"..QBCore.Functions.GetPlayerData().citizenid)
-                    TriggerEvent("inventory:client:SetCurrentStash", "policestash_"..QBCore.Functions.GetPlayerData().citizenid)
+                    TriggerServerEvent("inventory:server:OpenInventory", "stash", "ncpdstash_"..QBCore.Functions.GetPlayerData().citizenid)
+                    TriggerEvent("inventory:client:SetCurrentStash", "ncpdstash_"..QBCore.Functions.GetPlayerData().citizenid)
                     break
                 end
             else
@@ -570,14 +570,14 @@ local function trash()
     CreateThread(function()
         while true do
             Wait(0)
-            if inTrash and PlayerJob.name == "police" then
+            if inTrash and PlayerJob.name == "ncpd" then
                 if PlayerJob.onduty then sleep = 5 end
                 if IsControlJustReleased(0, 38) then
-                    TriggerServerEvent("inventory:server:OpenInventory", "stash", "policetrash", {
+                    TriggerServerEvent("inventory:server:OpenInventory", "stash", "ncpdtrash", {
                         maxweight = 4000000,
                         slots = 300,
                     })
-                    TriggerEvent("inventory:client:SetCurrentStash", "policetrash")
+                    TriggerEvent("inventory:client:SetCurrentStash", "ncpdtrash")
                     break
                 end
             else
@@ -592,7 +592,7 @@ local function fingerprint()
     CreateThread(function()
         while true do
             Wait(0)
-            if inFingerprint and PlayerJob.name == "police" then
+            if inFingerprint and PlayerJob.name == "ncpd" then
                 if PlayerJob.onduty then sleep = 5 end
                 if IsControlJustReleased(0, 38) then
                     TriggerEvent("qb-police:client:scanFingerPrint")
@@ -610,7 +610,7 @@ local function armoury()
     CreateThread(function()
         while true do
             Wait(0)
-            if inArmoury and PlayerJob.name == "police" then
+            if inArmoury and PlayerJob.name == "ncpd" then
                 if PlayerJob.onduty then sleep = 5 end
                 if IsControlJustReleased(0, 38) then
                     TriggerEvent("qb-police:client:openArmoury")
@@ -628,7 +628,7 @@ local function heli()
     CreateThread(function()
         while true do
             Wait(0)
-            if inHelicopter and PlayerJob.name == "police" then
+            if inHelicopter and PlayerJob.name == "ncpd" then
                 if PlayerJob.onduty then sleep = 5 end
                 if IsControlJustReleased(0, 38) then
                     TriggerEvent("qb-police:client:spawnHelicopter")
@@ -646,7 +646,7 @@ local function impound()
     CreateThread(function()
         while true do
             Wait(0)
-            if inImpound and PlayerJob.name == "police" then
+            if inImpound and PlayerJob.name == "ncpd" then
                 if PlayerJob.onduty then sleep = 5 end
                 if IsPedInAnyVehicle(PlayerPedId(), false) then
                     if IsControlJustReleased(0, 38) then
@@ -666,7 +666,7 @@ local function garage()
     CreateThread(function()
         while true do
             Wait(0)
-            if inGarage and PlayerJob.name == "police" then
+            if inGarage and PlayerJob.name == "ncpd" then
                 if PlayerJob.onduty then sleep = 5 end
                 if IsPedInAnyVehicle(PlayerPedId(), false) then
                     if IsControlJustReleased(0, 38) then
@@ -698,7 +698,7 @@ if Config.UseTarget then
                         event = "qb-policejob:ToggleDuty",
                         icon = "fas fa-sign-in-alt",
                         label = "Sign In",
-                        job = "police",
+                        job = "ncpd",
                     },
                 },
                 distance = 1.5
@@ -720,7 +720,7 @@ if Config.UseTarget then
                         event = "qb-police:client:openStash",
                         icon = "fas fa-dungeon",
                         label = "Open Personal Stash",
-                        job = "police",
+                        job = "ncpd",
                     },
                 },
                 distance = 1.5
@@ -742,7 +742,7 @@ if Config.UseTarget then
                         event = "qb-police:client:openTrash",
                         icon = "fas fa-trash",
                         label = "Open Trash",
-                        job = "police",
+                        job = "ncpd",
                     },
                 },
                 distance = 1.5
@@ -764,7 +764,7 @@ if Config.UseTarget then
                         event = "qb-police:client:scanFingerPrint",
                         icon = "fas fa-fingerprint",
                         label = "Open Fingerprint",
-                        job = "police",
+                        job = "ncpd",
                     },
                 },
                 distance = 1.5
@@ -786,7 +786,7 @@ if Config.UseTarget then
                         event = "qb-police:client:openArmoury",
                         icon = "fas fa-swords",
                         label = "Open Armory",
-                        job = "police",
+                        job = "ncpd",
                     },
                 },
                 distance = 1.5
@@ -842,7 +842,7 @@ else
     stashCombo:onPlayerInOut(function(isPointInside, _, _)
         if isPointInside then
             inStash = true
-            if PlayerJob.name == 'police' and PlayerJob.onduty then
+            if PlayerJob.name == 'ncpd' and PlayerJob.onduty then
                 exports['qb-core']:DrawText(Lang:t('info.stash_enter'), 'left')
                 stash()
             end
@@ -868,7 +868,7 @@ else
     trashCombo:onPlayerInOut(function(isPointInside)
         if isPointInside then
             inTrash = true
-            if PlayerJob.name == 'police' and PlayerJob.onduty then
+            if PlayerJob.name == 'ncpd' and PlayerJob.onduty then
                 exports['qb-core']:DrawText(Lang:t('info.trash_enter'),'left')
                 trash()
             end
@@ -894,7 +894,7 @@ else
     fingerprintCombo:onPlayerInOut(function(isPointInside)
         if isPointInside then
             inFingerprint = true
-            if PlayerJob.name == 'police' and PlayerJob.onduty then
+            if PlayerJob.name == 'ncpd' and PlayerJob.onduty then
                 exports['qb-core']:DrawText(Lang:t('info.scan_fingerprint'),'left')
                 fingerprint()
             end
@@ -920,7 +920,7 @@ else
     armouryCombo:onPlayerInOut(function(isPointInside)
         if isPointInside then
             inArmoury = true
-            if PlayerJob.name == 'police' and PlayerJob.onduty then
+            if PlayerJob.name == 'ncpd' and PlayerJob.onduty then
                 exports['qb-core']:DrawText(Lang:t('info.enter_armory'),'left')
                 armoury()
             end
@@ -948,7 +948,7 @@ CreateThread(function()
     local evidenceCombo = ComboZone:Create(evidenceZones, {name = "evidenceCombo", debugPoly = false})
     evidenceCombo:onPlayerInOut(function(isPointInside)
         if isPointInside then
-            if PlayerJob.name == "police" and PlayerJob.onduty then
+            if PlayerJob.name == "ncpd" and PlayerJob.onduty then
                 local currentEvidence = 0
                 local pos = GetEntityCoords(PlayerPedId())
 
@@ -990,7 +990,7 @@ CreateThread(function()
     helicopterCombo:onPlayerInOut(function(isPointInside)
         if isPointInside then
             inHelicopter = true
-            if PlayerJob.name == 'police' and PlayerJob.onduty then
+            if PlayerJob.name == 'ncpd' and PlayerJob.onduty then
                 if IsPedInAnyVehicle(PlayerPedId(), false) then
                     exports['qb-core']:HideText()
                     exports['qb-core']:DrawText(Lang:t('info.store_heli'), 'left')
@@ -1023,7 +1023,7 @@ CreateThread(function()
     impoundCombo:onPlayerInOut(function(isPointInside, point)
         if isPointInside then
             inImpound = true
-            if PlayerJob.name == 'police' and PlayerJob.onduty then
+            if PlayerJob.name == 'ncpd' and PlayerJob.onduty then
                 if IsPedInAnyVehicle(PlayerPedId(), false) then
                     exports['qb-core']:DrawText(Lang:t('info.impound_veh'), 'left')
                     impound()
@@ -1071,7 +1071,7 @@ CreateThread(function()
     garageCombo:onPlayerInOut(function(isPointInside, point)
         if isPointInside then
             inGarage = true
-            if PlayerJob.name == 'police' and PlayerJob.onduty then
+            if PlayerJob.name == 'ncpd' and PlayerJob.onduty then
                 if IsPedInAnyVehicle(PlayerPedId(), false) then
                     exports['qb-core']:DrawText(Lang:t('info.store_veh'), 'left')
 		    garage()

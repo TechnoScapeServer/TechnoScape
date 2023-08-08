@@ -15,8 +15,8 @@ QBShared.Jobs = {
             },
         },
 	},
-	['police'] = {
-		label = 'Law Enforcement',
+	['ncpd'] = {
+		label = 'Night City Police Department',
         type = "leo",
 		defaultDuty = true,
 		offDutyPay = false,
@@ -80,6 +80,34 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'Recruit',
+                payment = 50
+            },
+			['1'] = {
+                name = 'House Sales',
+                payment = 75
+            },
+			['2'] = {
+                name = 'Business Sales',
+                payment = 100
+            },
+			['3'] = {
+                name = 'Broker',
+                payment = 125
+            },
+			['4'] = {
+                name = 'Manager',
+				isboss = true,
+                payment = 150
+            },
+        },
+	},
+    ['catcafe'] = {
+		label = 'Cat Cafe',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'employee',
                 payment = 50
             },
 			['1'] = {

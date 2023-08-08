@@ -1070,13 +1070,13 @@ Config.Garages = {
         },
     },
 
-    ["police"] = { 
+    ["ncpd"] = { 
         ["garage"] = "jobgarage", -- "normal" - "aircraft" - "boat" - "jobgarage" - "impound"
         ["gang"] = "none", 
-        ["access"] = "police",
+        ["access"] = "ncpd",
         ["blip"] = {
             ["show"] = true,  -- true or false
-            ["blipName"] = "Police Garage",
+            ["blipName"] = "NCPD Garage",
             ["blipType"] = 357,
             ["blipColour"] =  3
         },
@@ -1092,23 +1092,11 @@ Config.Garages = {
         ["cars"] = {
             [1] = {
                 grade = 0,
-                model = "police",
+                model = "cortesncpd",
             },
             [2] = {
                 grade = 0,
-                model = "police3",
-            },
-            [3] = {
-                grade = 0,
-                model = "police4",
-            },
-            [4] = {
-                grade = 0,
-                model = "police2",
-            },
-            [5] = {
-                grade = 2,
-                model = "whelen08chargerbb",
+                model = "emperorncpd",
             },
         },
         ["camera"] = { 
