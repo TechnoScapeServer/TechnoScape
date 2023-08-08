@@ -101,6 +101,34 @@ QBShared.Jobs = {
             },
         },
 	},
+    ['catcafe'] = {
+		label = 'Cat Cafe',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'employee',
+                payment = 50
+            },
+			['1'] = {
+                name = 'House Sales',
+                payment = 75
+            },
+			['2'] = {
+                name = 'Business Sales',
+                payment = 100
+            },
+			['3'] = {
+                name = 'Broker',
+                payment = 125
+            },
+			['4'] = {
+                name = 'Manager',
+				isboss = true,
+                payment = 150
+            },
+        },
+	},
 	['taxi'] = {
 		label = 'Taxi',
 		defaultDuty = true,
