@@ -11,8 +11,7 @@ Config.PlayMusicByDefault = true -- if true plays the music when loading screen 
 --html\assets\music
 Config.Musics = {
     "music.mp3",
-    "music-2.mp3",
-    "music-3.mp3",
+    "music2.mp3",
 
 }
 
