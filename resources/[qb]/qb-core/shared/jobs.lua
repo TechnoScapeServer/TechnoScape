@@ -44,6 +44,38 @@ QBShared.Jobs = {
             },
         },
 	},
+    ['koi'] = {
+        label = 'Koi',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
+            ['0'] = {
+                name = 'Recruit',
+                payment = 50
+            },
+            ['1'] = {
+                name = 'Novice',
+                payment = 75
+            },
+            ['2'] = {
+                name = 'Experienced',
+                payment = 100
+            },
+            ['3'] = {
+                name = 'Advanced',
+                payment = 125
+            },
+            ['4'] = {
+                name = 'Manager',
+                payment = 150
+            },
+            ['5'] = {
+                name = 'Boss',
+                isboss = true,
+                payment = 150
+            },
+        },
+    },
 	['traumateam'] = {
 		label = 'Trauma Team',
         type = 'ems',
@@ -101,34 +133,38 @@ QBShared.Jobs = {
             },
         },
 	},
-    ['catcafe'] = {
-		label = 'Cat Cafe',
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
+    ['uwu'] = {
+        label = 'Cat Cafe',
+        defaultDuty = true,
+        offDutyPay = false,
+        grades = {
             ['0'] = {
-                name = 'employee',
+                name = 'Recruit',
                 payment = 50
             },
-			['1'] = {
-                name = 'House Sales',
+            ['1'] = {
+                name = 'Novice',
                 payment = 75
             },
-			['2'] = {
-                name = 'Business Sales',
+            ['2'] = {
+                name = 'Experienced',
                 payment = 100
             },
-			['3'] = {
-                name = 'Broker',
+            ['3'] = {
+                name = 'Advanced',
                 payment = 125
             },
-			['4'] = {
+            ['4'] = {
                 name = 'Manager',
-				isboss = true,
+                payment = 150
+            },
+            ['5'] = {
+                name = 'Boss',
+                isboss = true,
                 payment = 150
             },
         },
-	},
+    },
 	['taxi'] = {
 		label = 'Taxi',
 		defaultDuty = true,
