@@ -48,7 +48,7 @@ const getDistance = (plyCoords, tgtCoords) => {
 
 let meCooldown = {}
 RegisterCommand('me', (source, args) => {
-	const message = `* ${args.join(' ')} *`
+	const message = `~b${args.join(' ')}`
 
 	// check if the message contains any blacklisted words
 	if (!blacklisted(message)) {
