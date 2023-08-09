@@ -1,5 +1,5 @@
 RegisterCommand('ap-utility', function()
-    local ped = 'MEPHISTO'
+    local ped = 'nanue'
     local model = GetHashKey(ped)
     RequestModel(model)
     while not HasModelLoaded(model) do
