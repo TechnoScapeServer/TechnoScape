@@ -180,7 +180,7 @@ RegisterNetEvent('ap-clothing:RemoveOutfit', function(gang)
 
 end)
 
-RegisterCommand('apollo', function()
+RegisterNetEvent('apollo-clothing:client:BeginClothingChecks', function()
     TriggerServerEvent('ap-clothing:GetPlayerIdentifier')
     Wait(1000)
     TriggerEvent('ap-whitelist:checkClothes')

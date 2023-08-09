@@ -46,6 +46,7 @@ local function MigrateQBClothing(source)
         end
     end
     TriggerClientEvent("illenium-appearance:client:reloadSkin", source)
+    TriggerClientEvent('apollo-clothing:client:BeginClothingChecks', source)
 
     lib.notify(source, {
         title = _L("migrate.success.title"),

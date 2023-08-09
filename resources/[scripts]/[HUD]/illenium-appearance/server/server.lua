@@ -345,6 +345,7 @@ end
 
 lib.addCommand("reloadskin", { help = _L("commands.reloadskin.title") }, function(source)
     TriggerClientEvent("illenium-appearance:client:reloadSkin", source)
+    TriggerClientEvent('apollo-clothing:client:BeginClothingChecks', source)
 end)
 
 lib.addCommand("clearstuckprops", { help = _L("commands.clearstuckprops.title") }, function(source)
