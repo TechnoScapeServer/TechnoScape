@@ -1,7 +1,7 @@
 Config = {
     UI = {
         ppType = "steam", -- steam or discord
-        welcomeMessage = "Welcome to Night City!",
+        welcomeMessage = "Welcome to Technoscape!",
     },
     Framework = "qbcore", -- esx or qbcore
     FrameworkCustomName = false, -- if you have custom framework name, set this to your framework name or leave it false
