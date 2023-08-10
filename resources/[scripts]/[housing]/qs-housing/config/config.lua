@@ -114,10 +114,10 @@ Config.Framework = 'qb'
 Config.MenuType = 'qb-menu'
 Config.Inventory = 'lj-inventory'
 Config.Wardrobe = 'illenium-appearance'
-Config.Garage = 'jg-advancedgarages' -- or some option above
+Config.Garage = 'codem-garage' -- or some option above
 Config.Logout = 'drop'
 Config.Weather = 'qb-weathersync'
-Config.HelpNotification = 'DrawText3D'
+Config.HelpNotification = 'ShowHelpNotification'
 
 --[[ 
     Basic configuration of your new housing!
