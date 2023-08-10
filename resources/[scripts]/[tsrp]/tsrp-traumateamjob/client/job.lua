@@ -113,8 +113,10 @@ RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
                 deathTime = Config.ReviveInterval
                 OnDeath()
                 DeathTimer()
+                TriggerServerEvent('qb-playerDied')
             elseif (PlayerData.metadata["inlaststand"] and not PlayerData.metadata["isdead"]) then
                 SetLaststand(true)
+                TriggerServerEvent('qb-playerDied')
             else
                 TriggerServerEvent("hospital:server:SetDeathStatus", false)
                 TriggerServerEvent("hospital:server:SetLaststandStatus", false)
