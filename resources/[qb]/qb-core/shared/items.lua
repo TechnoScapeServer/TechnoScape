@@ -4827,5 +4827,8 @@ QBShared.Items = {
     ['description'] = 'Description'
 },
 
+['spray'] 	  = {['name'] = 'spray', ['label'] = 'Spray', ['weight'] = 500, ['type'] = 'item', ['image'] = 'spray.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Spray paint can'},
+['spray_remover'] = {['name'] = 'spray_remover', ['label'] = 'Spray Remover', ['weight'] = 500, ['type'] = 'item', ['image'] = 'spray_remover.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Removes graffiti'},
+
 
 }
