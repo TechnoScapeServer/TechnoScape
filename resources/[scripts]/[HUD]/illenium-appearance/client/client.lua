@@ -724,7 +724,7 @@ RegisterNetEvent("illenium-appearance:client:reloadSkin", function(bypassChecks)
 
     reloadSkinTimer = GetGameTimer()
     BackupPlayerStats()
-    TriggerClientEvent('apollo-clothing:client:BeginClothingChecks', source)
+    TriggerEvent('apollo-clothing:client:BeginClothingChecks', source)
 
     lib.callback("illenium-appearance:server:getAppearance", false, function(appearance)
         if not appearance then
