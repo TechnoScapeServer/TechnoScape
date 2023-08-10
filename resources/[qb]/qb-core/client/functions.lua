@@ -112,24 +112,24 @@ function QBCore.Functions.Notify(text, texttype, length)
         local caption = text.caption or 'Placeholder'
         texttype = texttype or 'primary'
         length = length or 5000
-        -- SendNUIMessage({
-        --     action = 'notify',
-        --     type = texttype,
-        --     length = length,
-        --     text = ttext,
-        --     caption = caption
-        -- })
-        TriggerEvent("codem-cyberhud:Notify", ttext, texttype, length)
+        SendNUIMessage({
+            action = 'notify',
+            type = texttype,
+            length = length,
+            text = ttext,
+            caption = caption
+        })
+        --TriggerEvent("codem-cyberhud:Notify", ttext, texttype, length)
     else
         texttype = texttype or 'primary'
         length = length or 5000
-        -- SendNUIMessage({
-        --     action = 'notify',
-        --     type = texttype,
-        --     length = length,
-        --     text = text
-        -- })
-        TriggerEvent("codem-cyberhud:Notify", text, texttype, length)
+        SendNUIMessage({
+            action = 'notify',
+            type = texttype,
+            length = length,
+            text = text
+        })
+        --TriggerEvent("codem-cyberhud:Notify", text, texttype, length)
     end
 end
 
