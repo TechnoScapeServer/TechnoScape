@@ -7,7 +7,7 @@ ConfigPermissions = {
 
       -- Limit tattoo to certain players
       identifiers = {
-          '323647417255854081',
+          'a9dd64c77a263926a5a926419541bf8c6b01d51f',
           '389763102637555713'
       },
     },
@@ -16,7 +16,7 @@ ConfigPermissions = {
 
       -- Limit tattoo to certain players
       identifiers = {
-        '433338831039758337'
+        'ae29f5b172b6e69921f7b91c656bc6cfb53bd5c1',
       },
     },
 }

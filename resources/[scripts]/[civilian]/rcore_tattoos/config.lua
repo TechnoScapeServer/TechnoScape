@@ -27,7 +27,7 @@ Config.Locale = 'en' -- Shop language - en, es, de, cs, fr, it, kr, pl
 --    Frameworks.STANDALONE - check documentation for this type of framework!
 Config.Framework = Frameworks.QBCORE
 Config.EnableGuidebookIntegration = false --enable rcore_guidebook integration https://store.rcore.cz/package/5041989
-Config.LicenseType = 'discord' --license, steam, discord
+Config.LicenseType = 'license' --license, steam, discord
 Config.LicenseWithoutPrefix = true --remove license:, steam: prefix from license
 
 Config.TattooListsPath = "assets/tattooLists/"
