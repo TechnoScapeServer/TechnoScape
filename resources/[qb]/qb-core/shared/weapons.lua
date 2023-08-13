@@ -148,4 +148,19 @@ QBShared.Weapons = {
 	-- Animals
     [`weapon_animal`]               = {['name'] = 'weapon_animal',	['label'] = 'Animal',	['weapontype'] = 'Animals',	['ammotype'] = nil,	['damagereason'] = 'Mauled'},
     [`weapon_cougar`]               = {['name'] = 'weapon_cougar',	['label'] = 'Cougar',	['weapontype'] = 'Animals',	['ammotype'] = nil,	['damagereason'] = 'Mauled'},
+
+	--Addon
+	[`bat1`] 					 = {['name'] = 'bat1', 				['label'] = 'Kanabo', 					['weapontype'] = 'Melee',	['ammotype'] = nil,	['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
+	[`ham1`] 					 = {['name'] = 'ham1', 				['label'] = 'Sasquatch Hammer', 					['weapontype'] = 'Melee',	['ammotype'] = nil,	['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
+	[`mag1`] 					 = {['name'] = 'mag1', 				['label'] = 'Police Nightstick', 					['weapontype'] = 'Melee',	['ammotype'] = nil,	['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
+	[`mag2`] 					 = {['name'] = 'mag2', 				['label'] = 'Police Nightstick V.2', 					['weapontype'] = 'Melee',	['ammotype'] = nil,	['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
+	[`ascia`] 					 = {['name'] = 'ascia', 			['label'] = 'Advanced Hatchet', 					['weapontype'] = 'Melee',	['ammotype'] = nil,	['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
+	[`col1`] 					 = {['name'] = 'col1', 				['label'] = 'Hunters Knife', 					['weapontype'] = 'Melee',	['ammotype'] = nil,	['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
+	[`colcuoco`] 				 = {['name'] = 'colcuoco', 			['label'] = 'Chefs Knife', 					['weapontype'] = 'Melee',	['ammotype'] = nil,	['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
+	[`machetemael`] 			 = {['name'] = 'machetemael', 		['label'] = 'Maelstrom Machete', 					['weapontype'] = 'Melee',	['ammotype'] = nil,	['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
+	[`machetecustom`] 			 = {['name'] = 'machetecustom', 	['label'] = 'Machete Custom', 					['weapontype'] = 'Melee',	['ammotype'] = nil,	['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
+	[`motosega`] 			 	 = {['name'] = 'motosega', 			['label'] = 'Cut-o-Matic', 					['weapontype'] = 'Melee',	['ammotype'] = nil,	['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
+	[`tsunami`] 			 	 = {['name'] = 'tsunami', 			['label'] = 'Tsunami Kappa', 					['weapontype'] = 'Pistol',	['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
+	[`carnage`] 			 	 = {['name'] = 'carnage', 			['label'] = 'Budget Arms Carnage', 					['weapontype'] = 'Shotgun',	['ammotype'] = 'AMMO_SHOTGUN',	['damagereason'] = 'Devastated / Pulverized / Shotgunned'},
+	[`umbra`] 			 	 	 = {['name'] = 'umbra', 			['label'] = 'Darra Polytechnic DA8 Umbra', 					['weapontype'] = 'Assault Rifle',	['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
 }

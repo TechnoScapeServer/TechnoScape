@@ -152,6 +152,21 @@ Config.DurabilityMultiplier = {
     ['weapon_fireextinguisher']      = 0.15,
     ['weapon_hazardcan']             = 0.15,
     ['weapon_fertilizercan']         = 0.15,
+
+    --Addon
+    ['bat1']                   = 0.15,
+    ['ham1']                   = 0.15,
+    ['mag1']                   = 0.15,
+    ['mag2']                   = 0.15,
+    ['ascia']                  = 0.15,
+    ['col1']                   = 0.15,
+    ['colcuoco']               = 0.15,
+    ['machetemael']            = 0.15,
+    ['machetecustom']          = 0.15,
+    ['motosega']               = 0.15,
+    ['tsunami']                = 0.15,
+    ['carnage']                = 0.15,
+    ['umbra']                  = 0.15,
 }
 
 Config.WeaponRepairPoints = {
