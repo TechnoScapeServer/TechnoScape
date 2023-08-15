@@ -428,7 +428,7 @@ Config.Shop = {
     },
     Ped = {
         model = `s_m_y_waretech_01`, 
-        coords = vector4(224.03, -894.1, 31.38, 113.04), 
+        coords = vector4(-927.64, -2963.62, 18.85, 159.47), 
         scenario = "WORLD_HUMAN_AA_SMOKE"
     },
     blip = {
@@ -476,7 +476,7 @@ Config.SellShop = {
     },
     Ped = {
         model = `a_m_m_eastsa_01`, 
-        coords = vec4(453.66, -1305.08, 29.0, 243.6), 
+        coords = vector4(-926.38, -2964.51, 18.85, 158.64), 
         scenario = "WORLD_HUMAN_AA_COFFEE"
     },
 }
@@ -490,14 +490,14 @@ Config.StartMission = {
     },
     Ped = {
         model = `cs_fbisuit_01`, 
-        coords = vector4(224.84, -896.77, 31.37, 117.68), 
+        coords = vector4(-925.53, -2965.05, 18.85, 149.42), 
         scenario = "WORLD_HUMAN_SMOKING" 
     },
     Vehicle = {    
         enabled = true,    
         Model = "burrito3",
         SpawnPoints = {
-            { Coords = vector3(234.93, -917.35, 31.31), Heading = 356.13, Radius = 3.0 },
+            { Coords = vector3(-904.3, -2981.11, 14.0), Heading = 356.13, Radius = 3.0 },
             -- { Coords = vector3(-577.1, 315.14, 83.66), Heading = 356.13, Radius = 3.0 }
         }, 
     }

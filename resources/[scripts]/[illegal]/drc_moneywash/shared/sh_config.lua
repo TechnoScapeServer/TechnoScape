@@ -412,7 +412,7 @@ Config.Shop = {
     },
     Ped = {
         model = `s_m_y_waretech_01`, 
-        coords = vector4(200.51, -889.77, 31.43, 261.53), 
+        coords = vector4(-937.01, -3019.46, 18.84, 333.9), 
         scenario = "WORLD_HUMAN_AA_SMOKE",
         renderdistance = 100
     },
@@ -423,7 +423,7 @@ Config.WarehouseShop = {
     enabled = true,
     Ped = {
         model = `a_m_y_business_03`,
-        coords = vector4(203.24, -882.94, 31.44, 245.29),
+        coords = vector4(-938.59, -3018.53, 18.84, 327.06),
         scenario = "WORLD_HUMAN_AA_COFFEE",
         renderdistance = 100
     },
