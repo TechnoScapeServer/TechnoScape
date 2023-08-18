@@ -1,0 +1,71 @@
+.InformationForVideo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.DarkenCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: #252525;
+    opacity: 0.6;
+}
+
+.ConnectingTo {
+    position: absolute;
+    top: 47%;
+    left: 33.5%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Technoscape";
+}
+
+.TechnoscapeTitle {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f1ec00;
+    font-size: 80px;
+    font-family: "Technoscape";
+}
+
+.PausePlay {
+    position: absolute;
+    bottom: 3%;
+    right: 0%;
+}
+
+.YellowHintBacker {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 130px;
+}
+
+.DidYouKnow {
+    position: absolute;
+    top: 58.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2px;
+    font-size: 13px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.DidYouKnowTip {
+    position: absolute;
+    top: 62%;
+    color: white;
+    left: 50%;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    width: 530px;
+    text-align: center;
+}

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;500;700&display=swap");
+
+@font-face {
+    font-family: "Technoscape";
+    src:url("../fonts/Technoscape.ttf");
+}
+
+.MainShow {
+    background: #000;
+    overflow: hidden;
+}
+
+/* Development Studios */
+.DevelopmentStudios {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 30%;
+}
+
+.DevelopmentStudiosImage {
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 130px;
+}
+
+.DevelopmentEngine {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f1ec00;
+    font-family: "Technoscape", sans-serif;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 12px;
+}
+
+.CustomServer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Catamaran", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.introLoader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.TermsText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Catamaran", sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #631a1d;
+    animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.Invisible {
+    display: none;
+}
+.Visible {
+    display: block;
+}
