@@ -1,7 +1,7 @@
 Config = {}
 -- For more info check https://codem.gitbook.io/codem-documentation/
 
-Config.Theme = 'cherry' --  sky, blvck, cherry, kush, mango, proxima
+Config.Theme = 'proxima' --  sky, blvck, cherry, kush, mango, proxima
 Config.Logo = 'https://i.imgur.com/1w0OZx8.png' -- Default or URL link
 Config.BackgroundImage = 'background.png' -- default or custom image/video
 -- Backgrounds can be found in html/assets/background/
@@ -11,8 +11,6 @@ Config.PlayMusicByDefault = true -- if true plays the music when loading screen 
 --html\assets\music
 Config.Musics = {
     "music.mp3",
-    "music2.mp3",
-
 }
 
 -- To display on left menu (must be an image)
