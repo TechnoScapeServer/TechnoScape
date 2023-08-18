@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ap-loadingscreen</title>
+    <link rel="stylesheet" href="./css/ap-styles.css">
+    <link rel="stylesheet" href="./css/glitchHelpers.css">
+    <link rel="stylesheet" href="./css/ap-videoHelper.css">
+</head>
+<body class="MainShow">
+
+    <!-- Development Studios -->
+    <div class="DevelopmentStudios Invisible" id="DevelopmentStudios">
+        <image src="./assets/spinnerDev.gif" alt="Development Studios" class="DevelopmentStudiosImage">
+        <h3 class="BroughtByDevelopment" data-text="Brought To You By:">Brought To You By:</h3>
+        <h2 class="hero glitch layers" data-text="Technoscape Development Studios"><span>Technoscape Development Studios</span></h2>
+    </div>
+
+    <!-- Development Engine -->
+    <div class="DevelopmentEngine Invisible" id="DevelopmentEngine">
+        <h3 data-text="TSRP" class="glitch layers">TSRP</h3>
+    </div>
+
+    <div class="CustomServer Invisible" id="CSPartOne">
+        <h3 data-text="Developed, Founded & Ran By Lovers Of Cyberpunk." class="customservertext glitch layers">Developed, Founded & Ran By Lovers Of Cyberpunk.</h3>
+    </div>
+    <div class="CustomServer Invisible" id="CSPartTwo">
+        <h3 data-text="A Community Completely Built From The Ground Up, Just For You." style="margin-bottom: -30px; color: #f1ec00;" class="customservertext glitch layers">A Community Completely Built From The Ground Up, Just For You.</h3>
+    </div>
+
+    <!-- Intro Game Text -->
+    <div class="TermsText Invisible" id="TermsText">
+        <h3 class="customservertext">This server is a work of fiction. All names, characters, events and incidents are portrayed in this game are fictitous. Except as expressly indicated. Any resesmblance to real persons or other real-life entities and any use of actual brands, buildings, vehicles, products, or objects is purely coincidental. Additionally, the content of the game is intended to serve artistic purposes and its makers do not endorse, condone, or encourage any of the viewpoints expressed herein or any of the products, content or conduct depicted herein.</h3>
+    </div>
+
+    <!-- Video Loader -->
+    <video id="introLoader" class="introLoader" autoplay>
+        <source src="./assets/newLoaderVideo.mp4" type="video/webm">
+        <script>
+            var video = document.currentScript.parentElement;
+            video.volume = 0;
+            </script>
+    </video>
+
+    <!-- Information For Video -->
+    <div class="InformationForVideo Invisible" id="InformationForVideo">
+        <div class="DarkenCover"></div>
+        <image src="./assets/PausePlay.svg" class="PausePlay"></image>
+
+        <!-- Did You Know? -->
+        <div>
+            <image src="./assets/HintBacker.svg" class="YellowHintBacker">
+                <h3 class="DidYouKnow">Did You Know</h3>
+                <h3 class="DidYouKnowTip">There are lots of LEGAL jobs to do inside the city? They are quick for cash and you wont be bothered by NCPD.</h3>
+            </div>
+
+        <h3 class="ConnectingTo glitch layers" data-text="Connecting To">Connecting To</h3>
+        <h3 class="TechnoscapeTitle glitch layers" data-text="Technoscape">Technoscape</h3>
+
+    </div>
+
+    
+
+
+</body>
+<script src="./scripts/ap-loadingscreen.js"></script>
+</html>
